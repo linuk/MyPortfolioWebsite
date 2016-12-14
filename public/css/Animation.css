@@ -1,0 +1,18 @@
+.example-appear {
+   transform: translateY(50vw);
+   opacity: 0.01;
+}
+
+.example-appear.example-appear-active {
+   transform: translateY(0px);
+   opacity: 1;
+   transition: all 1000ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: all 1000ms ease-in;
