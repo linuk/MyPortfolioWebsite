@@ -1,25 +1,19 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col} from "react-bootstrap";
-import Color from './Color';
+import {ProjectsCardsContainer} from './ProjectsCardsContainer'
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group' 
 
-const GridCSS={
-	width: "auto"
-}
 
 export class ProjectsContainer extends Component {
 	render() {
 		return (
-			<div>
-				<Grid style={GridCSS}>
-					<Row>
-						<Col md={4} style={{background: Color.secondary1, height: "40vh"}}>
-						</Col>
-						<Col md={4} style={{background: Color.secondary3, height: "40vh"}}>
-						</Col>
-						<Col md={4} style={{background: Color.secondary2, height: "40vh"}}>
-						</Col>
-					</Row>
-				</Grid>
+			<div style={{marginTop: "20px"}}>
+				<ReactCSSTransitionGroup
+					transitionName="example"
+					transitionAppear={true} transitionAppearTimeout={4000}
+	  				transitionEnter={true}  transitionEnterTimeout={4000}
+	  				transitionLeave={true} transitionLeaveTimeout={4000}>
+					<ProjectsCardsContainer />
+				</ReactCSSTransitionGroup>
 			</div>
 		);
 	}

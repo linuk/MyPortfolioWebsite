@@ -9,7 +9,7 @@ let IndexJumbotronCSS={
 	backgroundAttachment: 'fixed',
 	color: "#fff",
 	position: "relative",
-	height: "80vh",
+	height: "85vh",
 	marginBottom: "0"
 }
 
@@ -28,7 +28,6 @@ export default class IndexJumbotron extends Component {
 				<div style={IndexJumbotronContentCSS}>
 					<h1>Index!</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima accusantium praesentium exercitationem!</p>
-            		<LinkContainer to="/about"><Button bsStyle="primary">Learn more</Button></LinkContainer>
 				</div>
 			</Jumbotron>
 		);

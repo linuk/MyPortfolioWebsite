@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import MyNavbar from './components/MyNavbar';
-import './App.css';
+import IndexJumbotron from './components/IndexJumbotron';
 
+
+let AppCSS={
+	background: "#fafafa",
+}
 
 export default class App extends Component {
   render() {
     return (
-      <div>
+      <div style={AppCSS}>
 	    <MyNavbar />
 	    {this.props.children}
       </div>

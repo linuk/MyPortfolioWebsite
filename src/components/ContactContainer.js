@@ -12,12 +12,9 @@ export class ContactContainer extends Component {
 			<div>
 				<Grid style={GridCSS}>
 					<Row>
-						<Col md={4} style={{background: Color.secondary3, height: "40vh"}}>
-						</Col>
-						<Col md={4} style={{background: Color.primary, height: "40vh"}}>
-						</Col>
-						<Col md={4} style={{background: Color.secondary2, height: "40vh"}}>
-						</Col>
+						<Col md={4} style={{background: Color.secondary3, height: "40vh"}}></Col>
+						<Col md={4} style={{background: Color.primary, height: "40vh"}}></Col>
+						<Col md={4} style={{background: Color.secondary2, height: "40vh"}}></Col>
 					</Row>
 				</Grid>
 			</div>
