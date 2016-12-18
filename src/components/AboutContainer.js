@@ -4,12 +4,15 @@ import { Grid, Row, Col} from "react-bootstrap";
 import Color from './Color';
 // import Animation from './Animation.css'
 
-const GridCSS={
-	width: "auto"
-}
 
 export class AboutContainer extends Component {
+
 	render() {
+		
+		const GridCSS={
+			width: "auto"
+		}
+
 		return (
 			<div>
 				<ReactCSSTransitionGroup

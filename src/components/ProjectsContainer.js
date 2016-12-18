@@ -6,9 +6,9 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 export class ProjectsContainer extends Component {
 	render() {
 		return (
-			<div style={{marginTop: "20px"}}>
+			<div style={{paddingTop: "100px"}}>
 				<ReactCSSTransitionGroup
-					transitionName="example"
+					transitionName="fadeInfadeOut"
 					transitionAppear={true} transitionAppearTimeout={4000}
 	  				transitionEnter={true}  transitionEnterTimeout={4000}
 	  				transitionLeave={true} transitionLeaveTimeout={4000}>

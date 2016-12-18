@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Jumbotron, Button } from 'react-bootstrap';
-import { LinkContainer } from 'react-router-bootstrap';
+import { Jumbotron } from 'react-bootstrap';
 
 let backgroundImageURL= 'imgs/bg.jpg';
 let IndexJumbotronCSS={

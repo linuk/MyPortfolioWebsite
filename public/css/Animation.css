@@ -1,18 +1,79 @@
-.example-appear {
-   transform: translateY(50vw);
+.fadeInfadeOut-appear {
+   transform: translateY(20vw);
    opacity: 0.01;
 }
 
-.example-appear.example-appear-active {
+.fadeInfadeOut-appear.fadeInfadeOut-appear-active {
    transform: translateY(0px);
    opacity: 1;
    transition: all 1000ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
-.example-leave {
+.fadeInfadeOut-leave {
   opacity: 1;
 }
 
-.example-leave.example-leave-active {
+.fadeInfadeOut-leave.fadeInfadeOut-leave-active {
   opacity: 0.01;
   transition: all 1000ms ease-in;
+}
+
+/*==========================================
+=            IndexCardContent            =
+==========================================*/
+
+.IndexCardContent-appear {
+   transform: translateY(20vw);
+   opacity: 0.0;
+   transition: all .5s ease-in-out;
+}
+
+.IndexCardContent-appear.IndexCardContent-appear-active{
+   transform: translateY(0vw);
+   opacity: 1;
+   transition: all .5s ease-in-out;
+}
+
+.IndexCardContent-enter {
+   transform: translateY(10vw);
+   opacity: 0.0;
+   transition: all .5s ease-in-out;
+}
+
+.IndexCardContent-enter.IndexCardContent-enter-active{
+   transform: translateY(0vw);
+   opacity: 1;
+   transition: all .5s ease-in-out;
+}
+
+.IndexCardContent-leave {
+  transform: translateY(0vw);
+  opacity: 1;
+  transition: all .5s ease-in-out ;
+}
+
+.IndexCardContent-leave.IndexCardContent-leave-active{
+  transform: translateY(-10vw);
+  opacity: 0.0;
+  transition: all .5s ease-in-out  ;
+}
+/*=====  End of IndexCardContent  ======*/
+
+
+/*=================================
+=            IndexCard            =
+=================================*/
+
+.absoluteCenter-appear {
+   transform: translate(0%,40%);
+   opacity: 0.01;
+}
+
+.absoluteCenter-appear.absoluteCenter-appear-active {
+   transform: translate(0%,0%);
+   opacity: 1;
+   transition: all 1000ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+/*=====  End of IndexCard  ======*/
+

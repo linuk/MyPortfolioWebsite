@@ -2,9 +2,7 @@ import React from 'react';
 import { Modal, Button } from 'react-bootstrap'
 
 
-let ModalHeaderCSS={
-	textAlign: "center"
-}
+
 
 
 const ProjectsCardModal  = React.createClass({	
@@ -14,15 +12,31 @@ const ProjectsCardModal  = React.createClass({
   	open() { this.setState({ showModal: true }); },
 
 	render() {
+		
+		const ModalContainerCSS={
+			transform: "translate(0,20%)"
+		}
+
+		const ModalHeaderCSS={
+			textAlign: "center"
+		};
+
+		const ModalBodyCSS={
+			padding: "20px"
+		}
+
+		console.log(this.props.content);
+
 		return (
-			<Modal bsSize="lg" open={this.open} show={this.state.showModal} onHide={this.close}>
+			<div >
+			<Modal style={ModalContainerCSS} bsSize="lg" open={this.open} show={this.state.showModal} onHide={this.close}>
       			
       			<Modal.Header style={ModalHeaderCSS} closeButton>
         	    	<Modal.Title>{this.props.title}</Modal.Title>
       	    	</Modal.Header>
           		
-          		<Modal.Body>
-		            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae debitis mollitia tempora eos corporis accusantium optio consequuntur. Unde, quasi, quae numquam tempore sapiente quis facere, optio quo, expedita fugit minima?</p>
+          		<Modal.Body style={ModalBodyCSS}>
+		            <p>{this.props.content.description}</p>
 		        </Modal.Body>
 		        
 		        <Modal.Footer>
@@ -30,6 +44,7 @@ const ProjectsCardModal  = React.createClass({
           		</Modal.Footer>
         	
         	</Modal>
+        	</div>
 		);
 	}
 })

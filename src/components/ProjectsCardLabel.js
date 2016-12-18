@@ -24,6 +24,7 @@ export class ProjectsCardLabel extends Component {
 			switch(labelName){
 				case "Javascript": labelClass = "success"; break;
 				case "C++": labelClass = "warning"; break; 
+				default: labelClass = "warning"; break; 
 			}
 			
 			this.state.labels.push( 

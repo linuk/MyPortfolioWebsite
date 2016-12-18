@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import ProjectsCardModal  from './ProjectsCardModal'
-import {ProjectsCardLabel} from './ProjectsCardLabel'
-import color from 'material-colors'
+import { ProjectsCardLabel } from './ProjectsCardLabel'
 
 let ProjectsCardCSS = { background: "#fff", color: "#222" }
 
@@ -20,10 +19,10 @@ export class ProjectsCard extends Component {
 	render() {
 		return (
 			<div style={ProjectsCardCSS} onClick={this.openModal.bind(this)} className={'card card-1'}>
-				<ProjectsCardModal ref="modal" title={this.props.title} />
+				<ProjectsCardModal ref="modal" content={this.props.content}  title={this.props.title} />
 				<div className={'cardContent'}>
 					<h2>{this.props.title}</h2>
-					<p>{this.props.text}</p>
+					<p>{this.props.content.shortDesctiption}</p>
 					<ProjectsCardLabel labels={this.props.labels} title={this.props.title} />
 				</div>
 			</div>
