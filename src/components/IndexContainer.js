@@ -46,7 +46,7 @@ export class IndexContainer extends Component {
 			backgroundURL: 'imgs/indexCodeBG.jpg',
 			polygonCSS: "polygon(0 0, 80% 0, 100% 100%, 0% 100%)",
 			icon: "fa fa-code fa-5x",
-			text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem repellat quae, fuga quasi voluptatibus quibusdam perspiciatis eveniet temporibus numquam aliquid est porro commodi sint pariatur similique, et nostrum dolores expedita.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem repellat quae, fuga quasi voluptatibus quibusdam perspiciatis eveniet temporibus numquam aliquid est porro commodi sint pariatur similique, et nostrum dolores expedita",
+			text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem repellat quae, fuga quasi voluptatibus quibusdam perspiciatis eveniet temporibus numquam aliquid ",
 		}; 
 
 		const IndexCardContentRight ={
@@ -55,7 +55,7 @@ export class IndexContainer extends Component {
 			backgroundURL: 'imgs/indexPhotographyBG.jpg',
 			polygonCSS: "polygon(0 0, 100% 0, 100% 100%, 20% 100%)",
 			icon: "fa fa-camera-retro fa-5x",
-			text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem repellat quae, fuga quasi voluptatibus quibusdam perspiciatis eveniet temporibus numquam aliquid est porro commodi sint pariatur similique, et nostrum dolores expedita.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem repellat quae, fuga quasi voluptatibus quibusdam perspiciatis eveniet temporibus numquam aliquid est porro commodi sint pariatur similique, et nostrum dolores expedita",
+			text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem repellat quae, fuga quasi voluptatibus quibusdam perspiciatis eveniet temporibus numquam aliquid .",
 		}
 
 		return (

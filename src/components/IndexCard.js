@@ -23,7 +23,6 @@ export class IndexCard extends Component {
 		this.setState({
 			iconDisplay: true,
 			transform: "scale(1.05,1.05)", 
-			background: 'linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),url(' + this.props.content.backgroundURL + ') center center no-repeat',
 		})
 	}
 
@@ -52,7 +51,6 @@ export class IndexCard extends Component {
 			width: "180%",
 			zIndex: 200,
 			transform: "scale(1.05,1.05)", 
-			background: 'linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),url(' + this.props.content.backgroundURL + ') center center no-repeat',
 		});
 		console.log("open");
 
@@ -65,7 +63,6 @@ export class IndexCard extends Component {
 			zIndex: 1,
 			iconDisplay: false,
 			transform: "scale(1,1)", 
-			background: 'linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),url(' + this.props.content.backgroundURL + ') center center no-repeat',
 		});	
 		console.log("close");
 	}
@@ -86,9 +83,9 @@ export class IndexCard extends Component {
 			cursor: cursorStyle,
 			clipPath: this.props.content.polygonCSS,
 			WebkitClipPath: this.props.content.polygonCSS,
-			background: this.state.background,
 			transform: this.state.transform,
 			WebkitTransform: this.state.transform,
+			background: this.state.background,
 		};
 
 		// icon align for each side
@@ -140,7 +137,7 @@ export class IndexCard extends Component {
 				onClick={this.handleClick.bind(this)} 
 				onMouseLeave={this.handleMouseLeave.bind(this)} 
 				onMouseOver={this.handleMouseOver.bind(this)} >
-						<div style={IndexCardContentCSS}>
+						<div style={IndexCardContentCSS} >
 							<ReactCSSTransitionGroup
 							transitionName="IndexCardContent"
 							transitionLeave={true} transitionLeaveTimeout={500}

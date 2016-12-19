@@ -20,9 +20,14 @@ export default class App extends Component {
   }
   
   render() {
-	let AppCSS={
+	
+  const backgroundURL='imgs/projectBG.png';
+
+  let AppCSS={
 		height: "100vh",
-    background: "#fafafa"
+    background: "transparent",
+    background: 'url(' + backgroundURL + ') center center repeat',
+    backgroundAttachment: 'fixed',
 	}
 
 	let AppContentCSS={

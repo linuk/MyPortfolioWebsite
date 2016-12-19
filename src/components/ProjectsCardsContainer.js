@@ -31,9 +31,9 @@ export class ProjectsCardsContainer extends Component {
 					<Col md={4}> <ProjectsCard title={ "7" } content={ content } labels={ tempLabels }/> </Col>
 					<Col md={4}> <ProjectsCard title={ "8" } content={ content } labels={ tempLabels }/> </Col>
 					<Col md={4}> <ProjectsCard title={ "9" } content={ content } labels={ tempLabels }/> </Col>
-					<Col md={4}> <ProjectsCard title={ "9" } content={ content } labels={ tempLabels }/> </Col>
 					<Col md={4}> <ProjectsCard title={ "10" } content={ content } labels={ tempLabels }/> </Col>
 					<Col md={4}> <ProjectsCard title={ "11" } content={ content } labels={ tempLabels }/> </Col>
+					<Col md={4}> <ProjectsCard title={ "12" } content={ content } labels={ tempLabels }/> </Col>
 				</Row>
 			</Grid>
 		);
