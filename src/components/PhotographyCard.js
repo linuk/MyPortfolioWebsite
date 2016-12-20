@@ -4,11 +4,6 @@ import Gallery from 'react-photo-gallery';
 export default class PhotographyCard extends Component {
 	render() {
 
-		const PhotoWitth=1;
-		const PhotoHeight=1;
-
-
-
 		const PHOTO_SET = [
 		  {
 		    src: 'imgs/photos/3.jpg',
@@ -32,7 +27,7 @@ export default class PhotographyCard extends Component {
 		    src: 'imgs/photos/1.jpg',
 		    width: 1,
 		    height: 1,
-		    aspectRatio: 4,
+		    aspectRatio: 1,
 		    lightboxImage:{
 		    src: 'imgs/photos/1.jpg',
 		    }
@@ -41,15 +36,15 @@ export default class PhotographyCard extends Component {
 		    src: 'imgs/photos/4.jpg',
 		    width: 1,
 		    height: 1,
-		    aspectRatio: 1,
+		    aspectRatio: 4,
 		    lightboxImage:{
 		    src: 'imgs/photos/4.jpg',
 		    }
 		  },
 		  {
 		    src: 'imgs/photos/5.jpg',
-		    width: 681,
-		    height: 1024,
+		    width: 1,
+		    height: 1,
 		    aspectRatio: 1.5,
 		    lightboxImage:{
 		    src: 'imgs/photos/5.jpg',
@@ -57,8 +52,8 @@ export default class PhotographyCard extends Component {
 		  },
 		  {
 		    src: 'imgs/photos/6.jpg',
-		    width: 600,
-		    height: 600,
+		    width: 1,
+		    height: 1,
 		    aspectRatio: 2,
 		    lightboxImage:{
 		    src: 'imgs/photos/6.jpg'
@@ -66,8 +61,8 @@ export default class PhotographyCard extends Component {
 		  },
 		  {
 		    src: 'imgs/photos/7.jpg',
-		    width: 600,
-		    height: 600,
+		    width: 1,
+		    height: 1,
 		    aspectRatio: 1,
 		    lightboxImage:{
 		    src: 'imgs/photos/7.jpg',
@@ -75,8 +70,8 @@ export default class PhotographyCard extends Component {
 		  },
 		  {
 		    src: 'imgs/photos/8.jpg',
-		    width: 600,
-		    height: 600,
+		    width: 1,
+		    height: 1,
 		    aspectRatio: 3,
 		    lightboxImage:{
 		    src: 'imgs/photos/8.jpg',
@@ -84,8 +79,8 @@ export default class PhotographyCard extends Component {
 		  },
 		  {
 		    src: 'imgs/photos/9.jpg',
-		    width: 600,
-		    height: 600,
+		    width: 1,
+		    height: 1,
 		    aspectRatio: 1.5,
 		    lightboxImage:{
 		    src: 'imgs/photos/9.jpg',
@@ -93,8 +88,8 @@ export default class PhotographyCard extends Component {
 		  },
 		  {
 		    src: 'imgs/photos/10.jpg',
-		    width: 600,
-		    height: 600,
+		    width: 1,
+		    height: 1,
 		    aspectRatio: 1,
 		    lightboxImage:{
 		    src: 'imgs/photos/10.jpg',
@@ -102,8 +97,8 @@ export default class PhotographyCard extends Component {
 		  },
 		  {
 		    src: 'imgs/photos/11.jpg',
-		    width: 600,
-		    height: 600,
+		    width: 1,
+		    height: 1,
 		    aspectRatio: 3,
 		    lightboxImage:{
 		    src: 'imgs/photos/11.jpg',
@@ -111,8 +106,8 @@ export default class PhotographyCard extends Component {
 		  },
 		  {
 		    src: 'imgs/photos/12.jpg',
-		    width: 600,
-		    height: 600,
+		    width: 1,
+		    height: 1,
 		    aspectRatio: 1,
 		    lightboxImage:{
 		    src: 'imgs/photos/12.jpg',
@@ -120,8 +115,8 @@ export default class PhotographyCard extends Component {
 		  },
 		  {
 		    src: 'imgs/photos/13.jpg',
-		    width: 600,
-		    height: 600,
+		    width: 1,
+		    height: 1,
 		    aspectRatio: 4,
 		    lightboxImage:{
 		    src: 'imgs/photos/13.jpg',
@@ -131,8 +126,6 @@ export default class PhotographyCard extends Component {
 
 
 		const PhotographyCardContainerCSS={
-			width: "100%",
-			textAlign: "center",
 			padding: "15px",
 		}
 

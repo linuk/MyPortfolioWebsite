@@ -62,8 +62,8 @@ h1,h2,h3,h4,h5{
 	background: rgb(0,0,0);
 	opacity: 0.2;
 	transition: all 1000ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
-	-webkit-clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
 	clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+	-webkit-clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
 
 }
 
@@ -73,22 +73,22 @@ h1,h2,h3,h4,h5{
 	background: rgb(0,0,0);
 	opacity: 0.2;
 	transition: all 1000ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
-	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
 }
 
 .IndexCardLeftOverlay:hover{
 	transition: all 1000ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
-	-webkit-clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
-	clip-path:  polygon(0 0, 80% 0, 100% 100%, 0% 100%);
 	opacity: 0.5;
+	clip-path:  polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+	-webkit-clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
 }
 
 .IndexCardRightOverlay:hover{
 	transition: all 1000ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
-	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
-	clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
 	opacity: 0.5;
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
 }
 
 
