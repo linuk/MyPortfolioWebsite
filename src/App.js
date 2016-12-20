@@ -24,7 +24,7 @@ export default class App extends Component {
   const backgroundURL='imgs/projectBG.png';
 
   let AppCSS={
-		height: "100%",
+		minHeight: "100%",
     background: 'url(' + backgroundURL + ') center center repeat',
     backgroundAttachment: 'fixed',
 	}

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PhotographyCardContent from './PhotographyCardContent'
+import PhotographyCard from './PhotographyCard'
 
 export default class PhotographyCardContainer extends Component {
 	render() {
@@ -12,7 +12,7 @@ export default class PhotographyCardContainer extends Component {
 
 		return (
 			<div style={PhotographyCardContainerCSS} className={"card-2"}>
-				<PhotographyCardContent/>
+				<PhotographyCard/>
 			</div>
 		);
 	}

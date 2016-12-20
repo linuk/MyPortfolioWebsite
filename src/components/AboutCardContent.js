@@ -5,7 +5,7 @@ export default class AboutCardContent extends Component {
 
 	render() {
 		
-		const profileImageURL="imgs/profile.jpg";
+		const profileImageURL="imgs/about/profile.jpg";
 		const exampleImageURL="imgs/example.jpg";
 		const exampleImage2URL="imgs/example2.jpg";
 		const exampleImage3URL="imgs/example3.jpg";
@@ -58,19 +58,19 @@ export default class AboutCardContent extends Component {
 								</div>
 							</Col></Row>
 
-							<p style={pCSS}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi,animi maxime pariatur minima architecto laudantium magnam libero atque nisi non, soluta quasi ut, cupiditate placeat enim quo.orem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi,animi maxime pa.</p>
+							<h5 style={pCSS}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi,animi maxime pariatur minima architecto laudantium magnam libero atque nisi non, soluta quasi ut, cupiditate placeat enim quo.orem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi,animi maxime pa.</h5>
 							
 							{gap}
 							
 							<h2 className={"primaryBlackFont"} style={titleCSS} >Advantages</h2>
-							<p style={pCSS}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi,animi maxime pariatur minima architecto laudantium magnam libero atque nisi non, soluta quasi ut, cupiditate placeat enim quo.</p>
+							<h5 style={pCSS}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi,animi maxime pariatur minima architecto laudantium magnam libero atque nisi non, soluta quasi ut, cupiditate placeat enim quo.</h5>
 							<Row>
 								<Col md={4} style={{paddingBottom: "20px"}}> 
 									<div className={"aboutSkillsCard"}>
 										<div className={"cardContent"}>
 											<i className="fa fa-language fa-5x" aria-hidden="true"></i>
 											<h3>Multilingual</h3>
-											<p style={{}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi, </p>
+											<h5 style={{}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi, </h5>
 										</div>
 									</div>
 								</Col>
@@ -80,7 +80,7 @@ export default class AboutCardContent extends Component {
 										<div className={"cardContent"}>
 											<i className="fa fa-star-o fa-5x" aria-hidden="true"></i>
 											<h3>Aesthetic</h3>
-											<p style={{}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi, </p>
+											<h5 style={{}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi, </h5>
 										</div>
 									</div>
 								</Col>
@@ -90,7 +90,7 @@ export default class AboutCardContent extends Component {
 										<div className={"cardContent"}>
 											<i className="fa fa-user-circle-o fa-5x" aria-hidden="true"></i>
 											<h3>UX</h3>
-											<p style={{}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi, </p>
+											<h5 style={{}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi, </h5>
 										</div>
 									</div>
 								</Col>
@@ -99,7 +99,7 @@ export default class AboutCardContent extends Component {
 							{gap}
 
 							<h2 className={"primaryBlackFont"} style={titleCSS} >Skills</h2>
-							<p style={pCSS}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi,animi maxime pariatur minima architecto laudantium magnam libero atque nisi non, soluta quasi ut, cupiditate placeat enim quo.</p>
+							<h5 style={pCSS}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi,animi maxime pariatur minima architecto laudantium magnam libero atque nisi non, soluta quasi ut, cupiditate placeat enim quo.</h5>
 							
 							<Row style={{textAlign: "center"}}>
 								<Col md={4} xs={4} style={{padding: "5px"}}> <i style={SkillsIconCSS} className="devicon-html5-plain-wordmark" /> </Col>
@@ -126,7 +126,7 @@ export default class AboutCardContent extends Component {
 								<Col md={6}> <Image style={imgCSS} src={exampleImage2URL} responsive /> </Col>
 							</Row>
 
-							<p style={pCSS}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi,animi maxime pariatur minima architecto laudantium magnam libero atque nisi non, soluta quasi ut, cupiditate placeat enim quo.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi, <br/>animi maxime pariatur minima architecto laudantium magnam libero atque nisi non, soluta quasi ut, cupiditate placeat enim quo.</p>
+							<h5 style={pCSS}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi,animi maxime pariatur minima architecto laudantium magnam libero atque nisi non, soluta quasi ut, cupiditate placeat enim quo.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi, <br/>animi maxime pariatur minima architecto laudantium magnam libero atque nisi non, soluta quasi ut, cupiditate placeat enim quo.</h5>
 
 							{gap}
 

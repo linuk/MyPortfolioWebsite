@@ -102,7 +102,7 @@ export class IndexContainer extends Component {
 			buttonLink: "photography",
 		}
 
-		const IndexCardLeftBackgroundURL='imgs/indexCodeBG.jpg';
+		const IndexCardLeftBackgroundURL='imgs/index/indexCodeBG.jpg';
 		const IndexCardLeftContainerCSS={
 			height: "100%",
 			width: this.state.leftWidth,
@@ -119,7 +119,7 @@ export class IndexContainer extends Component {
 			backgroundSize: "cover",
 		}
 
-		const IndexCardRightBackgroundURL='imgs/indexPhotographyBG.jpg';
+		const IndexCardRightBackgroundURL='imgs/index/indexPhotographyBG.jpg';
 		const IndexCardRightContainerCSS={
 			height: "100%",
 			width: this.state.rightWidth,
