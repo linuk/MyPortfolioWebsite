@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Navbar, NavItem, Nav } from 'react-bootstrap';
+import { Navbar, NavItem, Nav, Image } from 'react-bootstrap';
 import { IndexLink } from 'react-router'
 import { LinkContainer } from 'react-router-bootstrap';
 
@@ -14,12 +14,21 @@ let NavbarCSS={
 export default class MyNavbar extends Component {
 
   render() {
+
+    const BrandLogoContainerCSS={
+      paddingTop: "2px",
+      paddingBottom: "2px",
+      paddingLeft: "15px",
+    }
+
     return (
       <Navbar style={NavbarCSS} className={"card-2"} fluid={true} collapseOnSelect={true} fixedTop={true}>
         
         <Navbar.Header>
           <Navbar.Brand>
-            <IndexLink to="/">J L</IndexLink>
+            <IndexLink style={BrandLogoContainerCSS} to="/">
+              <Image src="imgs/JLLogo.svg" style={{maxHeight: "100%"}} responsive/>
+            </IndexLink>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
