@@ -7,20 +7,24 @@ let ProjectsCardCSS = { background: "#fff", color: "#222" }
 
 export class ProjectsCard extends Component {	
 	
-	constructor(props) {
-		super(props);
-		this.state = {
-			backgroundColor: "#fff"
-		};
-	}
-
 	openModal(){ this.refs.modal.open(); }
 
 	render() {
+		
+		const backgroundURL = 'imgs/projects/ex.jpg'
+
+		const ProjectCardContentContainer={
+			background: 'linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),url(' + backgroundURL + ') center center no-repeat',
+    		backgroundSize: "cover",
+    		color: "#fff",
+    		borderRadius: "5px",
+		}
+
+
 		return (
-			<div style={ProjectsCardCSS} onClick={this.openModal.bind(this)} className={'card card-1'}>
+			<div style={ProjectsCardCSS} onClick={this.openModal.bind(this)} className={'projectCard projectCardShadow'}>
 				<ProjectsCardModal ref="modal" content={this.props.content}  title={this.props.title} />
-				<div className={'cardContent'}>
+				<div className={'projectCardContent'} style={ProjectCardContentContainer}>
 					<h2>{this.props.title}</h2>
 					<p>{this.props.content.shortDesctiption}</p>
 					<ProjectsCardLabel labels={this.props.labels} title={this.props.title} />

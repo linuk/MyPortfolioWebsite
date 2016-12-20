@@ -25,7 +25,6 @@ export default class App extends Component {
 
   let AppCSS={
 		height: "100vh",
-    background: "transparent",
     background: 'url(' + backgroundURL + ') center center repeat',
     backgroundAttachment: 'fixed',
 	}

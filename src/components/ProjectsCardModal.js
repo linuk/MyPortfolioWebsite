@@ -25,7 +25,6 @@ const ProjectsCardModal  = React.createClass({
 			padding: "20px"
 		}
 
-		console.log(this.props.content);
 
 		return (
 			<div >
@@ -40,7 +39,7 @@ const ProjectsCardModal  = React.createClass({
 		        </Modal.Body>
 		        
 		        <Modal.Footer>
-            		<Button onClick={this.close}>Close</Button>
+            		<Button className={"button buttonShadow"}onClick={this.close}>Close</Button>
           		</Modal.Footer>
         	
         	</Modal>

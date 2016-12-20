@@ -28,7 +28,7 @@ export default class MyNavbar extends Component {
           <Nav pullRight>
             <LinkContainer to="/projects"><NavItem eventKey={1} href="#">Projects</NavItem></LinkContainer>
             <LinkContainer to="/Photography"><NavItem eventKey={2} href="#">Photography</NavItem></LinkContainer>
-            <LinkContainer to="about"><NavItem eventKey={3} href="#">About</NavItem></LinkContainer>
+            <LinkContainer to="/about"><NavItem eventKey={3} href="#">About</NavItem></LinkContainer>
             <LinkContainer to="/Contact"><NavItem eventKey={4} href="#">Contact</NavItem></LinkContainer>
           </Nav>
         </Navbar.Collapse>

@@ -6,7 +6,7 @@
 .fadeInfadeOut-appear.fadeInfadeOut-appear-active {
    transform: translateY(0px);
    opacity: 1;
-   transition: all 1000ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+   transition: all .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 .fadeInfadeOut-leave {
@@ -15,7 +15,7 @@
 
 .fadeInfadeOut-leave.fadeInfadeOut-leave-active {
   opacity: 0.01;
-  transition: all 1000ms ease-in;
+  transition: all .5s ease-in;
 }
 
 /*==========================================

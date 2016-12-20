@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col} from "react-bootstrap";
 
 export default class Loading extends Component {
 	
@@ -20,10 +19,10 @@ export default class Loading extends Component {
 		}
 
 		return (
-						<div style={LoadingContainterCSS}>
-							<i style={LoadingIconCSS} className="fa fa-refresh fa-spin fa-fw"></i>
-							<span className="sr-only">Loading...</span>	
-						</div>
+			<div style={LoadingContainterCSS}>
+				<i style={LoadingIconCSS} className="fa fa-refresh fa-spin fa-fw"></i>
+				<span className="sr-only">Loading...</span>	
+			</div>
 
 		);
 	}

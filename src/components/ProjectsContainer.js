@@ -10,7 +10,6 @@ export class ProjectsContainer extends Component {
 
 		const ProjectsContainerCSS={
 			paddingTop: "100px",
-		    background: "transparent",
 			background: 'url(' + backgroundURL + ') center center repeat',
 			backgroundAttachment: 'fixed',
 		}

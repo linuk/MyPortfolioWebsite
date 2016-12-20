@@ -1,26 +1,39 @@
-import React, { Component } from 'react';
-import { Grid, Row, Col} from "react-bootstrap";
-import Color from './Color';
-
-const GridCSS={
-	width: "auto"
-}
+import React, { Component } from 'react'
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group' 
+import { Grid, Row, Col} from "react-bootstrap"
+import PhotographyCardContainer from './PhotographyCardContainer'
 
 export class PhotographyContainer extends Component {
+
 	render() {
+		
+		const GridCSS={
+			width: "auto"
+		}
+
+		const PhotographyContainerCSS={
+			paddingTop: "100px"
+		}
+
+
 		return (
-			<div>
-				<Grid style={GridCSS}>
-					<Row>
-						<Col md={4} style={{background: Color.secondary1, height: "40vh"}}>
-						</Col>
-						<Col md={4} style={{background: Color.secondary3, height: "40vh"}}>
-						</Col>
-						<Col md={4} style={{background: Color.primary, height: "40vh"}}>
-						</Col>
-					</Row>
-				</Grid>
+			<div style={PhotographyContainerCSS}>
+				<ReactCSSTransitionGroup
+						transitionName="fadeInfadeOut"
+						transitionAppear={true} transitionAppearTimeout={4000}
+          				transitionEnter={true}  transitionEnterTimeout={4000}
+		  				transitionLeave={true} transitionLeaveTimeout={4000}>
+					<Grid style={GridCSS}>
+						<Row>
+							<Col md={8} mdOffset={2}>
+								<PhotographyCardContainer/>
+							</Col>
+						</Row>
+					</Grid>
+				</ReactCSSTransitionGroup>
 			</div>
 		);
 	}
 }
+
+

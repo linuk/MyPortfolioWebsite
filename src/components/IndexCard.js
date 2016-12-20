@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { IndexCardContent } from './IndexCardContent'
-import { Grid, Row, Col, Button} from "react-bootstrap";
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group' 
 
 export class IndexCard extends Component {
@@ -11,7 +10,7 @@ export class IndexCard extends Component {
 			width: "100%",
 			zIndex: 1,
 			cursor: "pointer",
-			contentDisplay: false,
+			contentDisplay: this.props.contentDisplay,
 			float: this.props.content.side,
 			iconDisplay: false,
 			transform: "scale(1,1)", 
@@ -20,19 +19,27 @@ export class IndexCard extends Component {
 	}
 
 	handleMouseEnter(){
+		
+		let iconDisplay = this.state.contentDisplay? false: true;
 		this.setState({
-			iconDisplay: true,
-			transform: "scale(1.05,1.05)", 
+			iconDisplay: iconDisplay,
+			transform: "scale(1.05)", 
 		})
+		console.log("enter")
 	}
 
 	handleClick(){
 		if(this.state.contentDisplay===false) this.open();
-
 	}
 
 	handleMouseLeave(){
-		this.close();
+		this.setState({
+			// contentDisplay: false,
+			width: "100%",
+			zIndex: 1,
+			iconDisplay: false,
+			transform: "scale(1)", 
+		});	
 		console.log("leave");
 	}
 
@@ -48,9 +55,9 @@ export class IndexCard extends Component {
 		this.setState({
 			iconDisplay: false,
 			contentDisplay: true,
-			width: "180%",
+			width: "100%",
 			zIndex: 200,
-			transform: "scale(1.05,1.05)", 
+			transform: "scale(1)", 
 		});
 		console.log("open");
 
@@ -62,12 +69,10 @@ export class IndexCard extends Component {
 			width: "100%",
 			zIndex: 1,
 			iconDisplay: false,
-			transform: "scale(1,1)", 
+			transform: "scale(1)", 
 		});	
 		console.log("close");
 	}
-
-
 
 	render(){
 		let cursorStyle = this.state.contentDisplay? "default": "pointer"; 
@@ -85,7 +90,6 @@ export class IndexCard extends Component {
 			WebkitClipPath: this.props.content.polygonCSS,
 			transform: this.state.transform,
 			WebkitTransform: this.state.transform,
-			background: this.state.background,
 		};
 
 		// icon align for each side
@@ -106,7 +110,7 @@ export class IndexCard extends Component {
 		  	top: "50%",
 		  	left: "50%",
 		    transform:" translate(-50%,-50%)",
-		    fontSize: "10em",
+		    fontSize: "8em",
 		    color: "rbga(255,255,255,0.1)",
 		}
 
@@ -117,22 +121,15 @@ export class IndexCard extends Component {
 			margin:  "10px",
 			background: "rgba(255,255,255,0.9)",
 			color: '#444',
-			borderRadius: "15px",
+			borderRadius: "5px",
 		}
 
-		let IndexCardContentCloseButtonCSS={
-			background: "rgba(255,255,255,0.3)",
-			border: "#fff 1px solid",
-			color: "#fff",
-		}
 
 		let icon = this.state.iconDisplay ? <i style={IndexCardContentIconCSS} className={this.props.content.icon} aria-hidden="true"></i>:  null;
-		let closeButton = this.state.contentDisplay ?  <Button style={IndexCardContentCloseButtonCSS} onClick={this.close.bind(this)}>X</Button>: null;		
 		let text = this.state.contentDisplay ? <IndexCardContent content={this.props.content} style={IndexCardContentTextCSS} /> : null;
 		
 		return (
-
-				<div style={IndexCardContainerCSS}
+				<div style={IndexCardContainerCSS} 
 				onMouseEnter={this.handleMouseEnter.bind(this)} 
 				onClick={this.handleClick.bind(this)} 
 				onMouseLeave={this.handleMouseLeave.bind(this)} 
@@ -145,7 +142,6 @@ export class IndexCard extends Component {
 							transitionAppear={false} >	
 									{icon}
 									{text}
-									{closeButton}
 							</ReactCSSTransitionGroup>
 						</div>
 				</div>

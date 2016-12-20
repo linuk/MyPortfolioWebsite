@@ -24,14 +24,17 @@ export class ProjectsCardLabel extends Component {
 			switch(labelName){
 				case "Javascript": labelClass = "success"; break;
 				case "C++": labelClass = "warning"; break; 
-				default: labelClass = "warning"; break; 
+				default: labelClass = "info"; break; 
 			}
 			
 			this.state.labels.push( 
-				<Label key={labelName} style={{marginRight: "5px"}} bsStyle={labelClass}>{labelName}</Label> )
+				<h5 key={labelName}  style={{display: "inline"}}>
+					<Label style={{marginRight: "5px"}} bsStyle={labelClass}> 
+						{labelName} 
+					</Label>
+				</h5> )
 		}
 	}
-
 
 	render() {
 		return ( <div> {this.state.labels} </div> );
