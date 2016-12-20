@@ -14,7 +14,6 @@ export class IndexCard extends Component {
 			float: this.props.content.side,
 			iconDisplay: false,
 			transform: "scale(1,1)", 
-			background: 'linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)),url(' + this.props.content.backgroundURL + ') center center no-repeat',
 		}
 	}
 
@@ -86,7 +85,6 @@ export class IndexCard extends Component {
 			width: this.state.width,
 			zIndex: this.state.zIndex,
 			cursor: cursorStyle,
-			clipPath: this.props.content.polygonCSS,
 			WebkitClipPath: this.props.content.polygonCSS,
 			transform: this.state.transform,
 			WebkitTransform: this.state.transform,

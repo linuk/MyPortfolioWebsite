@@ -76,22 +76,19 @@ export class IndexContainer extends Component {
 	render() {
 	
 		const GridCSS={
-			width: "auto",
 			height: "100%",
-			marginBottom: '0',
+			width: "auto",
 		}
 
 		const RowCSS={
 			height: "100%",
-			marginBottom: '0',
+
 		}
 
 
 		const IndexCardContentLeft ={
 			side: "left",
 			title: "Corder",
-			backgroundURL: 'imgs/indexCodeBG.jpg',
-			polygonCSS: "polygon(0 0, 80% 0, 100% 100%, 0% 100%)",
 			icon: "fa fa-code fa-5x",
 			text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem repellat quae, fuga quasi voluptatibus quibusdam perspiciatis eveniet temporibus numquam aliquid ",
 			buttonLink: "projects",
@@ -100,8 +97,6 @@ export class IndexContainer extends Component {
 		const IndexCardContentRight ={
 			side: "right",
 			title: "Photographer",
-			backgroundURL: 'imgs/indexPhotographyBG.jpg',
-			polygonCSS: "polygon(0 0, 100% 0, 100% 100%, 20% 100%)",
 			icon: "fa fa-camera-retro fa-5x",
 			text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem repellat quae, fuga quasi voluptatibus quibusdam perspiciatis eveniet temporibus numquam aliquid .",
 			buttonLink: "photography",

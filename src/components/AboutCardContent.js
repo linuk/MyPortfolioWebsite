@@ -23,6 +23,21 @@ export default class AboutCardContent extends Component {
 			textAlign: "center",
 		}
 
+		const profileContainerCSS={
+			textAlign: "center",
+			width: "100%",
+		}
+
+		const profileImageCSS={
+			textAlign: "center",
+			margin: "auto auto",
+			maxWidth: "150px",
+		}
+
+		const pCSS={
+			margin: "15px 0 15px 0",
+		}
+
 		const SkillsIconCSS={
 			color: "#aaa",
 			fontSize: "6em",
@@ -35,19 +50,20 @@ export default class AboutCardContent extends Component {
 					<Col md={10} mdOffset={1} xs={10} xsOffset={1} >
 						<div style={AboutCardContentContainerCSS}>
 							<h1 style={titleCSS} className={"primaryBlackFont"}>About</h1>
-							<br/>
+							<hr/>
 							
 							<Row><Col md={4} mdOffset={4} xs={8} xsOffset={2}>
-								<Image style={titleCSS} src={profileImageURL} responsive circle  />
-								<br/>
+								<div style={profileContainerCSS}>
+									<Image style={profileImageCSS} src={profileImageURL}  circle  />
+								</div>
 							</Col></Row>
 
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi,animi maxime pariatur minima architecto laudantium magnam libero atque nisi non, soluta quasi ut, cupiditate placeat enim quo.orem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi,animi maxime pa.</p>
+							<p style={pCSS}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi,animi maxime pariatur minima architecto laudantium magnam libero atque nisi non, soluta quasi ut, cupiditate placeat enim quo.orem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi,animi maxime pa.</p>
 							
 							{gap}
 							
 							<h2 className={"primaryBlackFont"} style={titleCSS} >Advantages</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi,animi maxime pariatur minima architecto laudantium magnam libero atque nisi non, soluta quasi ut, cupiditate placeat enim quo.</p>
+							<p style={pCSS}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi,animi maxime pariatur minima architecto laudantium magnam libero atque nisi non, soluta quasi ut, cupiditate placeat enim quo.</p>
 							<Row>
 								<Col md={4} style={{paddingBottom: "20px"}}> 
 									<div className={"aboutSkillsCard"}>
@@ -83,7 +99,7 @@ export default class AboutCardContent extends Component {
 							{gap}
 
 							<h2 className={"primaryBlackFont"} style={titleCSS} >Skills</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi,animi maxime pariatur minima architecto laudantium magnam libero atque nisi non, soluta quasi ut, cupiditate placeat enim quo.</p>
+							<p style={pCSS}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi,animi maxime pariatur minima architecto laudantium magnam libero atque nisi non, soluta quasi ut, cupiditate placeat enim quo.</p>
 							
 							<Row style={{textAlign: "center"}}>
 								<Col md={4} xs={4} style={{padding: "5px"}}> <i style={SkillsIconCSS} className="devicon-html5-plain-wordmark" /> </Col>
@@ -105,13 +121,12 @@ export default class AboutCardContent extends Component {
 							{gap}
 
 							<h2 className={"primaryBlackFont"} style={titleCSS} >Experience</h2>
-							<br/>
 							<Row>
 								<Col md={6}> <Image style={imgCSS} src={exampleImageURL} responsive /><br/></Col>
 								<Col md={6}> <Image style={imgCSS} src={exampleImage2URL} responsive /> </Col>
 							</Row>
 
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi,animi maxime pariatur minima architecto laudantium magnam libero atque nisi non, soluta quasi ut, cupiditate placeat enim quo.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi, <br/>animi maxime pariatur minima architecto laudantium magnam libero atque nisi non, soluta quasi ut, cupiditate placeat enim quo.</p>
+							<p style={pCSS}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi,animi maxime pariatur minima architecto laudantium magnam libero atque nisi non, soluta quasi ut, cupiditate placeat enim quo.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi, <br/>animi maxime pariatur minima architecto laudantium magnam libero atque nisi non, soluta quasi ut, cupiditate placeat enim quo.</p>
 
 							{gap}
 

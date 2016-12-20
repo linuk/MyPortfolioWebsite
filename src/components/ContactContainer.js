@@ -8,16 +8,19 @@ export class ContactContainer extends Component {
 	render() {
 		
 		const backgroundURL='imgs/projectBG.png';
-		
-		const GridCSS={
-			width: "auto"
-		}
+
 
 		const ContactContainerCSS={
-			paddingBottom : "50px",
+			minHeight: "100%",
 			paddingTop: "100px",
 			background: 'url(' + backgroundURL + ') center center repeat',
-			backgroundAttachment: "fixed"
+    		backgroundAttachment: 'fixed',
+    	}
+		
+		const GridCSS={
+			width: "auto",
+			minHeight: "100%",
+
 		}
 
 		return (
@@ -28,8 +31,8 @@ export class ContactContainer extends Component {
           				transitionEnter={true}  transitionEnterTimeout={4000}
 		  				transitionLeave={true} transitionLeaveTimeout={4000}>
 					<Grid style={GridCSS}>
-						<Row>
-							<Col md={8} mdOffset={2}>
+						<Row style={GridCSS}>
+							<Col md={8} mdOffset={2} style={GridCSS} >
 								<ContactCardContainer/>
 							</Col>
 						</Row>
