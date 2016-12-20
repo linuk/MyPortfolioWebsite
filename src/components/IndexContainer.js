@@ -78,10 +78,12 @@ export class IndexContainer extends Component {
 		const GridCSS={
 			width: "auto",
 			height: "100%",
+			marginBottom: '0',
 		}
 
 		const RowCSS={
-			height: "100%"
+			height: "100%",
+			marginBottom: '0',
 		}
 
 
@@ -120,7 +122,6 @@ export class IndexContainer extends Component {
 			transition: "all 500ms",
 			background: 'linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)),url(' + IndexCardLeftBackgroundURL + ') center center no-repeat',
 			backgroundSize: "cover",
-
 		}
 
 		const IndexCardRightBackgroundURL='imgs/indexPhotographyBG.jpg';
