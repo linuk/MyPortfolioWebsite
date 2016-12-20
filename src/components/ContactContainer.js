@@ -12,7 +12,8 @@ export class ContactContainer extends Component {
 		}
 
 		const ContactContainerCSS={
-			paddingTop: "100px"
+			paddingTop: "100px",
+			marginBottom: "50px",
 		}
 
 		return (
