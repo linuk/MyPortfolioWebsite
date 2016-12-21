@@ -124,6 +124,7 @@ export default class AboutCardContent extends Component {
 							<Row>
 								<Col md={6}> <Image style={imgCSS} src={exampleImageURL} responsive /><br/></Col>
 								<Col md={6}> <Image style={imgCSS} src={exampleImage2URL} responsive /> </Col>
+								<Col md={12}> <Image style={imgCSS} src={exampleImage3URL} responsive /> </Col>
 							</Row>
 
 							<h5 style={pCSS}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi,animi maxime pariatur minima architecto laudantium magnam libero atque nisi non, soluta quasi ut, cupiditate placeat enim quo.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi, <br/>animi maxime pariatur minima architecto laudantium magnam libero atque nisi non, soluta quasi ut, cupiditate placeat enim quo.</h5>

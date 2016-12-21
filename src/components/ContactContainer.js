@@ -16,12 +16,6 @@ export class ContactContainer extends Component {
 			background: 'url(' + backgroundURL + ') center center repeat',
     		backgroundAttachment: 'fixed',
     	}
-		
-		const GridCSS={
-			width: "auto",
-			minHeight: "100%",
-
-		}
 
 		return (
 			<div style={ContactContainerCSS}>
@@ -30,9 +24,9 @@ export class ContactContainer extends Component {
 						transitionAppear={true} transitionAppearTimeout={4000}
           				transitionEnter={true}  transitionEnterTimeout={4000}
 		  				transitionLeave={true} transitionLeaveTimeout={4000}>
-					<Grid style={GridCSS}>
-						<Row style={GridCSS}>
-							<Col md={8} mdOffset={2} style={GridCSS} >
+					<Grid className={"fullHeight"}>
+						<Row className={"fullHeight"}>
+							<Col md={8} mdOffset={2} className={"fullHeight"} >
 								<ContactCardContainer/>
 							</Col>
 						</Row>

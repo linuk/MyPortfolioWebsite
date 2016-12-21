@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col} from "react-bootstrap";
+import { Row, Col} from "react-bootstrap";
 import { ProjectsCard } from './ProjectsCard';
 
 
@@ -18,9 +18,12 @@ export class ProjectsCardsContainer extends Component {
 		let tempLabels = [ "Javascript", "HTML", "C++"];
 		let tempLabels2 = [ "Javascript", "HTML"];
 
-
 		return (
-			<Grid>
+			<div className={"fullHeight projectCardContainer"}>
+			
+					<h1 >Projects</h1>
+					<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio alias provident dignissimos. Explicabo sequi reprehenderit, nostrum beatae excepturi accusamus tenetur quis eum dolor non accusantium laudantium, dolore dolorem natus cum.</h5>
+
 				<Row>
 					<Col md={4}> <ProjectsCard title={ "1" } content={ content } labels={ tempLabels }/> </Col>  
 					<Col md={4}> <ProjectsCard title={ "2" } content={ content } labels={ tempLabels2 }/> </Col>
@@ -35,7 +38,8 @@ export class ProjectsCardsContainer extends Component {
 					<Col md={4}> <ProjectsCard title={ "11" } content={ content } labels={ tempLabels }/> </Col>
 					<Col md={4}> <ProjectsCard title={ "12" } content={ content } labels={ tempLabels }/> </Col>
 				</Row>
-			</Grid>
+			</div>
+
 		);
 	}
 }

@@ -17,10 +17,6 @@ export class PhotographyContainer extends Component {
 			marginBottom : "50px",
 		}
 
-		const RowCSS={
-			minHeight: "100%",
-		}
-
 
 		return (
 			<div style={PhotographyContainerCSS}>
@@ -30,8 +26,8 @@ export class PhotographyContainer extends Component {
           				transitionEnter={true}  transitionEnterTimeout={4000}
 		  				transitionLeave={true} transitionLeaveTimeout={4000}>
 					<Grid style={GridCSS}>
-						<Row style={RowCSS}>
-							<Col md={10} mdOffset={1}>
+						<Row className={"fullHeight"}>
+							<Col md={12} mdOffset={0}>
 								<PhotographyCardContainer/>
 							</Col>
 						</Row>

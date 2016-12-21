@@ -22,6 +22,9 @@ h1,h2,h3,h4,h5{
 	color: #717171;	
 }
 
+.fullHeight{
+	min-height: 100%;
+}
 
 
 /*==============================
@@ -46,15 +49,6 @@ h1,h2,h3,h4,h5{
 =            Index            =
 =============================*/
 
-.test{
-	transition: all 1000ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
-	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
-}
-
-.test:hover{
-	transition: all 1000ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
-	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
-}
 
 .IndexCardLeftOverlay{
 	height: 100%;
