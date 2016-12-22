@@ -31,8 +31,8 @@ export default class MyNavbar extends Component {
     var scrollCount = 0,
         scrollMargin,
         scrollInterval = setInterval( function() {
-          if ( window.scrollY != 0 ) {
-              scrollCount = scrollCount + 1;  
+          if ( window.scrollY !== 0 ) {
+              scrollCount++;  
               scrollMargin = cosParameter - cosParameter * Math.cos( scrollCount * scrollStep );
               window.scrollTo( 0, ( scrollHeight - scrollMargin ) );
           } 
@@ -46,6 +46,9 @@ export default class MyNavbar extends Component {
       paddingTop: "2px",
       paddingBottom: "2px",
       paddingLeft: "15px",
+    }
+
+    const iconCSS={
     }
 
     return (
@@ -62,7 +65,12 @@ export default class MyNavbar extends Component {
               <Image src="imgs/JLLogo.svg" style={{maxHeight: "100%"}} responsive/>
             </IndexLink>
           </Navbar.Brand>
-          <Navbar.Toggle />
+          <Navbar.Toggle>
+            <span className="icon-bar" style={iconCSS}></span>
+            <span className="icon-bar" style={iconCSS}></span>
+            <span className="icon-bar" style={iconCSS}></span>
+          </Navbar.Toggle>
+
         </Navbar.Header>
         
         <Navbar.Collapse>
