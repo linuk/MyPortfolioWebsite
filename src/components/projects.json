@@ -1,0 +1,57 @@
+{
+	"projects":
+	[ 
+		{
+			"key": "P1",
+			"name": "1",
+			"types": ["CSS", "Meteor JS", "jQuery"],
+			"background": "http://media.giphy.com/media/F7Jm8U4J8SZMY/giphy.gif",
+			"contents": 
+				{
+					"imgURL": "http://media.giphy.com/media/l2SpMTt4L213w7hxm/giphy.gif",
+					"shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio alias provkeyent dignissimos. Explicabo sequi reprehenderit",
+					"longDescription": "Vitae debitis mollitia tempora eos corporis accusantium optio consequuntur. Unde, quasi, quae numquam tempore sapiente quis facere, optio quo, expedita fugit minima?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae debitis mollitia tempora eos corporis accusantium optio consequuntur. Unde, quasi, quae numquam tempore sapiente quis facere, optio quo, expedita fugit minima.",
+					"GithubURL": "github.com"
+				}
+		},
+		{
+			"key": "P2",
+			"name": "2",
+			"types": ["HTML", "CSS", "Javascript", "jQuery"],
+			"background": "http://media.giphy.com/media/F7Jm8U4J8SZMY/giphy.gif",
+			"contents": 
+				{
+					"imgURL": "http://media.giphy.com/media/l2SpMTt4L213w7hxm/giphy.gif",
+					"shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio alias provkeyent dignissimos. Explicabo sequi reprehenderit",
+					"longDescription": "Vitae debitis mollitia tempora eos corporis accusantium optio consequuntur. Unde, quasi, quae numquam tempore sapiente quis facere, optio quo, expedita fugit minima?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae debitis mollitia tempora eos corporis accusantium optio consequuntur. Unde, quasi, quae numquam tempore sapiente quis facere, optio quo, expedita fugit minima.",
+					"GithubURL": "github.com"
+				}
+		},
+		{
+			"key": "P3",
+			"name": "3",
+			"types": ["Javascript", "React JS"],
+			"background": "http://media.giphy.com/media/F7Jm8U4J8SZMY/giphy.gif",
+			"contents": 
+				{
+					"imgURL": "http://media.giphy.com/media/l2SpMTt4L213w7hxm/giphy.gif",
+					"shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio alias provkeyent dignissimos. Explicabo sequi reprehenderit",
+					"longDescription": "Vitae debitis mollitia tempora eos corporis accusantium optio consequuntur. Unde, quasi, quae numquam tempore sapiente quis facere, optio quo, expedita fugit minima?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae debitis mollitia tempora eos corporis accusantium optio consequuntur. Unde, quasi, quae numquam tempore sapiente quis facere, optio quo, expedita fugit minima.",
+					"GithubURL": "github.com"
+				}
+		},
+		{
+			"key": "P4",
+			"name": "4",
+			"types": ["C++"],
+			"background": "http://media.giphy.com/media/F7Jm8U4J8SZMY/giphy.gif",
+			"contents": 
+				{
+					"imgURL": "http://media.giphy.com/media/l2SpMTt4L213w7hxm/giphy.gif",
+					"shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio alias provkeyent dignissimos. Explicabo sequi reprehenderit",
+					"longDescription": "Vitae debitis mollitia tempora eos corporis accusantium optio consequuntur. Unde, quasi, quae numquam tempore sapiente quis facere, optio quo, expedita fugit minima?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae debitis mollitia tempora eos corporis accusantium optio consequuntur. Unde, quasi, quae numquam tempore sapiente quis facere, optio quo, expedita fugit minima.",
+					"GithubURL": "github.com"
+				}
+		}
+	]
+}

@@ -30,9 +30,9 @@ export class ProjectsContainer extends Component {
 			<div style={ProjectsContainerCSS} >
 				<ReactCSSTransitionGroup
 					transitionName="fadeInfadeOut"
-					transitionAppear={true} transitionAppearTimeout={4000}
-	  				transitionEnter={true}  transitionEnterTimeout={4000}
-	  				transitionLeave={true} transitionLeaveTimeout={4000}>
+					transitionAppear={true} transitionAppearTimeout={500}
+	  				transitionEnter={true}  transitionEnterTimeout={500}
+	  				transitionLeave={true} transitionLeaveTimeout={500}>
 					<Grid style={GridCSS}>
 						<Row style={RowCSS}>
 							<Col md={12} mdOffset={0}>

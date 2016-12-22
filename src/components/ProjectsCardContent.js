@@ -2,14 +2,18 @@ import React, { Component } from 'react';
 import ProjectsCardModal  from './ProjectsCardModal'
 import { ProjectsCardLabel } from './ProjectsCardLabel'
 
-let ProjectsCardCSS = { background: "#fff", color: "#222" }
 
 
-export class ProjectsCard extends Component {	
+export class ProjectsCardContent extends Component {	
 	
 	openModal(){ this.refs.modal.open(); }
 
 	render() {
+		
+		const ProjectsCardContentCSS={ 
+			background: "#fff",
+			color: "#222" 
+		}
 		
 		const backgroundURL = 'imgs/projects/ex.jpg'
 
@@ -22,12 +26,12 @@ export class ProjectsCard extends Component {
 
 
 		return (
-			<div style={ProjectsCardCSS} onClick={this.openModal.bind(this)} className={'projectCard projectCardShadow'}>
-				<ProjectsCardModal ref="modal" content={this.props.content}  title={this.props.title} />
+			<div style={ProjectsCardContentCSS} onClick={this.openModal.bind(this)} className={'projectCard projectCardShadow'}>
+				<ProjectsCardModal ref="modal" project={this.props.project} />
 				<div className={'projectCardContent'} style={ProjectCardContentContainer}>
-					<h2>{this.props.title}</h2>
-					<p>{this.props.content.shortDesctiption}</p>
-					<ProjectsCardLabel labels={this.props.labels} title={this.props.title} />
+					<h2>{this.props.project.name}</h2>
+					<p>{this.props.project.contents.shortDescription}</p>
+					<ProjectsCardLabel types={this.props.project.types} />
 				</div>
 			</div>
 

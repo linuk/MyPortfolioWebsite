@@ -13,17 +13,19 @@ export class ProjectsCardLabel extends Component {
 	
 	componentWillMount(){
 		
-		let labelNumbers=this.props.labels.length;
+		let labelNumbers=this.props.types.length;
 
 		for (let labelIndex=0; labelIndex<labelNumbers; labelIndex++){
 			
-			let labelName = this.props.labels[labelIndex];
+			let labelName = this.props.types[labelIndex];
 			let labelClass = "info";
 			
 			// choose label class by label name
 			switch(labelName){
+				case "HTML": labelClass = "danger"; break;
 				case "Javascript": labelClass = "success"; break;
 				case "C++": labelClass = "warning"; break; 
+				case "CSS": labelClass = "primary"; break; 
 				default: labelClass = "info"; break; 
 			}
 			

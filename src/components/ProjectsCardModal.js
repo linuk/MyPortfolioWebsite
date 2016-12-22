@@ -31,11 +31,11 @@ const ProjectsCardModal  = React.createClass({
 			<Modal style={ModalContainerCSS} bsSize="lg" open={this.open} show={this.state.showModal} onHide={this.close}>
       			
       			<Modal.Header style={ModalHeaderCSS} closeButton>
-        	    	<Modal.Title>{this.props.title}</Modal.Title>
+        	    	<Modal.Title>{this.props.project.name}</Modal.Title>
       	    	</Modal.Header>
           		
           		<Modal.Body style={ModalBodyCSS}>
-		            <p>{this.props.content.description}</p>
+		            <p>{this.props.project.contents.longDescription}</p>
 		        </Modal.Body>
 		        
 		        <Modal.Footer>
