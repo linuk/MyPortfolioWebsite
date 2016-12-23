@@ -144,7 +144,6 @@
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out; 
     padding: 0 15px 0 15px;
-    position: relative;
   }
 
   .ProjectCard-enter.ProjectCard-enter-active{
@@ -154,12 +153,11 @@
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;   
     padding: 0 15px 0 15px;
-    position: relative;
   }
   
   .ProjectCard-leave {
-    height: 300px;
     opacity: 1;
+    height: 300px;
     -webkit-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out; 

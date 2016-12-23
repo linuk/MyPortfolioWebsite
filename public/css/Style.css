@@ -116,52 +116,43 @@ button.navbar-toggle{
 
 
 .label-default,  /*for C++*/
-.btn-default.selected,
-.btn-default:hover
+.btn-default.selected
 { background: #5397cc; color: #fff;}
 
 .all,
-.all.btn-default.selected, 
-.all.btn-default:hover{ background: #673fb4; }
+.all.btn-default.selected
+{ background: #673fb4; }
 
 .html,
-.html.btn-default.selected, 
-.html.btn-default:hover
+.html.btn-default.selected
 { background: #e86534; color: #fff;}
 
 .css,
-.css.btn-default.selected, 
-.css.btn-default:hover
+.css.btn-default.selected
 { background: #1790d1; color: #fff;}
 
 .javascript,
-.javascript.btn-default.selected, 
-.javascript.btn-default:hover
+.javascript.btn-default.selected
 { background: #f6dd3b; color: #555; }
 
 .design,
-.design.btn-default.selected, 
-.design.btn-default:hover	
+.design.btn-default.selected
 { background: #ff9000; color: #fff;}
 
 .reactjs,
-.reactjs.btn-default.selected, 
-.reactjs.btn-default:hover
+.reactjs.btn-default.selected
 { background: #66daf8; color: #fff;}
 
 .jquery,
-.jquery.btn-default.selected, 
-.jquery.btn-default:hover
+.jquery.btn-default.selected
 { background: #1469e8; color: #fff;}
 
 .meteorjs,
-.meteorjs.btn-default.selected, 
-.meteorjs.btn-default:hover
+.meteorjs.btn-default.selected
 { background: #de5050; color: #fff;}
 
 .p5js,
-.p5js.btn-default.selected, 
-.p5js.btn-default:hover
+.p5js.btn-default.selected
 { background: #ed225d; color: #fff;}
 
 
