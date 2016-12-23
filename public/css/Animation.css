@@ -82,61 +82,98 @@
 =            ProjectCard            =
 ===================================*/
 
-.ProjectCard-enter {
-  width: 0px;
-  opacity: 0.0;
-  -webkit-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out; 
 
-  padding: 0;
-  margin: 0;
-}
+/* for bigger screen like desktop or tablet */
+/* enter and livign with horizonal animation */
+@media screen and (min-width: 992px) {
 
-/* according using column system of bootstrap, 33.33% for bigger screen*/
-.ProjectCard-enter.ProjectCard-enter-active{
-  width: 33.333333%;
-  opacity: 1;
-  -webkit-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out; 
-  
-  /* for bootstrap grid default padding */
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0;
-}
+  .ProjectCard-enter {
+    width: 0px;
+    opacity: 0.0;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out; 
 
+    padding: 0;
+    margin: 0;
+  }
 
-/* according using column system of bootstrap, 100% for smaller screen*/
-@media only screen and (max-width: 992px) {
+  /* according using column system of bootstrap, 33.33% for bigger screen*/
   .ProjectCard-enter.ProjectCard-enter-active{
+    width: 33.333333%;
+    opacity: 1;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out; 
+    
+    /* for bootstrap grid default padding */
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0;
+  }
+
+  .ProjectCard-leave {
+    opacity: 1;
     width: 100%;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out; 
+  }
+
+  .ProjectCard-leave.ProjectCard-leave-active{
+    opacity: 0.0;
+    width: 0%;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out; 
+    
+    /* for existing div to align correctly   */
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/* for smaller screen for mobile devices */
+/* enter and livign with vertical animation */
+@media screen and (max-width: 992px) {
+  
+  .ProjectCard-enter {
+    height: 0;
+    opacity: 0.0;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out; 
+    padding: 0 15px 0 15px;
+    position: relative;
+  }
+
+  .ProjectCard-enter.ProjectCard-enter-active{
+    height: 300px;
     opacity: 1;
     -webkit-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;   
+    padding: 0 15px 0 15px;
+    position: relative;
   }
-}
-
-.ProjectCard-leave {
-  opacity: 1;
-  width: 100%;
-  -webkit-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out; 
-}
-
-.ProjectCard-leave.ProjectCard-leave-active{
-  opacity: 0.0;
-  width: 0.1px;
-  -webkit-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out; 
   
-  /* for existing div to align correctly   */
-  padding: 0;
-  margin: 0;
+  .ProjectCard-leave {
+    height: 300px;
+    opacity: 1;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out; 
+  }
+
+  .ProjectCard-leave.ProjectCard-leave-active{
+    height: 0;
+    opacity: 0;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out; 
+  }
+
 }
+
 /*=====  End of ProjectCard  ======*/
 
