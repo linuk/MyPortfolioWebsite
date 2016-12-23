@@ -7,9 +7,6 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 
 export class ProjectsCards extends Component {
 
-				// <Col md={4}> <ProjectsCardContent title={ "12" } content={ content } labels={ tempLabels }/> </Col>
-
-
 	constructor(props){
 		super(props);
 		this.state={
@@ -24,68 +21,47 @@ export class ProjectsCards extends Component {
 	}
 
 	componentWillReceiveProps(nextProps, nextState) {
-		if(nextProps.filter!==this.state.filter){
-			this.setState({
-				filter: nextProps.filter,
-			})	
-			this.filterProjectsCard(nextProps.filter,this.state.projects)
+		
+		if(nextProps.filter===this.state.filter){
+			this.setState({ filter: "all" })	
+		}else{
+			this.setState({filter: nextProps.filter })	
 		}
+
+		this.filterProjectsCard(nextProps.filter,this.state.projects)
 	}
 
 	filterProjectsCard(filter, projectsJSON){
+		
 		let filterProjects=[];
-
 		// user choose specific filter
 		projectsJSON.projects.forEach((element)=>{
-
+			
 			// change it to true if the project is what we want
 			let approved = false; 
-
+			
 			// chaeck each types
 			element.types.forEach((type)=>{
-				if(type.toLowerCase()===filter.toLowerCase()||filter.toLowerCase() === "all"){
-					approved = true; 
-				}	
+				if(type.toLowerCase()===filter.toLowerCase()||filter.toLowerCase() === "all"){ approved = true; }	
 			})
-
+			
 			// push to projects array if thats what we want  
-			if(approved){
-				filterProjects.push(element);
-			}
+			if(approved){ filterProjects.push(element); }
 		});
 
- 		this.setState({
- 			filterProjects: filterProjects
- 		});
-
-		console.log("filter: ");
-		console.log(filter);
-		console.log("filterProject: ");
-		console.log(filterProjects);
-
+ 		this.setState({ filterProjects: filterProjects });
 	}
 
-	
+
 
 	render() {
-
-		const content={
-			shortDesctiption: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. ",
-			description: "Vitae debitis mollitia tempora eos corporis accusantium optio consequuntur. Unde, quasi, quae numquam tempore sapiente quis facere, optio quo, expedita fugit minima?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae debitis mollitia tempora eos corporis accusantium optio consequuntur. Unde, quasi, quae numquam tempore sapiente quis facere, optio quo, expedita fugit minima?",
-		}
-
-		const tempLabels = [ "HTML", "CSS", "Javascript" ];
-		const tempLabels2 = [ "HTML", "Javascript", "jQuery"];
-		const tempLabels3 = [ "C++"];
-
 		return (
 			<Row>
 				<ReactCSSTransitionGroup
-					transitionName="ProjectCard"
-					transitionAppear={true} transitionAppearTimeout={500}
-	  				transitionEnter={true}  transitionEnterTimeout={500}
-	  				transitionLeave={true} transitionLeaveTimeout={500}>
-
+				transitionName="ProjectCard"
+				transitionAppear={false}
+  				transitionEnter={true}  transitionEnterTimeout={1000}
+  				transitionLeave={true} transitionLeaveTimeout={1000}>
 
 				{
 					this.state.filterProjects.map((project)=>
@@ -95,7 +71,6 @@ export class ProjectsCards extends Component {
 					)
 				}
 				</ReactCSSTransitionGroup>
-
 			</Row>
 		);
 	}

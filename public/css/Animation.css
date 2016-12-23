@@ -82,40 +82,61 @@
 =            ProjectCard            =
 ===================================*/
 
-.ProjectCard-appear {
-   transform: scale(0.5);
-   opacity: 0.0;
-   transition: all .5s ease-in-out;
-}
-
-.ProjectCard-appear.ProjectCard-appear-active{
-   transform: scale(1);
-   opacity: 1;
-   transition: all .5s ease-in-out;
-}
-
 .ProjectCard-enter {
-   transform: scale(0.5);
-   opacity: 0.0;
-   transition: all .5s ease-in-out;
+  width: 0px;
+  opacity: 0.0;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; 
+
+  padding: 0;
+  margin: 0;
 }
 
+/* according using column system of bootstrap, 33.33% for bigger screen*/
 .ProjectCard-enter.ProjectCard-enter-active{
-   transform: scale(1);
-   opacity: 1;
-   transition: all .5s ease-in-out;
+  width: 33.333333%;
+  opacity: 1;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; 
+  
+  /* for bootstrap grid default padding */
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0;
+}
+
+
+/* according using column system of bootstrap, 100% for smaller screen*/
+@media only screen and (max-width: 992px) {
+  .ProjectCard-enter.ProjectCard-enter-active{
+    width: 100%;
+    opacity: 1;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;   
+  }
 }
 
 .ProjectCard-leave {
-   transform: scale(1);
   opacity: 1;
-  transition: all .5s ease-in-out ;
+  width: 100%;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; 
 }
 
 .ProjectCard-leave.ProjectCard-leave-active{
-   transform: scale(0.5);
   opacity: 0.0;
-  transition: all .5s ease-in-out  ;
+  width: 0.1px;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; 
+  
+  /* for existing div to align correctly   */
+  padding: 0;
+  margin: 0;
 }
 /*=====  End of ProjectCard  ======*/
 

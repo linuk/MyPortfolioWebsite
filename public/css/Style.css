@@ -107,3 +107,86 @@ button.navbar-toggle{
 
 /*=====  End of Index  ======*/
 
+
+/*=============================================
+=            Projects-Label Button            =
+=============================================*/
+
+
+
+
+.label-default,  /*for C++*/
+.btn-default.selected,
+.btn-default:hover
+{ background: #5397cc; color: #fff;}
+
+.all,
+.all.btn-default.selected, 
+.all.btn-default:hover{ background: #673fb4; }
+
+.html,
+.html.btn-default.selected, 
+.html.btn-default:hover
+{ background: #e86534; color: #fff;}
+
+.css,
+.css.btn-default.selected, 
+.css.btn-default:hover
+{ background: #1790d1; color: #fff;}
+
+.javascript,
+.javascript.btn-default.selected, 
+.javascript.btn-default:hover
+{ background: #f6dd3b; color: #555; }
+
+.design,
+.design.btn-default.selected, 
+.design.btn-default:hover	
+{ background: #ff9000; color: #fff;}
+
+.reactjs,
+.reactjs.btn-default.selected, 
+.reactjs.btn-default:hover
+{ background: #66daf8; color: #fff;}
+
+.jquery,
+.jquery.btn-default.selected, 
+.jquery.btn-default:hover
+{ background: #1469e8; color: #fff;}
+
+.meteorjs,
+.meteorjs.btn-default.selected, 
+.meteorjs.btn-default:hover
+{ background: #de5050; color: #fff;}
+
+.p5js,
+.p5js.btn-default.selected, 
+.p5js.btn-default:hover
+{ background: #ed225d; color: #fff;}
+
+
+.btn-default{ 
+	background: #fff; /*for C++*/
+	color: #888;
+	border: none;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	
+	transition: all .5s;
+	-webkit-transition: all .5s;
+} 
+
+.btn-default:hover{ 
+	border: none;	
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+	transition: all .5s;
+	-webkit-transition: all .5s;
+}
+
+.btn-default:focus{
+	outline: none !important;
+}
+/*=====  End of Projects-Label Button  ======*/
+

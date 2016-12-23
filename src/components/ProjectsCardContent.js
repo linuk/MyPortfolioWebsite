@@ -12,10 +12,10 @@ export class ProjectsCardContent extends Component {
 		
 		const ProjectsCardContentCSS={ 
 			background: "#fff",
-			color: "#222" 
+			color: "#222",
 		}
 		
-		const backgroundURL = 'imgs/projects/ex.jpg'
+		const backgroundURL = this.props.project.background;
 
 		const ProjectCardContentContainer={
 			background: 'linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),url(' + backgroundURL + ') center center no-repeat',

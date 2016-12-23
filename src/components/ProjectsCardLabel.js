@@ -12,30 +12,25 @@ export class ProjectsCardLabel extends Component {
 	}	
 	
 	componentWillMount(){
+		this.setLabels();
+	}
+
+	setLabels(){
 		
 		let labelNumbers=this.props.types.length;
 
 		for (let labelIndex=0; labelIndex<labelNumbers; labelIndex++){
 			
 			let labelName = this.props.types[labelIndex];
-			let labelClass = "info";
 			
 			// choose label class by label name
-			switch(labelName){
-				case "HTML": labelClass = "danger"; break;
-				case "Javascript": labelClass = "success"; break;
-				case "C++": labelClass = "warning"; break; 
-				case "CSS": labelClass = "primary"; break; 
-				default: labelClass = "info"; break; 
-			}
-			
 			this.state.labels.push( 
 				<h5 key={labelName}  style={{display: "inline"}}>
-					<Label style={{marginRight: "5px"}} bsStyle={labelClass}> 
+					<Label style={{marginRight: "5px"}} className={labelName.toLowerCase()}> 
 						{labelName} 
 					</Label>
 				</h5> )
-		}
+		}		
 	}
 
 	render() {
