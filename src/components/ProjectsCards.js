@@ -20,12 +20,13 @@ export class ProjectsCards extends Component {
 		this.filterProjectsCard(this.props.filter,this.props.projects)
 	}
 
-	componentWillReceiveProps(nextProps, nextState) {
+	componentWillReceiveProps(nextProps) {
 		
 		if(nextProps.filter===this.state.filter){
 			this.setState({ filter: "all" })	
 		}else{
-			this.setState({filter: nextProps.filter })	
+			// this.setState({filter: nextProps.filter })	
+			console.log(nextProps.filter);
 		}
 
 		this.filterProjectsCard(nextProps.filter,this.state.projects)
@@ -65,6 +66,7 @@ export class ProjectsCards extends Component {
 
 				{
 					this.state.filterProjects.map((project)=>
+						// generate project card content
 						<Col md={4} key={project.key} > 
 							<ProjectsCardContent project={project}/>
 						</Col>

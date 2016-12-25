@@ -64,6 +64,8 @@ button.navbar-toggle{
 /*=====  End of Navbar  ======*/
 
 
+
+
 /*=============================
 =            Index            =
 =============================*/
@@ -108,12 +110,11 @@ button.navbar-toggle{
 /*=====  End of Index  ======*/
 
 
+
+
 /*=============================================
 =            Projects-Label Button            =
 =============================================*/
-
-
-
 
 .label-default,  /*for C++*/
 .btn-default.selected
@@ -167,7 +168,10 @@ button.navbar-toggle{
 	-webkit-transition: all .5s;
 } 
 
-.btn-default:hover{ 
+.btn-default:hover,
+.btn-default:focus{ 
+	background: #fff; /*for C++*/
+	color: #333;
 	border: none;	
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -180,4 +184,57 @@ button.navbar-toggle{
 	outline: none !important;
 }
 /*=====  End of Projects-Label Button  ======*/
+
+
+
+/*======================================
+=            Projects-Modal            =
+======================================*/
+
+
+/*----------  vertically center modal  ----------*/
+/* reference: https://codepen.io/dimbslmh/full/mKfCc */
+
+.modal {
+	text-align: center;
+	padding: 0!important;
+}
+
+.modal:before {
+	content: '';
+	display: inline-block;	
+	height: 100%;
+	vertical-align: middle;
+	margin-right: -4px;
+}
+
+.modal-dialog {
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.modal-content{
+	border-radius: 5px;
+}
+
+/*----------  End of vertically center modal  ----------*/
+
+.carousel-inner{
+	height: 300px;
+	/*max-height: 200px;*/
+}
+
+.carousel-inner .item img{
+	object-fit: cover;
+	height: 100%;
+}
+
+.carousel-inner .item{
+	object-fit: cover;
+	height: 100%;
+}
+
+
+/*=====  End of Projects-Modal  ======*/
 

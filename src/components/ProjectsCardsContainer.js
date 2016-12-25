@@ -13,19 +13,15 @@ export class ProjectsCardsContainer extends Component {
 			projects: projectsJSON,
 			filter: "all",
 			labels: [], 
+			// filters: [], // for setting multiple label filter
 		}
 	}
 
 	componentWillMount(){
-		this.setLabel(this.state.projects);
+		this.setLabelButton(this.state.projects);
 	}
 
-
-	componentWillUpdate(){
-	}
-
-
-	setLabel(projectsJSON){
+	setLabelButton(projectsJSON){
 		let labels=[];
 		this.state.projects.projects.forEach((project)=>{
 			project.types.forEach((label)=>{
@@ -61,6 +57,30 @@ export class ProjectsCardsContainer extends Component {
 		}
 	}
 
+
+	// TODO: for setting mutiple label filters
+	// setFilters(label){
+
+	// 	let labels=this.state.filters;
+
+	// 	// if the new selected label hasn't been selected yet.
+	// 	if(!labels.includes(label)){
+	// 		labels.push(label);
+			
+	// 	}else{
+	// 	// if the new selected label has been selected, then remove it from the filters array.
+	// 		let index = labels.indexOf(label);
+	// 		labels.splice( index, 1 );
+	// 	}
+
+	// 	this.setState({
+	// 			filters: labels,
+	// 		});
+	// 	console.log(this.state.filters)	
+	// }
+
+
+
 	setFilter(label){
 		this.setState({
 			filter: label,
@@ -83,6 +103,7 @@ export class ProjectsCardsContainer extends Component {
 
 					{
 						this.state.labels.map((label)=>
+							// generate label buttons
 							<div style={LabelContainerCSS} key={label}> 
 								<Button 
 								bsSize="xsmall" 
