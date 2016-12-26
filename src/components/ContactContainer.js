@@ -11,7 +11,6 @@ export class ContactContainer extends Component {
 
 
 		const ContactContainerCSS={
-			minHeight: "100%",
 			paddingTop: "100px",
 			background: 'url(' + backgroundURL + ') center center repeat',
     		backgroundAttachment: 'fixed',

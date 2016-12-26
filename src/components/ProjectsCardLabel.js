@@ -18,10 +18,11 @@ export class ProjectsCardLabel extends Component {
 	setLabels(){
 		
 		let labelNumbers=this.props.types.length;
+		let labels = this.props.types.sort();
 
 		for (let labelIndex=0; labelIndex<labelNumbers; labelIndex++){
 			
-			let labelName = this.props.types[labelIndex];
+			let labelName = labels[labelIndex];
 			
 			// choose label class by label name
 			this.state.labels.push( 

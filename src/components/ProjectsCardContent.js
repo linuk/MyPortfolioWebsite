@@ -15,7 +15,7 @@ export class ProjectsCardContent extends Component {
 			color: "#222",
 		}
 		
-		const backgroundURL = this.props.project.background;
+		const backgroundURL = this.props.project.thumb;
 
 		const ProjectCardContentContainer={
 			background: 'linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),url(' + backgroundURL + ') center center no-repeat',

@@ -5,162 +5,125 @@
 			"key": "P1",
 			"name": "Slides",
 			"types": ["HTML", "CSS", "jQuery"],
-			"background": "imgs/projects/slides/slides_thumbnail.jpg",
+			"thumb": "imgs/projects/slides/slides.jpg",
 			"contents": 
 				{
 					"imgs": [
-						"imgs/projects/slides/slides1.jpg",
-						"imgs/projects/slides/slides2.jpg",
-						"imgs/projects/slides/slides3.jpg"
+						"imgs/projects/slides/slides.jpg"
 						],
 					"shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio alias provkeyent dignissimos. Explicabo sequi reprehenderit",
 					"longDescription": "Vitae deusantium optio consequuntur. Unde, quasi, quae numquam tempore sapiente quis facere, optio quo, expedita fugit minima.",
-					"githubURL": "http://www.github.com",
-					"liveDemo": "#"
+					"githubURL": "http://github.com/linuk/SimpleGallery",
+					"liveDemo": "http://doc.gold.ac.uk/~jlin015/coursera/w4/"
 				}
 		},
 		{
 			"key": "P2",
-			"name": "2",
-			"types": ["HTML", "CSS", "Javascript", "jQuery"],
-			"background": "imgs/projects/ex.jpg",
+			"name": "Single Page Website Design",
+			"types": ["HTML", "CSS", "Javascript", "jQuery", "Design"],
+			"thumb": "imgs/projects/singlePageWebsite/singlePageWebsite1.jpg",
 			"contents": 
 				{
 					"imgs": [
-						"imgs/projects/slides/slides1.jpg",
-						"imgs/projects/slides/slides2.jpg",
-						"imgs/projects/slides/slides3.jpg"
+						"imgs/projects/singlePageWebsite/singlePageWebsite1.jpg"
 						],
 					"shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio alias provkeyent dignissimos. Explicabo sequi reprehenderit",
-					"longDescription": "Vitae debitis mollitia tempora eos corporis accusantium optio consequuntur. Unde, quasi, quae numquam tempore sapiente quis facere, optio quo, expedita fugit minima?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae debitis mollitia tempora eos corporis accusantium optio consequuntur. Unde, quasi, quae numquam tempore sapiente quis facere, optio quo, expedita fugit minimVitae debitis mollitia tempora eos corporis accusantium optio consequuntur. Unde, quasi, quae numquam tempore sapiente quis facere, optio quo, expedita fugit minima?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae debitis mollitia tempora eos corporis accusantium optio consequuntur. Unde, quasi, quae numquam tempore sapiente quis facere, optio quo, expedita fugit minimVitae debitis mollitia tempora eos corporis accusantium optio consequuntur. Unde, quasi, quae numquam tempore sapiente quis facere, optio quo, expedita fugit minima?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae debitis mollitia tempora eos corporis accusantium optio consequuntur. Unde, quasi, quae numquam tempore sapiente quis facere, optio quo, expedita fugit minimVitae debitis mollitia tempora eos corporis accusantium optio consequuntur. Unde, quasi, quae numquam tempore sapiente quis facere, optio quo, expedita fugit minima?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae debitis mollitia tempora eos corporis accusantium optio consequuntur. Unde, quasi, quae numquam tempore sapiente quis facere, optio quo, expedita fugit minima.",
-					"githubURL": "http://www.github.com",
-					"liveDemo": "#"
+					"longDescription": "Vitae debitis mollitia tempora eos corporis accusantium optio consequuntur. Unde, quasi, quae numquam tempore sapiente quis facere, optio quo, expedita fugit minima?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae debitis mollitia tempora eos corporis accusantium optio consequuntur. Unde, qao.",
+					"githubURL": "http://www.github.com/linuk",
+					"liveDemo": "http://doc.gold.ac.uk/~jlin015/practice/nyoxphotography/"
 				}
 		},
 		{
 			"key": "P3",
-			"name": "3",
-			"types": ["Javascript", "ReactJS"],
-			"background": "imgs/projects/ex.jpg",
+			"name": "Zoo Album",
+			"types": [ "HTML", "jQuery", "HandlebarJS", "CSS"],
+			"thumb": "imgs/projects/zooAlbum/zooAlbum.jpg",
 			"contents": 
 				{
 					"imgs": [
-						"imgs/projects/slides/slides1.jpg",
-						"imgs/projects/slides/slides2.jpg",
-						"imgs/projects/slides/slides3.jpg"
+						"imgs/projects/zooAlbum/zooAlbum.jpg"
 						],
 					"shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio alias provkeyent dignissimos. Explicabo sequi reprehenderit",
 					"longDescription": "Vitae debitis mollitia tempora eos corporis accusantium optio consequuntur. Unde, quasi, quae numquam tempore sapiente quis facere, optio quo, expedita fugit minima?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae debitis mollitia tempora eos corporis accusantium optio consequuntur. Unde, quasi, quae numquam tempore sapiente quis facere, optio quo, expedita fugit minima.",
-					"githubURL": "http://www.github.com",
-					"liveDemo": "#"
+					"githubURL": "http://github.com/linuk/ZooAlbum",
+					"liveDemo": "http://doc.gold.ac.uk/~jlin015/coursera/w8/album/"
 				}
 		},
 		{
 			"key": "P4",
-			"name": "4",
-			"types": ["C++"],
-			"background": "imgs/projects/ex.jpg",
+			"name": "Website Aggregater",
+			"types": [ "CSS", "Javascript", "MeteorJS" ],
+			"thumb": "imgs/projects/websiteAggregater/websiteAggregater.jpg",
 			"contents": 
 				{
 					"imgs": [
-						"imgs/projects/slides/slides1.jpg",
-						"imgs/projects/slides/slides2.jpg",
-						"imgs/projects/slides/slides3.jpg"
+						"imgs/projects/websiteAggregater/websiteAggregater.jpg"
 						],
 					"shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio alias provkeyent dignissimos. Explicabo sequi reprehenderit",
 					"longDescription": "Vitae debitis mollitia tempora eos corporis accusantium optio consequuntur. Unde, quasi, quae numquam tempore sapiente quis facere, optio quo, expedita fugit minima?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae debitis mollitia tempora eos corporis accusantium optio consequuntur. Unde, quasi, quae numquam tempore sapiente quis facere, optio quo, expedita fugit minima.",
-					"githubURL": "http://www.github.com",
-					"liveDemo": "#"
+					"githubURL": "https://github.com/linuk/ProjectWebsiteAggregater"
 				}
 		},
 		{
 			"key": "P5",
-			"name": "5",
-			"types": ["CSS", "MeteorJS", "jQuery"],
-			"background": "imgs/projects/ex.jpg",
+			"name": "Mario Game",
+			"types": ["Javascript", "P5JS"],
+			"thumb": "imgs/projects/marioGame/marioGame.jpg",
 			"contents": 
 				{
 					"imgs": [
-						"imgs/projects/slides/slides1.jpg",
-						"imgs/projects/slides/slides2.jpg",
-						"imgs/projects/slides/slides3.jpg"
+						"imgs/projects/marioGame/marioGame.jpg"
 						],
 					"shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio alias provkeyent dignissimos. Explicabo sequi reprehenderit",
 					"longDescription": "Vitae debitis mollitia tempora eos corporis accusantium optio consequuntur. Unde, quasi, quae numquam tempore sapiente quis facere, optio quo, expedita fugit minima?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae debitis mollitia tempora eos corporis accusantium optio consequuntur. Unde, quasi, quae numquam tempore sapiente quis facere, optio quo, expedita fugit minima.",
-					"githubURL": "http://www.github.com",
-					"liveDemo": "#"
+					"githubURL": "https://github.com/linuk/P5MarioGame",
+					"liveDemo": "http://doc.gold.ac.uk/~jlin015/intro/term/play.Mario1.4"
 				}
 		},
 		{
 			"key": "P6",
-			"name": "6",
-			"types": ["HTML", "CSS", "Javascript", "jQuery"],
-			"background": "imgs/projects/ex.jpg",
+			"name": "Colour Picker",
+			"types": ["HTML", "CSS", "jQuery"],
+			"thumb": "imgs/projects/colourPicker/colourPicker_thumb.jpg",
 			"contents": 
 				{
 					"imgs": [
-						"imgs/projects/slides/slides1.jpg",
-						"imgs/projects/slides/slides2.jpg",
-						"imgs/projects/slides/slides3.jpg"
+						"imgs/projects/colourPicker/colourPicker.jpg"
 						],
 					"shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio alias provkeyent dignissimos. Explicabo sequi reprehenderit",
 					"longDescription": "Vitae debitis mollitia tempora eos corporis accusantium optio consequuntur. Unde, quasi, quae numquam tempore sapiente quis facere, optio quo, expedita fugit minima?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae debitis mollitia tempora eos corporis accusantium optio consequuntur. Unde, quasi, quae numquam tempore sapiente quis facere, optio quo, expedita fugit minima.",
-					"githubURL": "http://www.github.com",
-					"liveDemo": "#"
+					"githubURL": "https://github.com/linuk/ColourPicker",
+					"liveDemo": "http://doc.gold.ac.uk/~jlin015/webdev/ex3/"
 				}
 		},
 		{
 			"key": "P7",
-			"name": "7",
-			"types": ["Javascript", "ReactJS"],
-			"background": "imgs/projects/ex.jpg",
+			"name": "Think like a programmer exercise Ch2-2-2",
+			"types": ["C++"],
+			"thumb": "imgs/projects/thinkLikeAProgrammerExerciseCh2-2-2/thinkLikeAProgrammerExerciseCh2-2-2.jpg",
 			"contents": 
 				{
 					"imgs": [
-						"imgs/projects/slides/slides1.jpg",
-						"imgs/projects/slides/slides2.jpg",
-						"imgs/projects/slides/slides3.jpg"
+						"imgs/projects/thinkLikeAProgrammerExerciseCh2-2-2/thinkLikeAProgrammerExerciseCh2-2-2.jpg"
 						],
 					"shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio alias provkeyent dignissimos. Explicabo sequi reprehenderit",
 					"longDescription": "Vitae debitis mollitia tempora eos corporis accusantium optio consequuntur. Unde, quasi, quae numquam tempore sapiente quis facere, optio quo, expedita fugit minima?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae debitis mollitia tempora eos corporis accusantium optio consequuntur. Unde, quasi, quae numquam tempore sapiente quis facere, optio quo, expedita fugit minima.",
-					"githubURL": "http://www.github.com",
-					"liveDemo": "#"
+					"githubURL": "https://github.com/linuk/Think-like-a-programmer-Chp2-2-Exercise-2-2"
 				}
 		},
 		{
 			"key": "P8",
-			"name": "8",
+			"name": "Think like a programmer exercise Ch2-2-3",
 			"types": ["C++"],
-			"background": "imgs/projects/ex.jpg",
+			"thumb": "imgs/projects/thinkLikeAProgrammerExerciseCh2-2-3/thinkLikeAProgrammerExerciseCh2-2-3.jpg",
 			"contents": 
 				{
 					"imgs": [
-						"imgs/projects/slides/slides1.jpg",
-						"imgs/projects/slides/slides2.jpg",
-						"imgs/projects/slides/slides3.jpg"
+						"imgs/projects/thinkLikeAProgrammerExerciseCh2-2-3/thinkLikeAProgrammerExerciseCh2-2-3.jpg"
 						],
 					"shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio alias provkeyent dignissimos. Explicabo sequi reprehenderit",
 					"longDescription": "Vitae debitis mollitia tempora eos corporis accusantium optio consequuntur. Unde, quasi, quae numquam tempore sapiente quis facere, optio quo, expedita fugit minima?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae debitis mollitia tempora eos corporis accusantium optio consequuntur. Unde, quasi, quae numquam tempore sapiente quis facere, optio quo, expedita fugit minima.",
-					"githubURL": "http://www.github.com",
-					"liveDemo": "#"
-				}
-		},
-		{
-			"key": "P9",
-			"name": "9",
-			"types": ["P5JS"],
-			"background": "imgs/projects/ex.jpg",
-			"contents": 
-				{
-					"imgs": [
-						"imgs/projects/slides/slides1.jpg",
-						"imgs/projects/slides/slides2.jpg",
-						"imgs/projects/slides/slides3.jpg"
-						],
-					"shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio alias provkeyent dignissimos. Explicabo sequi reprehenderit",
-					"longDescription": "Vitae debitis mollitia tempora eos corporis accusantium optio consequuntur. Unde, quasi, quae numquam tempore sapiente quis facere, optio quo, expedita fugit minima?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae debitis mollitia tempora eos corporis accusantium optio consequuntur. Unde, quasi, quae numquam tempore sapiente quis facere, optio quo, expedita fugit minima.",
-					"githubURL": "http://www.github.com",
-					"liveDemo": "#"
+					"githubURL": "https://github.com/linuk/Think-like-a-programmer-Chp2-2-Exercise-2-3"
 				}
 		}
 	]

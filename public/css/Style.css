@@ -26,6 +26,9 @@ h1,h2,h3,h4,h5{
 	min-height: 100%;
 }
 
+.pageTitle{
+	margin: 25px 0 25px 0;
+}
 
 /*==============================
 =            Navbar            =
@@ -115,6 +118,10 @@ button.navbar-toggle{
 /*=============================================
 =            Projects-Label Button            =
 =============================================*/
+
+.label-default{
+	display: inline-block;
+}
 
 .label-default,  /*for C++*/
 .btn-default.selected
@@ -216,25 +223,59 @@ button.navbar-toggle{
 
 .modal-content{
 	border-radius: 5px;
+	border: none;
 }
 
 /*----------  End of vertically center modal  ----------*/
 
+
+/*----------  Modify position and style of close button   ----------*/
+
+.modal-header{
+	padding: 0;
+	height: 0;
+	border: none;
+	position: absolute;
+	right: 15px;
+	top: 5px;
+	z-index: 100;
+}
+
+button.close{
+	color: #fff;
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
+	opacity: .5;
+	font-size: 3em;
+	transition: all .5s;
+	-webkit-transition: all .5s;
+}
+
+button.close:hover{
+	color: #fff;
+	opacity: 1;
+	transition: all .5s;
+	-webkit-transition: all .5s;
+}
+
+/*---------- End of Modify position and style of close button   ----------*/
+
 .carousel-inner{
-	height: 300px;
-	/*max-height: 200px;*/
+	height: 400px;
 }
 
 .carousel-inner .item img{
 	object-fit: cover;
+	object-position:50% 20%;
 	height: 100%;
+	border-radius: 5px 5px 0 0;
 }
 
 .carousel-inner .item{
 	object-fit: cover;
+	object-position:0% 50%;
 	height: 100%;
 }
-
 
 /*=====  End of Projects-Modal  ======*/
 

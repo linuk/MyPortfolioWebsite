@@ -7,7 +7,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 export class ProjectsContainer extends Component {
 	render() {
 		
-		const backgroundURL='imgs/projectBG.png';
+		const backgroundURL='imgs/projects/background.png';
 
 		const ProjectsContainerCSS={
 			paddingTop: "100px",

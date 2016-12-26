@@ -9,11 +9,6 @@ export class AboutContainer extends Component {
 		
 		const backgroundURL='imgs/projectBG.png';
 
-
-		const GridCSS={
-			width: "auto",
-		    	}
-
 		const AboutContainerCSS={
 			paddingTop: "100px",
 			paddingBottom : "50px",
@@ -30,9 +25,9 @@ export class AboutContainer extends Component {
 						transitionAppear={true} transitionAppearTimeout={4000}
           				transitionEnter={true}  transitionEnterTimeout={4000}
 		  				transitionLeave={true} transitionLeaveTimeout={4000}>
-					<Grid style={GridCSS}>
-						<Row>
-							<Col md={8} mdOffset={2}>
+					<Grid className={"fullHeight"}>
+						<Row className={"fullHeight"}>
+							<Col md={8} mdOffset={2} className={"fullHeight"}>
 								<AboutCardContainer/>
 							</Col>
 						</Row>

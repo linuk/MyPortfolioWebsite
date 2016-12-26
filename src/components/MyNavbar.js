@@ -62,7 +62,7 @@ export default class MyNavbar extends Component {
         <Navbar.Header>
           <Navbar.Brand>
             <IndexLink style={BrandLogoContainerCSS} to="/">
-              <Image src="imgs/JLLogo.svg" style={{maxHeight: "100%"}} responsive/>
+              <Image src="imgs/logo/JLLogo.svg" style={{maxHeight: "100%"}} responsive/>
             </IndexLink>
           </Navbar.Brand>
           <Navbar.Toggle>

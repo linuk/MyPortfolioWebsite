@@ -61,7 +61,7 @@
 ===================================*/
 
 .projectCardContainer {
-  background: #fff;
+  background: #fafafa;
   border-radius: 5px;
   text-align: center;
   margin: 1rem;
@@ -73,7 +73,7 @@
   background: #eee;
   border-radius: 5px;
   text-align: center;
-  height: 300px;
+  height: 350px;
   margin: 1rem;
   position: relative;
   cursor: pointer; 
@@ -191,8 +191,8 @@
   object-fit: cover;   /* make picture fit in div without breaking original ration*/
   background: #fff;
 
-  /*filter: grayscale(100%);*/
-  /*-webkit-filter: grayscale(100%); */
+  /*filter: grayscale(40%);*/
+  /*-webkit-filter: grayscale(40%); */
 
   transform: scale(1);
   -webkit-transform: scale(1);
@@ -203,7 +203,7 @@
 
 #Gallery div img:hover{
   /*filter: grayscale(0);*/
-  /*-webkit-filter: grayscale(0); /* Safari 6.0 - 9.0 */*/
+  /*-webkit-filter: grayscale(0); /* Safari 6.0 - 9.0 */
  
   transform: scale(1.03);
   -webkit-transform: scale(1.03);

@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
-import { Button} from "react-bootstrap"
+import { Row, Col, Button} from "react-bootstrap"
 import { ProjectsCards } from './ProjectsCards'
 import projectsJSON from './projects.json'
-
 
 
 export class ProjectsCardsContainer extends Component {
@@ -31,7 +30,7 @@ export class ProjectsCardsContainer extends Component {
 			});
 		});
 		this.setState({
-			labels: labels,
+			labels: labels.sort(),
 		});
 	}
 
@@ -96,31 +95,34 @@ export class ProjectsCardsContainer extends Component {
 
 		return (
 			<div className={"fullHeight projectCardContainer"}>
-			
-					<h1 >Projects</h1>
-					<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio alias provident dignissimos. Explicabo sequi reprehenderit, nostrum beatae excepturi accusamus tenetur quis eum dolor non accusantium laudantium, dolore dolorem natus cum.</h5>
-					<hr/>
+				<Row>
+					<Col md={8} mdOffset={2}>
+						<h1 className={"pageTitle"}>Projects</h1>
+						<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio alias provident dignissimos. Explicabo sequi reprehenderit, nostrum beatae excepturi accusamus tenetur quis eum dolor non accusantium laudantium, dolore dolorem natus cum.</h5>
+						<hr/>
+					</Col>
+				</Row>
 
-					{
-						this.state.labels.map((label)=>
-							// generate label buttons
-							<div style={LabelContainerCSS} key={label}> 
-								<Button 
-								bsSize="xsmall" 
-								className={label.toLowerCase()} 
-								onClick={this.handleClickLabel.bind(this)}>
-									{label}
-								</Button> 
-							</div>
-						)
-					}
+				{
+					this.state.labels.map((label)=>
+						// generate label buttons
+						<div style={LabelContainerCSS} key={label}> 
+							<Button 
+							bsSize="xsmall" 
+							className={label.toLowerCase()} 
+							onClick={this.handleClickLabel.bind(this)}>
+								{label}
+							</Button> 
+						</div>
+					)
+				}
 
-					<hr/>
-					
-					<ProjectsCards 
-					projects={this.state.projects}
-					filter={this.state.filter}
-					/>
+				<hr/>
+	
+				<ProjectsCards 
+				projects={this.state.projects}
+				filter={this.state.filter}
+				/>
 
 
 			</div>

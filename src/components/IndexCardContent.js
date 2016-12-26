@@ -25,7 +25,7 @@ export class IndexCardContent extends Component {
 						<p>{this.props.content.text}</p>
             			
             			<Link to={"/"+buttonLink}>
-            				<Button className={"buttonShadow button"}>Explore</Button>
+            				<Button className={"buttonShadow button"}>Read More</Button>
             			</Link>
 
 					</Row>

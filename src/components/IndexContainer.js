@@ -88,7 +88,7 @@ export class IndexContainer extends Component {
 
 		const IndexCardContentLeft ={
 			side: "left",
-			title: "Corder",
+			title: "Coder",
 			icon: "fa fa-code fa-5x",
 			text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem repellat quae, fuga quasi voluptatibus quibusdam perspiciatis eveniet temporibus numquam aliquid ",
 			buttonLink: "projects",
