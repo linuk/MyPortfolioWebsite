@@ -2,9 +2,25 @@
 	"projects":
 	[ 
 		{
+			"key": "P0",
+			"name": "Portfolio",
+			"types": ["HTML", "CSS", "Javascript", "reactJS", "Design"],
+			"thumb": "imgs/projects/portfolio/portfolio.jpg",
+			"contents": 
+				{
+					"imgs": [
+						"imgs/projects/portfolio/portfolio.jpg"
+						],
+					"shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio alias provkeyent dignissimos. Explicabo sequi reprehenderit",
+					"longDescription": "Vitae deusantium optio consequuntur. Unde, quasi, quae numquam tempore sapiente quis facere, optio quo, expedita fugit minima.",
+					"githubURL": "http://github.com/linuk/MyPortfolioWebsite",
+					"liveDemo": "http://jlportfolio.herokuapp.com/"
+				}
+		},
+		{
 			"key": "P1",
 			"name": "Slides",
-			"types": ["HTML", "CSS", "jQuery"],
+			"types": ["HTML", "CSS", "jQuery", "Design"],
 			"thumb": "imgs/projects/slides/slides.jpg",
 			"contents": 
 				{
@@ -20,7 +36,7 @@
 		{
 			"key": "P2",
 			"name": "Single Page Website Design",
-			"types": ["HTML", "CSS", "Javascript", "jQuery", "Design"],
+			"types": ["HTML", "CSS", "Javascript", "jQuery"],
 			"thumb": "imgs/projects/singlePageWebsite/singlePageWebsite1.jpg",
 			"contents": 
 				{
@@ -36,7 +52,7 @@
 		{
 			"key": "P3",
 			"name": "Zoo Album",
-			"types": [ "HTML", "jQuery", "HandlebarJS", "CSS"],
+			"types": [ "HTML", "jQuery", "HandlebarJS", "CSS", "Design"],
 			"thumb": "imgs/projects/zooAlbum/zooAlbum.jpg",
 			"contents": 
 				{
