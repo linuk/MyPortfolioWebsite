@@ -18,6 +18,22 @@
 				}
 		},
 		{
+			"key": "P01",
+			"name": "Todo App",
+			"types": ["HTML", "CSS", "reactJS", "Design", "Javascript"],
+			"thumb": "imgs/projects/simpleTodoApp/simpleTodoApp.jpg",
+			"contents": 
+				{
+					"imgs": [
+						"imgs/projects/simpleTodoApp/simpleTodoApp.jpg"
+						],
+					"shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio alias provkeyent dignissimos. Explicabo sequi reprehenderit",
+					"longDescription": "Vitae deusantium optio consequuntur. Unde, quasi, quae numquam tempore sapiente quis facere, optio quo, expedita fugit minima.",
+					"githubURL": "http://github.com/linuk/SImple-Todo-App",
+					"liveDemo": "http://simple-to-do-app.herokuapp.com"
+				}
+		},
+		{
 			"key": "P1",
 			"name": "Slides",
 			"types": ["HTML", "CSS", "jQuery", "Design"],
