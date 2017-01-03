@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import { Row, Col, Modal, Button, Carousel } from 'react-bootstrap'
 
 
@@ -7,9 +7,9 @@ import { Row, Col, Modal, Button, Carousel } from 'react-bootstrap'
 
 const ProjectsCardModal  = React.createClass({	
 
-	getInitialState() { return { showModal: false }; },
-	close() { this.setState({ showModal: false }); },
-  	open() { this.setState({ showModal: true }); },
+	getInitialState() { return { showModal: false } },
+	close() { this.setState({ showModal: false }) },
+  	open() { this.setState({ showModal: true }) },
 
 	render() {
 		
@@ -50,13 +50,13 @@ const ProjectsCardModal  = React.createClass({
 
 		// generate demoButton if it has live demo link in JSON file
 		let demoButton = this.props.project.contents.liveDemo ? 
-				<Button 
-        		className={"button buttonShadow"} 
-        		onClick={this.close} 
-        		style={DemoButtonCSS}
-        		href={this.props.project.contents.liveDemo}>
-        			Demo
-    			</Button> : null;
+			<Button 
+    		className={"button buttonShadow"} 
+    		onClick={this.close} 
+    		style={DemoButtonCSS}
+    		href={this.props.project.contents.liveDemo}>
+    			Demo
+			</Button> : null
 
 
 		return (
@@ -108,11 +108,11 @@ const ProjectsCardModal  = React.createClass({
 	        	
 	        	</Modal>
         	</div>
-		);
+		)
 	}
 })
 
-module.exports = ProjectsCardModal;
+module.exports = ProjectsCardModal
 
 
 

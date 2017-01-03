@@ -7,13 +7,9 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 export class ProjectsContainer extends Component {
 	render() {
 		
-		const backgroundURL='imgs/projects/background.png';
-
 		const ProjectsContainerCSS={
 			paddingTop: "100px",
 			paddingBottom: "50px",
-			background: 'url(' + backgroundURL + ') center center repeat',
-			backgroundAttachment: 'fixed',
 			height: "100%",
 		}
 

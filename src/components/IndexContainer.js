@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import { Grid, Row, Col, Button} from "react-bootstrap";
-import { IndexCard } from './IndexCard';
+import React, { Component } from 'react'
+import { Grid, Row, Col, Button} from "react-bootstrap"
+import { IndexCard } from './IndexCard'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group' 
 
 
@@ -8,7 +8,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 export class IndexContainer extends Component {
 
 	constructor(props){
-		super(props);
+		super(props)
 		this.state={
 			leftIndex: 1,
 			leftWidth: "55%",
@@ -23,21 +23,21 @@ export class IndexContainer extends Component {
 	}
 
 	handleLeftClick(){
-		if(this.state.rightContentDisplay) this.closeContent();
-		if(!this.state.leftContentDisplay) this.openLeftContent();
+		if(this.state.rightContentDisplay) this.closeContent()
+		if(!this.state.leftContentDisplay) this.openLeftContent()
 	}
 
 	handleRightClick(){
-		if(this.state.leftContentDisplay) this.closeContent();
-		if(!this.state.rightContentDisplay) this.openRightContent();
+		if(this.state.leftContentDisplay) this.closeContent()
+		if(!this.state.rightContentDisplay) this.openRightContent()
 	}
 
 
 
 
 	openLeftContent(){
-		console.log("left");
-		this.refs.leftIndexCard.open();
+		console.log("left")
+		this.refs.leftIndexCard.open()
 		this.setState({
 			leftIndex: 100,
 			leftWidth: "100%",
@@ -47,14 +47,14 @@ export class IndexContainer extends Component {
 	}
 
 	openRightContent(){
-		console.log("right");
-		this.refs.rightIndexCard.open();
+		console.log("right")
+		this.refs.rightIndexCard.open()
 		this.setState({
 			rightIndex: 100,
 			rightWidth: "100%",
 			iconDisplay: true,
 			rightContentDisplay: true,
-		});
+		})
 	}
 
 	closeContent(){
@@ -66,9 +66,9 @@ export class IndexContainer extends Component {
 			iconDisplay: false,
 			leftContentDisplay: false,
 			rightContentDisplay: false,
-		});
-		this.refs.leftIndexCard.close();
-		this.refs.rightIndexCard.close();
+		})
+		this.refs.leftIndexCard.close()
+		this.refs.rightIndexCard.close()
 	}
 
 
@@ -92,7 +92,7 @@ export class IndexContainer extends Component {
 			icon: "fa fa-code fa-5x",
 			text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem repellat quae, fuga quasi voluptatibus quibusdam perspiciatis eveniet temporibus numquam aliquid ",
 			buttonLink: "projects",
-		}; 
+		}
 
 		const IndexCardContentRight ={
 			side: "right",
@@ -102,7 +102,7 @@ export class IndexContainer extends Component {
 			buttonLink: "photography",
 		}
 
-		const IndexCardLeftBackgroundURL='imgs/index/indexCodeBG.jpg';
+		const IndexCardLeftBackgroundURL='imgs/index/indexCodeBG.jpg'
 		const IndexCardLeftContainerCSS={
 			height: "100%",
 			width: this.state.leftWidth,
@@ -119,7 +119,7 @@ export class IndexContainer extends Component {
 			backgroundSize: "cover",
 		}
 
-		const IndexCardRightBackgroundURL='imgs/index/indexPhotographyBG.jpg';
+		const IndexCardRightBackgroundURL='imgs/index/indexPhotographyBG.jpg'
 		const IndexCardRightContainerCSS={
 			height: "100%",
 			width: this.state.rightWidth,
@@ -147,7 +147,7 @@ export class IndexContainer extends Component {
 
 		}
 
-		const  closeButton = this.state.iconDisplay ?  <Button style={CloseButtonCSS} onClick={this.closeContent.bind(this)}>X</Button>: null;		
+		const  closeButton = this.state.iconDisplay ?  <Button style={CloseButtonCSS} onClick={this.closeContent.bind(this)}>X</Button>: null
 
 
 		return (
@@ -186,6 +186,6 @@ export class IndexContainer extends Component {
 					</ReactCSSTransitionGroup>
 					</Row>
 				</Grid>
-		);
+		)
 	}
 }

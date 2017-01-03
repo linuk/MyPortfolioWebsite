@@ -7,14 +7,9 @@ export class AboutContainer extends Component {
 
 	render() {
 		
-		const backgroundURL='imgs/projectBG.png';
-
 		const AboutContainerCSS={
 			paddingTop: "100px",
 			paddingBottom : "50px",
-			background: 'url(' + backgroundURL + ') center center repeat',
-    		backgroundAttachment: 'fixed',
-	
 		}
 
 

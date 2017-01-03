@@ -1,19 +1,19 @@
-import React, { Component } from 'react';
-import MyNavbar from './components/MyNavbar';
-import Loading from './components/Loading';
+import React, { Component } from 'react'
+import MyNavbar from './components/MyNavbar'
+import Loading from './components/Loading'
 
 
 
 export default class App extends Component {
   constructor(props){
-  	super(props);
+  	super(props)
   	this.state={
   		loaded: false,
   	}
   }
 
   componentDidMount(){
-  	console.log(this.state.loaded);
+  	console.log(this.state.loaded)
   	this.setState({
   		loaded: true,
   	})
@@ -21,7 +21,7 @@ export default class App extends Component {
   
   render() {
 	
-  const backgroundURL='imgs/projectBG.png';
+  const backgroundURL='imgs/global/background.png'
 
   let AppCSS={
 		minHeight: "100%",

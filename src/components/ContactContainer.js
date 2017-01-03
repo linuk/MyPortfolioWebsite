@@ -7,13 +7,8 @@ export class ContactContainer extends Component {
 
 	render() {
 		
-		const backgroundURL='imgs/projectBG.png';
-
-
 		const ContactContainerCSS={
 			paddingTop: "100px",
-			background: 'url(' + backgroundURL + ') center center repeat',
-    		backgroundAttachment: 'fixed',
     	}
 
 		return (

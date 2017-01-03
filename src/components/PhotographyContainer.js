@@ -8,7 +8,6 @@ export class PhotographyContainer extends Component {
 	render() {
 		
 		const PhotographyContainerCSS={
-			minHeight: "100%",
 			paddingTop: "100px",
 		}
 
