@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import { Row, Col, Button, FormGroup, FormControl } from "react-bootstrap"
+import contactJSON from "./contact.json"
 
 export default class ContactCardContent extends Component {
 
@@ -14,9 +15,9 @@ export default class ContactCardContent extends Component {
 				<Row>
 					<Col md={10} mdOffset={1} xs={10} xsOffset={1} >
 						<div style={ContactCardContentContainerCSS}>
-							<h1 className={"primaryBlackFont"}>Contact</h1>
+							<h1 className={"primaryBlackFont"}>{contactJSON.title}</h1>
 							<hr/>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi, <br/>animi maxime pariatur minima architecto laudantium magnam libero atque nisi non, soluta quasi ut, cupiditate placeat enim quo.</p>
+							<p>{contactJSON.content}</p>
 							<hr/>
 
 						    <FormGroup controlId="formControlsName">

@@ -1,0 +1,25 @@
+{
+	"list": 
+	[
+		{
+			"key": 1,
+			"title": "Projects",
+			"link": "/projects"
+		},
+		{
+			"key": 2,
+			"title": "Photography",
+			"link": "/photography"
+		},
+		{
+			"key": 3,
+			"title": "About",
+			"link": "/about"
+		},
+		{
+			"key": 4,
+			"title": "Contact",
+			"link": "/contact"
+		}
+	]
+}

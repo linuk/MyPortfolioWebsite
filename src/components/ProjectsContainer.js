@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import {ProjectsCardsContainer} from './ProjectsCardsContainer'
 import { Grid, Row, Col} from "react-bootstrap"
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group' 

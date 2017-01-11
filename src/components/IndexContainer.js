@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Grid, Row, Col, Button} from "react-bootstrap"
 import { IndexCard } from './IndexCard'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group' 
+import indexJSON from './index.json'
 
 
 
@@ -19,6 +20,7 @@ export class IndexContainer extends Component {
 			rightContentDisplay: false,
 	
 			iconDisplay: false,
+			contents: indexJSON
 		}
 	}
 
@@ -88,18 +90,17 @@ export class IndexContainer extends Component {
 
 		const IndexCardContentLeft ={
 			side: "left",
-			title: "Coder",
-			icon: "fa fa-code fa-5x",
-			text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem repellat quae, fuga quasi voluptatibus quibusdam perspiciatis eveniet temporibus numquam aliquid ",
-			buttonLink: "projects",
+			title: this.state.contents.index.left.title,
+			text: this.state.contents.index.left.content,
+			icon: this.state.contents.index.left.icon,
+			buttonLink: this.state.contents.index.left.link,
 		}
 
 		const IndexCardContentRight ={
-			side: "right",
-			title: "Photographer",
-			icon: "fa fa-camera-retro fa-5x",
-			text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem repellat quae, fuga quasi voluptatibus quibusdam perspiciatis eveniet temporibus numquam aliquid .",
-			buttonLink: "photography",
+			title: this.state.contents.index.right.title,
+			text: this.state.contents.index.right.content,
+			icon: this.state.contents.index.right.icon,
+			buttonLink: this.state.contents.index.right.link,
 		}
 
 		const IndexCardLeftBackgroundURL='imgs/index/indexCodeBG.jpg'

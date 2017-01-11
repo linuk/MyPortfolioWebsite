@@ -1,0 +1,58 @@
+{
+	"profile": 
+	{
+		"image": "imgs/about/profile.jpg",
+		"name": "Jheng Lin",
+		"content": "Studying Computer Science in Goldsmiths, University of London"
+	},
+
+	"advantages": 
+	{
+		"title": "Advantages",
+		"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+		"list": 
+		[
+			{
+				"title":"Multilingual",
+				"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi",
+				"iconClass": "fa fa-language fa-5x primaryBlackFont"
+			},
+			{
+				"title":"Aesthetic",
+				"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi",
+				"iconClass": "fa fa-star-o fa-5x primaryBlackFont"
+			},
+			{
+				"title":"UX",
+				"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi",
+				"iconClass": "fa fa-user-circle-o fa-5x primaryBlackFont"
+			}
+		]
+	},
+
+	"skills": 
+	{
+		"title": "Skills",
+		"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+		"list": 
+		[
+			"devicon-html5-plain-wordmark",
+			"devicon-css3-plain-wordmark",
+			"devicon-bootstrap-plain-wordmark",
+			"devicon-react-original-wordmark",
+			"devicon-jquery-plain-wordmark",
+			"devicon-python-plain-wordmark",
+			"devicon-github-plain-wordmark",
+			"devicon-heroku-plain-wordmark",
+			"devicon-git-plain",
+			"devicon-javascript-plain",
+			"devicon-illustrator-plain",
+			"devicon-photoshop-plain"
+		]
+	},
+
+	"final": 
+	{
+		"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi,animi maxime pariatur minima architecto laudantium magnam libero atque nisi non, soluta quasi ut, cupiditate placeat enim quo.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi, animi maxime pariatur minima architecto laudantium magnam libero atque nisi non, soluta quasi ut, cupiditate placeat enim quo."
+	}
+}

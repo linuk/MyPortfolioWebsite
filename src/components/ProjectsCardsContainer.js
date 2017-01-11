@@ -7,7 +7,7 @@ import projectsJSON from './projects.json'
 export class ProjectsCardsContainer extends Component {
 
 	constructor(props){
-		super(props);
+		super(props)
 		this.state={
 			projects: projectsJSON,
 			filter: "all",
@@ -97,8 +97,8 @@ export class ProjectsCardsContainer extends Component {
 			<div className={"fullHeight projectCardContainer"}>
 				<Row>
 					<Col md={8} mdOffset={2}>
-						<h1 className={"pageTitle"}>Projects</h1>
-						<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio alias provident dignissimos. Explicabo sequi reprehenderit, nostrum beatae excepturi accusamus tenetur quis eum dolor non accusantium laudantium, dolore dolorem natus cum.</h5>
+						<h1 className={"pageTitle"}>{this.state.projects.page.title}</h1>
+						<h5>{this.state.projects.page.descriptions}</h5>
 						<hr/>
 					</Col>
 				</Row>

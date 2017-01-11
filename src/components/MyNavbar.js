@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
-import { Navbar, NavItem, Nav, Image } from 'react-bootstrap';
+import React, { Component } from 'react'
+import { Navbar, NavItem, Nav, Image } from 'react-bootstrap'
 import { IndexLink } from 'react-router'
-import { LinkContainer } from 'react-router-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap'
+import menuJSON from "./menu.json"
 
 let NavbarCSS={
   marginBottom: "0",
@@ -14,9 +15,10 @@ let NavbarCSS={
 export default class MyNavbar extends Component {
 
   constructor(props){
-    super(props);
+    super(props)
     this.state={
       navbarExpended: false,
+      menu: menuJSON
     }
   }
 
@@ -26,18 +28,18 @@ export default class MyNavbar extends Component {
   scrollToTop(scrollDuration){
     const scrollHeight = window.scrollY,
           scrollStep = Math.PI / ( scrollDuration / 15 ),
-          cosParameter = scrollHeight / 2;
+          cosParameter = scrollHeight / 2
 
     var scrollCount = 0,
         scrollMargin,
         scrollInterval = setInterval( function() {
           if ( window.scrollY !== 0 ) {
-              scrollCount++;  
-              scrollMargin = cosParameter - cosParameter * Math.cos( scrollCount * scrollStep );
-              window.scrollTo( 0, ( scrollHeight - scrollMargin ) );
+              scrollCount++  
+              scrollMargin = cosParameter - cosParameter * Math.cos( scrollCount * scrollStep )
+              window.scrollTo( 0, ( scrollHeight - scrollMargin ) )
           } 
-          else clearInterval(scrollInterval); 
-      }, 15 );
+          else clearInterval(scrollInterval)
+      }, 15 )
   }
 
   render() {
@@ -48,8 +50,7 @@ export default class MyNavbar extends Component {
       paddingLeft: "15px",
     }
 
-    const iconCSS={
-    }
+    const menu = this.state.menu
 
     return (
       <Navbar 
@@ -66,27 +67,23 @@ export default class MyNavbar extends Component {
             </IndexLink>
           </Navbar.Brand>
           <Navbar.Toggle>
-            <span className="icon-bar" style={iconCSS}></span>
-            <span className="icon-bar" style={iconCSS}></span>
-            <span className="icon-bar" style={iconCSS}></span>
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
           </Navbar.Toggle>
 
         </Navbar.Header>
         
         <Navbar.Collapse>
           <Nav pullRight  >
-            <LinkContainer to="/projects">
-              <NavItem onSelect={this.scrollToTop(1000)} eventKey={1} href="#">Projects</NavItem>
-            </LinkContainer>
-            <LinkContainer to="/Photography">
-              <NavItem onSelect={this.scrollToTop(1000)} eventKey={2} href="#">Photography</NavItem>
-            </LinkContainer>
-            <LinkContainer to="/about">
-              <NavItem onSelect={this.scrollToTop(1000)} eventKey={3} href="#">About</NavItem>
-            </LinkContainer>
-            <LinkContainer to="/Contact">
-              <NavItem onSelect={this.scrollToTop(1000)} eventKey={4} href="#">Contact</NavItem>
-            </LinkContainer>
+            {
+              menu.list.map((item)=>
+              <LinkContainer to={item.link}>
+                <NavItem onSelect={this.scrollToTop(1000)} eventKey={item.key} href="#">{item.title}</NavItem>
+              </LinkContainer>    
+
+              )
+            }
           </Nav>
         </Navbar.Collapse>
 

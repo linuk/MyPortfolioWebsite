@@ -1,0 +1,22 @@
+{
+	"index": 
+	{
+		"left": 
+		{
+			"title": "Coder",
+			"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem repellat quae, fuga quasi voluptatibus quibusdam perspiciatis eveniet temporibus numquam aliquid",
+			"icon": "fa fa-code fa-5x",
+			"link": "projects"
+
+		},
+		
+		"right": 
+		{
+			"title": "Photographer",
+			"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem repellat quae, fuga quasi voluptatibus quibusdam perspiciatis eveniet temporibus numquam aliquid",
+			"icon": "fa fa-camera-retro fa-5x",
+			"link": "photography"
+
+		}
+	}
+}
