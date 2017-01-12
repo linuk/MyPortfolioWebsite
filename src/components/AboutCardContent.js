@@ -20,10 +20,6 @@ export default class AboutCardContent extends Component {
 			paddingBottom: "50px",
 		}
 
-		const imgCSS={
-			border: "15px",
-		}
-
 		const centerCSS={
 			textAlign: "center",
 		}
@@ -50,21 +46,6 @@ export default class AboutCardContent extends Component {
 			fontSize: "6em",
 		}
 
-		const skillIconClassName=[
-			"devicon-html5-plain-wordmark",
-			"devicon-css3-plain-wordmark",
-			"devicon-bootstrap-plain-wordmark",
-			"devicon-react-original-wordmark",
-			"devicon-jquery-plain-wordmark",
-			"devicon-python-plain-wordmark",
-			"devicon-github-plain-wordmark",
-			"devicon-heroku-plain-wordmark",
-			"devicon-git-plain",
-			"devicon-javascript-plain",
-			"devicon-illustrator-plain",
-			"devicon-photoshop-plain"
-		]
-
 		const gap=<div><hr/></div>
 
 		return (
@@ -79,15 +60,17 @@ export default class AboutCardContent extends Component {
 							</Col></Row>
 							
 							<h2 style={centerCSS}>{about.profile.name}</h2>
-							<h5 style={centerCSS}>{about.profile.content}</h5>
+							<h5 style={centerCSS}>{about.profile.address}</h5>
+							<h5 style={centerCSS}>{about.profile.content1}</h5>
+							<h5 style={centerCSS}>{about.profile.content2}</h5>
 							
 							{gap}
 							
-							<h2 className={"primaryBlackFont"} style={centerCSS}>{about.advantages.title}</h2>
-							<h5 style={pCSS}>{about.advantages.content}</h5>
+							<h2 className={"primaryBlackFont"} style={centerCSS}>{about.section1.title}</h2>
+							<h5 style={pCSS}>{about.section1.content}</h5>
 							<Row>
 							{
-								about.advantages.list.map((advantage)=>
+								about.section1.list.map((advantage)=>
 									<Col key={advantage.title} md={4} style={{paddingBottom: "20px"}}> 
 										<div className={"aboutSkillsCard"}>
 											<div className={"cardContent"}>
@@ -103,13 +86,13 @@ export default class AboutCardContent extends Component {
 
 							{gap}
 
-							<h2 className={"primaryBlackFont"} style={centerCSS} >{about.skills.title}</h2>
-							<h5 style={pCSS}>{about.skills.content}</h5>
+							<h2 className={"primaryBlackFont"} style={centerCSS} >{about.section2.title}</h2>
+							<h5 style={pCSS}>{about.section2.content}</h5>
 							
 							<Row style={centerCSS}>
 								{
-									about.skills.list.map((skill, index)=>
-										<Col md={4} xs={4} style={{padding: "5px"}} key={"skills"+index}> 
+									about.section2.list.map((skill, index)=>
+										<Col md={3} xs={4} style={{padding: "5px"}} key={"skills"+index}> 
 											<i style={SkillsIconCSS} className={skill} />
 										</Col>	
 									)
@@ -118,7 +101,7 @@ export default class AboutCardContent extends Component {
 
 							{gap}
 
-							<h5 style={pCSS}>{about.final.content}</h5>
+							<h4 style={pCSS}>{about.final.content}</h4>
 
 							{gap}
 

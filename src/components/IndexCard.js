@@ -5,7 +5,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 export class IndexCard extends Component {
 	
 	constructor(props){
-		super(props);
+		super(props)
 		this.state={
 			width: "100%",
 			zIndex: 1,
@@ -19,16 +19,15 @@ export class IndexCard extends Component {
 
 	handleMouseEnter(){
 		
-		let iconDisplay = this.state.contentDisplay? false: true;
+		let iconDisplay = this.state.contentDisplay? false: true
 		this.setState({
 			iconDisplay: iconDisplay,
 			transform: "scale(1.05)", 
 		})
-		console.log("enter")
 	}
 
 	handleClick(){
-		if(this.state.contentDisplay===false) this.open();
+		if(this.state.contentDisplay===false) this.open()
 	}
 
 	handleMouseLeave(){
@@ -38,15 +37,14 @@ export class IndexCard extends Component {
 			zIndex: 1,
 			iconDisplay: false,
 			transform: "scale(1)", 
-		});	
-		console.log("leave");
+		})
 	}
 
 	handleMouseOver(){
 		if(this.state.contentDisplay===false){
 			this.setState({
 				iconDisplay: true,
-			});
+			})
 		}
 	}
 
@@ -57,9 +55,7 @@ export class IndexCard extends Component {
 			width: "100%",
 			zIndex: 200,
 			transform: "scale(1)", 
-		});
-		console.log("open");
-
+		})
 	}
 
 	close(){
@@ -69,8 +65,7 @@ export class IndexCard extends Component {
 			zIndex: 1,
 			iconDisplay: false,
 			transform: "scale(1)", 
-		});	
-		console.log("close");
+		})
 	}
 
 	render(){
@@ -91,7 +86,7 @@ export class IndexCard extends Component {
 		};
 
 		// icon align for each side
-		let leftAlign = this.state.float==="left" ? "45%": "55%" ;
+		let leftAlign = this.state.float==="left" ? "45%": "55%" 
 
 		let IndexCardContentCSS={
 			position: "absolute",
@@ -101,7 +96,7 @@ export class IndexCard extends Component {
 		    transform:" translate(-50%,-50%)",
 			color: '#fafafa',
 			width: "70%",
-		};
+		}
 
 		let IndexCardContentIconCSS={
 			position: "absolute",
@@ -123,8 +118,8 @@ export class IndexCard extends Component {
 		}
 
 
-		let icon = this.state.iconDisplay ? <i style={IndexCardContentIconCSS} className={this.props.content.icon} aria-hidden="true"></i>:  null;
-		let text = this.state.contentDisplay ? <IndexCardContent content={this.props.content} style={IndexCardContentTextCSS} /> : null;
+		let icon = this.state.iconDisplay ? <i style={IndexCardContentIconCSS} className={this.props.content.icon} aria-hidden="true"></i>:  null
+		let text = this.state.contentDisplay ? <IndexCardContent content={this.props.content} style={IndexCardContentTextCSS} /> : null
 		
 		return (
 				<div style={IndexCardContainerCSS} 
@@ -143,7 +138,7 @@ export class IndexCard extends Component {
 							</ReactCSSTransitionGroup>
 						</div>
 				</div>
-		);
+		)
 	}
 }
 						

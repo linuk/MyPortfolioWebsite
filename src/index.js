@@ -1,12 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 import { Router, browserHistory, IndexRoute } from 'react-router'
-import App from './App';
-import { IndexContainer } from './components/IndexContainer';
-import { AboutContainer } from './components/AboutContainer';
-import { ProjectsContainer } from './components/ProjectsContainer';
-import { PhotographyContainer } from './components/PhotographyContainer';
-import { ContactContainer } from './components/ContactContainer';
+import App from './App'
+import { IndexContainer } from './components/IndexContainer'
+import { AboutContainer } from './components/AboutContainer'
+import { ProjectsContainer } from './components/ProjectsContainer'
+import { PhotographyContainer } from './components/PhotographyContainer'
+import { ContactContainer } from './components/ContactContainer'
 
 ReactDOM.render((
 	<Router history={ browserHistory }>

@@ -78,7 +78,7 @@ export default class MyNavbar extends Component {
           <Nav pullRight  >
             {
               menu.list.map((item)=>
-              <LinkContainer to={item.link}>
+              <LinkContainer key={item.title} to={item.link}>
                 <NavItem onSelect={this.scrollToTop(1000)} eventKey={item.key} href="#">{item.title}</NavItem>
               </LinkContainer>    
 

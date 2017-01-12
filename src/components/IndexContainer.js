@@ -38,18 +38,16 @@ export class IndexContainer extends Component {
 
 
 	openLeftContent(){
-		console.log("left")
 		this.refs.leftIndexCard.open()
 		this.setState({
 			leftIndex: 100,
 			leftWidth: "100%",
 			iconDisplay: true,
 			leftContentDisplay: true,
-		});
+		})
 	}
 
 	openRightContent(){
-		console.log("right")
 		this.refs.rightIndexCard.open()
 		this.setState({
 			rightIndex: 100,
@@ -77,6 +75,8 @@ export class IndexContainer extends Component {
 
 	render() {
 	
+		const index = this.state.contents.index
+
 		const GridCSS={
 			height: "100%",
 			width: "auto",
@@ -90,20 +90,19 @@ export class IndexContainer extends Component {
 
 		const IndexCardContentLeft ={
 			side: "left",
-			title: this.state.contents.index.left.title,
-			text: this.state.contents.index.left.content,
-			icon: this.state.contents.index.left.icon,
-			buttonLink: this.state.contents.index.left.link,
+			title: index.left.title,
+			text: index.left.content,
+			icon: index.left.icon,
+			buttonLink: index.left.link,
 		}
 
 		const IndexCardContentRight ={
-			title: this.state.contents.index.right.title,
-			text: this.state.contents.index.right.content,
-			icon: this.state.contents.index.right.icon,
-			buttonLink: this.state.contents.index.right.link,
+			title: index.right.title,
+			text: index.right.content,
+			icon: index.right.icon,
+			buttonLink: index.right.link,
 		}
 
-		const IndexCardLeftBackgroundURL='imgs/index/indexCodeBG.jpg'
 		const IndexCardLeftContainerCSS={
 			height: "100%",
 			width: this.state.leftWidth,
@@ -116,11 +115,10 @@ export class IndexContainer extends Component {
 			overflow: "hidden", 
 			zIndex: this.state.leftIndex,
 			transition: "all 500ms",
-			background: 'linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)),url(' + IndexCardLeftBackgroundURL + ') center center no-repeat',
+			background: 'linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)),url(' + index.left.backgroundImage + ') center center no-repeat',
 			backgroundSize: "cover",
 		}
 
-		const IndexCardRightBackgroundURL='imgs/index/indexPhotographyBG.jpg'
 		const IndexCardRightContainerCSS={
 			height: "100%",
 			width: this.state.rightWidth,
@@ -133,7 +131,7 @@ export class IndexContainer extends Component {
 			overflow: "hidden",
 			zIndex: this.state.rightIndex,
 			transition: "all 500ms",
-			background: 'linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)),url(' + IndexCardRightBackgroundURL + ') center center no-repeat',
+			background: 'linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)),url(' + index.right.backgroundImage + ') center center no-repeat',
 			backgroundSize: "cover",
 		}
 

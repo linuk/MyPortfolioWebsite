@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 export default class Loading extends Component {
 	
@@ -6,7 +6,7 @@ export default class Loading extends Component {
 
 		const LoadingContainterCSS={
 			width: "100%",
-			height: "100%",
+			height: "100vh",
 			textAlign: "center",
 			background: "#eaeaea"
 		}

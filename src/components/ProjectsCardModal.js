@@ -54,7 +54,8 @@ const ProjectsCardModal  = React.createClass({
     		className={"button buttonShadow"} 
     		onClick={this.close} 
     		style={DemoButtonCSS}
-    		href={this.props.project.contents.liveDemo}>
+    		href={this.props.project.contents.liveDemo}
+    		target="_blank">
     			Demo
 			</Button> : null
 
@@ -95,7 +96,8 @@ const ProjectsCardModal  = React.createClass({
 		            		className={"button buttonShadow"} 
 		            		onClick={this.close} 
 		            		style={GithubButtonCSS}
-		            		href={this.props.project.contents.githubURL}>
+		            		href={this.props.project.contents.githubURL}
+		            		target="_blank">
 		            			Github
 		        			</Button>
 		        				{demoButton}

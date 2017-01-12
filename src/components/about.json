@@ -3,37 +3,39 @@
 	{
 		"image": "imgs/about/profile.jpg",
 		"name": "Jheng Lin",
-		"content": "Studying Computer Science in Goldsmiths, University of London"
+		"address": "UK, London",
+		"content1": "Bachelor of Landscape Design, National Taiwan University",
+		"content2": "Studying BSC Computer Science in Goldsmiths, University of London"
 	},
 
-	"advantages": 
+	"section1": 
 	{
-		"title": "Advantages",
-		"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+		"title": "Strengths",
+		"content": "",
 		"list": 
 		[
 			{
 				"title":"Multilingual",
-				"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi",
+				"content": "Fluent in Mandarin (verbal / written). Intermediate in English (verbal / written) " ,
 				"iconClass": "fa fa-language fa-5x primaryBlackFont"
 			},
 			{
 				"title":"Aesthetic",
-				"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi",
+				"content": "Have a really high standard of aesthetics, and also good taste in visual design.",
 				"iconClass": "fa fa-star-o fa-5x primaryBlackFont"
 			},
 			{
 				"title":"UX",
-				"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi",
+				"content": "Keen on user centered design to make websites more accessible and easier to use. ",
 				"iconClass": "fa fa-user-circle-o fa-5x primaryBlackFont"
 			}
 		]
 	},
 
-	"skills": 
+	"section2": 
 	{
 		"title": "Skills",
-		"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+		"content": "Including visual design and programming languages, these tools are my favorite which help me create projects.",
 		"list": 
 		[
 			"devicon-html5-plain-wordmark",
@@ -53,6 +55,6 @@
 
 	"final": 
 	{
-		"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi,animi maxime pariatur minima architecto laudantium magnam libero atque nisi non, soluta quasi ut, cupiditate placeat enim quo.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia facilis quae commodi, animi maxime pariatur minima architecto laudantium magnam libero atque nisi non, soluta quasi ut, cupiditate placeat enim quo."
+		"content": "I'm now looking for a summber front-end web development internship in UK, welcome to send me message via the contact page. Thank you so much! "
 	}
 }

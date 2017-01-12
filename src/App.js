@@ -13,7 +13,6 @@ export default class App extends Component {
   }
 
   componentDidMount(){
-  	console.log(this.state.loaded)
   	this.setState({
   		loaded: true,
   	})
