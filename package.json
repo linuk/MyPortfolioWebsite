@@ -8,8 +8,6 @@
   "dependencies": {
     "json-loader": "^0.5.4",
     "material-colors": "^1.2.0",
-    "nodemailer": "^2.7.0",
-    "nodemailer-direct-transport": "^3.3.2",
     "react": "^15.4.1",
     "react-addons-css-transition-group": "^15.4.1",
     "react-bootstrap": "^0.30.7",
