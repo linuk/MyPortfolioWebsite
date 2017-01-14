@@ -18,26 +18,32 @@ export default class PhotographyCard extends Component {
 			color: "#fff",
 		}
 
+		const welcomeMessageCSS={
+			lineHeight: "55px"
+		}
+
 		return (
 			<div style={PhotographyCardContainerCSS}>
-				<Row><Col md={8} mdOffset={2}>
+				<Row><Col md={10} mdOffset={1}>
 						<h1 className={"pageTitle"}>{ photography.title }</h1>
-						<h5>{ photography.content }</h5>
+						<hr/>
+						<h4 className={"pageDescription"}>{ photography.content }</h4>
 				</Col></Row>
 
 				<hr/>
 				<Gallery photos={photography.photos}  />
 				
 				<Row><Col md={8} mdOffset={2}>
-						<h3 className={"pageTitle"}>{ photography.welcomeMessage }</h3>
+						<hr/>
+						<h3 style={welcomeMessageCSS}>{ photography.welcomeMessage }</h3>
 						<Button 
 		            		className={"button buttonShadow"} 
-		            		onClick={this.close} 
 		            		style={LinkButtonCSS}
 		            		href={photography.blogLink}
 		            		target="_blank">
 		            			Nyo Photography
 		        			</Button>
+						<hr/>
 				</Col></Row>
 
 			</div>

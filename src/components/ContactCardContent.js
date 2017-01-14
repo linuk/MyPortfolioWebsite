@@ -5,15 +5,31 @@ import contactJSON from "./contact.json"
 export default class ContactCardContent extends Component {
 
 	render() {
-		
+
 		const ContactCardContentContainerCSS={
 			textAlign: "center",
 			marginBottom: "20px",
-
 		}
 
-		const emailForm=(
-			<div>
+		const profileCSS={
+			width: "100%",
+			maxWidth: "300px",
+			padding: "15px 0",
+		}
+
+		const leftCSS={ textAlign: "left" }
+
+		const contactFormContainerCSS={
+			padding: "1em"
+		}
+
+		const contactIconContainerCSS={
+			padding: "15px"
+		}
+
+		// for adding server side in the future 
+		const contactForm=(
+			<div style={contactFormContainerCSS}>
 				<FormGroup controlId="formControlsName">
 			    	<FormControl 
 			    	type="text" 
@@ -33,11 +49,11 @@ export default class ContactCardContent extends Component {
 			    <FormGroup controlId="formControlsMessages">
 			    	<FormControl 
 			    	componentClass="textarea"
-					style={{margin: "5px",height: "20vh",display: "inline"}}
+					style={{margin: "5px",height: "20vh",display: "inline", maxWidth: "100%"}}
 			    	placeholder="Messages" />
 			    </FormGroup>
 
-			    <Button type="submit"  className={"buttonShadow button"}> Send </Button>
+			    <Button type="submit" onClick={this.handleSendClick} className={"buttonShadow button"}> Send </Button>
 		    </div>)		
 
 
@@ -45,15 +61,30 @@ export default class ContactCardContent extends Component {
 				<Row>
 					<Col md={10} mdOffset={1} xs={10} xsOffset={1} >
 						<div style={ContactCardContentContainerCSS}>
-							<h1 className={"primaryBlackFont"}>{contactJSON.title}</h1>
+							<h1 className={"primaryBlackFont pageTitle"} >{contactJSON.title}</h1>
+							<h3>{contactJSON.content}</h3>
 							<hr/>
-							<p>{contactJSON.content1}</p>
-							<hr/>
-							{emailForm}
-
-						    
-						
-
+							{
+								contactJSON.contacts.map((contact)=>
+									<Col style={contactIconContainerCSS} key={contact.name} md={4} mdOffset={0} xs={12}>
+										<div className={"contactLinkContainer"} >
+											<span className="fa-stack fa-5x">
+												<i className="fa fa-circle fa-stack-2x"></i>
+												<i className={contact.icon}/>
+											</span>
+											<h4> {contact.content}</h4>
+										</div>
+									</Col>
+								)
+							}
+							
+							<Col md={12} mdOffset={0} xs={12}>
+								<hr/>
+									<h3>{contactJSON.formContent}</h3>
+									{contactForm}	
+								<hr/>
+								<br/>
+							</Col>
 						</div>
 					</Col>
 				</Row>

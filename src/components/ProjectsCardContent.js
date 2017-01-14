@@ -29,7 +29,7 @@ export class ProjectsCardContent extends Component {
 			<div style={ProjectsCardContentCSS} onClick={this.openModal.bind(this)} className={'projectCard projectCardShadow'}>
 				<ProjectsCardModal ref="modal" project={this.props.project} />
 				<div className={'projectCardContent'} style={ProjectCardContentContainer}>
-					<h2>{this.props.project.name}</h2>
+					<h2 className={"projectCardTitle"}>{this.props.project.name}</h2>
 					<p>{this.props.project.contents.shortDescription}</p>
 					<ProjectsCardLabel types={this.props.project.types} />
 				</div>

@@ -1,11 +1,12 @@
 {
 	"profile": 
 	{
+		"title": "About",
 		"image": "imgs/about/profile.jpg",
 		"name": "Jheng Lin",
 		"address": "UK, London",
 		"content1": "Bachelor of Landscape Design, National Taiwan University",
-		"content2": "Studying BSC Computer Science in Goldsmiths, University of London"
+		"content2": "Studying BSc Computer Science in Goldsmiths, University of London"
 	},
 
 	"section1": 
@@ -55,6 +56,6 @@
 
 	"final": 
 	{
-		"content": "I'm now looking for a summber front-end web development internship in UK, welcome to send me message via the contact page. Thank you so much! "
+		"content": "I'm now looking for a summber front-end web development internship in UK, would love to help if there is anything I can do."
 	}
 }

@@ -1,7 +1,28 @@
 {
 	"title": "Contact",
-	"content1": "Welcome to send me email anytime, I'll reply during within 3 days, thank you.",
-	"email": "jlin015@gold.ac.uk",
-	"phone": "07784599601"
+	"content": "Welcome to contact me anytime, thank you !",
+	
+	"contacts": [
+		{
+			"name": "email",
+			"content": "jlin015@gold.ac.uk",
+			"link": "mailto:jlin015@gold.ac.uk",
+			"icon": "fa fa-envelope fa-stack-1x  fa-inverse  "
+		},
+		{
+			"name": "phone",
+			"content": "07784599601",
+			"link": "#",
+			"icon": "fa fa-phone fa-stack-1x  fa-inverse  "
+		},
+		{
+			"name": "github",
+			"content": "github.com/linuk",
+			"link": "https://github.com/linuk",
+			"icon": "fa fa-github-alt fa-stack-1x  fa-inverse  "
+		}
+	],
+
+	"formContent": "Or you can send me message via the form ;)"
 
 }

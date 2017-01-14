@@ -98,7 +98,7 @@ export class ProjectsCardsContainer extends Component {
 				<Row>
 					<Col md={8} mdOffset={2}>
 						<h1 className={"pageTitle"}>{this.state.projects.page.title}</h1>
-						<h5>{this.state.projects.page.content}</h5>
+						<h4 className={"pageDescription"}>{this.state.projects.page.content}</h4>
 						<hr/>
 					</Col>
 				</Row>

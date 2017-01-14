@@ -60,6 +60,10 @@
 =            ProjectCard            =
 ===================================*/
 
+.projectCardTitle{
+  color: #fff;
+}
+
 .projectCardContainer {
   background: #fafafa;
   border-radius: 5px;

@@ -12,6 +12,15 @@ html,body,#root{
 
 h1,h2,h3,h4,h5{
 	font-weight: 300;
+	color: #717171;
+}
+
+h1{
+	padding: 15px;
+}
+
+a,a:hover{
+	text-decoration: none;
 }
 
 .primaryWhiteFont{
@@ -19,7 +28,7 @@ h1,h2,h3,h4,h5{
 }
 
 .primaryBlackFont{
-	color: #717171;	
+	color: #717171;
 }
 
 .fullHeight{
@@ -28,6 +37,13 @@ h1,h2,h3,h4,h5{
 
 .pageTitle{
 	margin: 25px 0 25px 0;
+	color: #717171;
+	font-size: 3em;
+	text-align: center;
+}
+
+.pageDescription{
+	line-height: 25px;
 }
 
 /*==============================
@@ -279,3 +295,34 @@ button.close:hover{
 
 /*=====  End of Projects-Modal  ======*/
 
+
+
+/*===============================
+=            Contact            =
+===============================*/
+
+.contactLinkContainer{
+	color: #717171;
+	text-decoration: none;
+	padding: 10px; 
+}
+
+.contactLinkContainer:hover{
+	color: #555;
+	background:#eee;
+	text-decoration: none;
+	border-radius: 15px;
+}
+
+
+.contactLinkContainer,
+.contactLinkContainer:hover
+.contactLinkContainer i,
+.contactLinkContainer:hover i{
+	transition: all .5s;
+	-webkit-transition: all .5s;
+}
+
+
+
+/*=====  End of Contact  ======*/
