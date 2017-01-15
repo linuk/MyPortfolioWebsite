@@ -17,7 +17,6 @@ export default class AboutCardContent extends Component {
 		const about=this.state.about
 
 		const AboutCardContentContainerCSS={
-			// paddingTop: "50px",
 			paddingBottom: "50px",
 			textAlign: "center",
 		}
@@ -40,7 +39,7 @@ export default class AboutCardContent extends Component {
 		}
 
 		const LinkButtonCSS={
-			background: "#d040a0",
+			background: "#3040a0",
 			color: "#fff",
 		}
 
@@ -60,7 +59,7 @@ export default class AboutCardContent extends Component {
 							<br/>
 							<Row><Col md={4} mdOffset={4} xs={8} xsOffset={2}>
 								<div style={profileContainerCSS}>
-									<Image style={profileImageCSS} src={about.profile.image}  circle  />
+									<Image style={profileImageCSS} src={about.profile.image} alt="Jheng Lin profile" circle  />
 								</div>
 							</Col></Row>
 							
@@ -72,16 +71,16 @@ export default class AboutCardContent extends Component {
 							{gap}
 							
 							<h2 className={"primaryBlackFont"}>{about.section1.title}</h2>
-							<h5 style={pCSS}>{about.section1.content}</h5>
+							<br/>
 							<Row>
 							{
 								about.section1.list.map((advantage)=>
 									<Col key={advantage.title} md={4} style={{paddingBottom: "20px"}}> 
 										<div className={"aboutSkillsCard"}>
 											<div className={"cardContent"}>
-												<i className={advantage.iconClass} aria-hidden="true"></i>
+												<i className={advantage.iconClass} aria-label={advantage.title}></i>
 												<h3>{advantage.title}</h3>
-												<h5 style={pCSS}>{advantage.content}</h5>
+												<p style={pCSS}>{advantage.content}</p>
 											</div>
 										</div>
 									</Col>
@@ -110,8 +109,7 @@ export default class AboutCardContent extends Component {
 							<Link  to={"/contact"}>
 								<Button 
 			            		className={"button buttonShadow"} 
-			            		style={LinkButtonCSS}
-			            		href={"./contact"}>
+			            		style={LinkButtonCSS}>
 			            			Contact Me
 			        			</Button>
 		        			</Link>

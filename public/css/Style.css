@@ -28,7 +28,7 @@ a,a:hover{
 }
 
 .primaryBlackFont{
-	color: #717171;
+	color: #111;
 }
 
 .fullHeight{
@@ -49,6 +49,15 @@ a,a:hover{
 /*==============================
 =            Navbar            =
 ==============================*/
+
+.navbar-default .navbar-nav>li>a{
+	color: #666;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover{
+	color: #222;
+}
 
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus,
@@ -182,7 +191,7 @@ button.navbar-toggle{
 
 .btn-default{ 
 	background: #fff; /*for C++*/
-	color: #888;
+	color: #777;
 	border: none;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);

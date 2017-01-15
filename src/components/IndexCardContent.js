@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Grid, Row, Button} from "react-bootstrap";
+import React, { Component } from 'react'
+import { Grid, Row, Button} from "react-bootstrap"
 import { Link} from 'react-router'
 
 
@@ -12,7 +12,7 @@ export class IndexCardContent extends Component {
 			width: "100%",
 		}
 
-		const buttonLink = this.props.content.buttonLink;
+		const buttonLink = this.props.content.buttonLink
 
 
 		return (

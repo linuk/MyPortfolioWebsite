@@ -32,7 +32,6 @@ export class IndexCard extends Component {
 
 	handleMouseLeave(){
 		this.setState({
-			// contentDisplay: false,
 			width: "100%",
 			zIndex: 1,
 			iconDisplay: false,
@@ -83,7 +82,7 @@ export class IndexCard extends Component {
 			WebkitClipPath: this.props.content.polygonCSS,
 			transform: this.state.transform,
 			WebkitTransform: this.state.transform,
-		};
+		}
 
 		// icon align for each side
 		let leftAlign = this.state.float==="left" ? "45%": "55%" 

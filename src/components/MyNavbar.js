@@ -58,15 +58,17 @@ export default class MyNavbar extends Component {
       className={"card-2"} 
       fluid={true} 
       collapseOnSelect={true} 
-      fixedTop={true} >
+      fixedTop={true} 
+      aria-label="navigation bar">
         
         <Navbar.Header>
           <Navbar.Brand>
             <IndexLink style={BrandLogoContainerCSS} to="/">
-              <Image src="imgs/logo/JLLogo.svg" style={{maxHeight: "100%"}} responsive/>
+              <Image src="imgs/logo/JLLogo.svg" style={{maxHeight: "100%"}} alt={"JL logo"} responsive/>
             </IndexLink>
           </Navbar.Brand>
           <Navbar.Toggle>
+            <span className="sr-only">Toggle menu navigation</span>
             <span className="icon-bar"></span>
             <span className="icon-bar"></span>
             <span className="icon-bar"></span>
@@ -79,7 +81,14 @@ export default class MyNavbar extends Component {
             {
               menu.list.map((item)=>
               <LinkContainer key={item.title} to={item.link}>
-                <NavItem onSelect={this.scrollToTop(1000)} eventKey={item.key} href="#">{item.title}</NavItem>
+                <NavItem 
+                onSelect={this.scrollToTop(1000)} 
+                eventKey={item.key} 
+                href="#"
+                aria-label={item.title}
+                >
+                {item.title}
+                </NavItem>
               </LinkContainer>    
 
               )

@@ -11,14 +11,6 @@ export default class ContactCardContent extends Component {
 			marginBottom: "20px",
 		}
 
-		const profileCSS={
-			width: "100%",
-			maxWidth: "300px",
-			padding: "15px 0",
-		}
-
-		const leftCSS={ textAlign: "left" }
-
 		const contactFormContainerCSS={
 			padding: "1em"
 		}
@@ -35,6 +27,7 @@ export default class ContactCardContent extends Component {
 			    	type="text" 
 					placeholder="Name"
 					style={{margin: "5px"}}
+					aria-label="name"
 			    	onChange={this.onChange} />
 			    </FormGroup>
 
@@ -43,6 +36,7 @@ export default class ContactCardContent extends Component {
 			    	type="text" 
 					placeholder="E-Mail"
 					style={{margin: "5px"}}
+					aria-label="e-mail"
 			    	onChange={this.onChange} />
 			    </FormGroup>
 
@@ -50,6 +44,7 @@ export default class ContactCardContent extends Component {
 			    	<FormControl 
 			    	componentClass="textarea"
 					style={{margin: "5px",height: "20vh",display: "inline", maxWidth: "100%"}}
+					aria-label="messages"
 			    	placeholder="Messages" />
 			    </FormGroup>
 
