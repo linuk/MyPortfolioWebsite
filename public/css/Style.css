@@ -150,7 +150,7 @@ button.navbar-toggle{
 
 .label-default,  /*for C++*/
 .btn-default.selected
-{ background: #5397cc; color: #fff;}
+{ background: #2574dd; color: #fff;}
 
 .all,
 .all.btn-default.selected
@@ -158,11 +158,11 @@ button.navbar-toggle{
 
 .html,
 .html.btn-default.selected
-{ background: #e86534; color: #fff;}
+{ background: #d04714; color: #fff;}
 
 .css,
 .css.btn-default.selected
-{ background: #1790d1; color: #fff;}
+{ background: #147bb2; color: #fff;}
 
 .javascript,
 .javascript.btn-default.selected
@@ -170,23 +170,23 @@ button.navbar-toggle{
 
 .design,
 .design.btn-default.selected
-{ background: #ff9000; color: #fff;}
+{ background: #d424a8; color: #fff;}
 
 .reactjs,
 .reactjs.btn-default.selected
-{ background: #66daf8; color: #fff;}
+{ background: #66daf8; color: #565656;}
 
 .jquery,
 .jquery.btn-default.selected
-{ background: #1469e8; color: #fff;}
+{ background: #a341c1; color: #fff;}
 
 .meteorjs,
 .meteorjs.btn-default.selected
-{ background: #de5050; color: #fff;}
+{ background: #d83535; color: #fff;}
 
 .p5js,
 .p5js.btn-default.selected
-{ background: #ed225d; color: #fff;}
+{ background: #dd124b; color: #fff;}
 
 
 .btn-default{ 

@@ -25,7 +25,6 @@ export default class ContactCardContent extends Component {
 				<form method="POST" action="https://formspree.io/nyotony@gmail.com">
 					<input type="hidden" name="_next" value="/thankyou" />
 					<input type="hidden" name="_format" value="plain" />
-					<input type="text" name="_gotcha" style={{display:"none"}} />
 					<FormGroup controlId="formControlsName">
 				    	<FormControl 
 				    	type="text" 
