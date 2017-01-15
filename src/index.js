@@ -7,6 +7,7 @@ import { AboutContainer } from './components/AboutContainer'
 import { ProjectsContainer } from './components/ProjectsContainer'
 import { PhotographyContainer } from './components/PhotographyContainer'
 import { ContactContainer } from './components/ContactContainer'
+import { ThankCard } from './components/ThankCard'
 
 ReactDOM.render((
 	<Router history={ browserHistory }>
@@ -16,6 +17,7 @@ ReactDOM.render((
 			<Router path="/projects" component={ ProjectsContainer } />
 			<Router path="/photography" component={ PhotographyContainer } />
 			<Router path="/contact" component={ ContactContainer } />
+			<Router path="/thankyou" component={ ThankCard } />
 		</Router>
 	</Router>
 ), document.getElementById('root'))

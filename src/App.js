@@ -38,7 +38,6 @@ export default class App extends Component {
 			    <MyNavbar />
 			    <div style={AppContentCSS}>
 			    	{this.props.children}
-
 		    	</div>
 			</div>
 		)

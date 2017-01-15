@@ -19,38 +19,49 @@ export default class ContactCardContent extends Component {
 			padding: "15px"
 		}
 
-		// for adding server side in the future 
+		// for addi server side in the future 
 		const contactForm=(
 			<div style={contactFormContainerCSS}>
-				<FormGroup controlId="formControlsName">
-			    	<FormControl 
-			    	type="text" 
-					placeholder="Name"
-					style={{margin: "5px"}}
-					aria-label="name"
-			    	onChange={this.onChange} />
-			    </FormGroup>
+				<form method="POST" action="http://formspree.io/nyotony@gmail.com">
+					<input type="hidden" name="_next" value="/thankyou" />
+					<input type="hidden" name="_format" value="plain" />
+					<input type="text" name="_gotcha" style={{display:"none"}} />
+					<FormGroup controlId="formControlsName">
+				    	<FormControl 
+				    	type="text" 
+				    	name="Name"
+						placeholder="Name"
+						style={{margin: "5px"}}
+						aria-label="name"
+				    	onChange={this.onChange} />
+				    </FormGroup>
 
-			    <FormGroup controlId="formControlsEmail">
-			    	<FormControl 
-			    	type="text" 
-					placeholder="E-Mail"
-					style={{margin: "5px"}}
-					aria-label="e-mail"
-			    	onChange={this.onChange} />
-			    </FormGroup>
+				    <FormGroup controlId="formControlsEmail">
+				    	<FormControl 
+				    	type="text" 
+				    	name="E-mail"
+						placeholder="E-Mail"
+						style={{margin: "5px"}}
+						aria-label="e-mail"
+				    	onChange={this.onChange} />
+				    </FormGroup>
 
-			    <FormGroup controlId="formControlsMessages">
-			    	<FormControl 
-			    	componentClass="textarea"
-					style={{margin: "5px",height: "20vh",display: "inline", maxWidth: "100%"}}
-					aria-label="messages"
-			    	placeholder="Messages" />
-			    </FormGroup>
+				    <FormGroup controlId="formControlsMessages">
+				    	<FormControl 
+				    	name="Message"
+				    	componentClass="textarea"
+						style={{margin: "5px",height: "20vh",display: "inline", maxWidth: "100%"}}
+						aria-label="messages"
+				    	placeholder="Messages" />
+				    </FormGroup>
 
-			    <Button type="submit" onClick={this.handleSendClick} className={"buttonShadow button"}> Send </Button>
+				    <Button 
+				    className={"buttonShadow button"}
+				    type="submit"> 
+				    	Send 
+			    	</Button>
+		    	</form>
 		    </div>)		
-
 
 		return (
 				<Row>
@@ -73,7 +84,7 @@ export default class ContactCardContent extends Component {
 								)
 							}
 							
-							<Col md={12} mdOffset={0} xs={12}>
+							<Col md={10} mdOffset={1} xs={12}>
 								<hr/>
 									<h3>{contactJSON.formContent}</h3>
 									{contactForm}	

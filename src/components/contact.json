@@ -23,6 +23,10 @@
 		}
 	],
 
-	"formContent": "Or you can send me message via the form ;)"
+	"formContent": "Or you can send me message via the form ;)",
+
+	"thankYouIcon": "fa fa-envelope-o fa-5x iconBreathe",
+	"thankYou1": "Your mail is on its way!",
+	"thankYou2": "Thank you for your enquiry. I'll reply you soon within 3 days ;)"
 
 }

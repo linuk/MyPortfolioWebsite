@@ -6,7 +6,7 @@ import { ProjectsCardLabel } from './ProjectsCardLabel'
 
 export class ProjectsCardContent extends Component {	
 	
-	openModal(){ this.refs.modal.open(); }
+	openModal(){ this.refs.modal.open() }
 
 	render() {
 		
@@ -15,7 +15,7 @@ export class ProjectsCardContent extends Component {
 			color: "#222",
 		}
 		
-		const backgroundURL = this.props.project.thumb;
+		const backgroundURL = this.props.project.thumb
 
 		const ProjectCardContentContainer={
 			background: 'linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),url(' + backgroundURL + ') center center no-repeat',
