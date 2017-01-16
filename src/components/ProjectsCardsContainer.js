@@ -3,7 +3,6 @@ import { Row, Col, Button} from "react-bootstrap"
 import { ProjectsCards } from './ProjectsCards'
 import projectsJSON from './projects.json'
 
-
 export class ProjectsCardsContainer extends Component {
 
 	constructor(props){
@@ -25,25 +24,25 @@ export class ProjectsCardsContainer extends Component {
 		this.state.projects.projects.forEach((project)=>{
 			project.types.forEach((label)=>{
 				if(!labels.includes(label)){
-					labels.push(label);
+					labels.push(label)
 				}
-			});
-		});
+			})
+		})
 		this.setState({
 			labels: labels.sort(),
-		});
+		})
 	}
 
 	handleClickLabel(event){ 
-		this.setFilter(event.target.innerHTML);
-		this.toggleClass(event.target);
+		this.setFilter(event.target.innerHTML)
+		this.toggleClass(event.target)
 	}
 
 
 	toggleClass(label){
 		// if click the selected label button
 		if(label.classList.contains("selected")){
-			label.classList.remove("selected");
+			label.classList.remove("selected")
 			this.setState({
 				filter: "all",
 			})
@@ -83,7 +82,7 @@ export class ProjectsCardsContainer extends Component {
 	setFilter(label){
 		this.setState({
 			filter: label,
-		});
+		})
 	}
 
 	render() {
@@ -92,6 +91,18 @@ export class ProjectsCardsContainer extends Component {
 			display: "inline-block",
 			margin: "5px",
 		}
+
+		const labels = this.state.labels.map((label)=>
+						// generate label buttons
+						<div style={LabelContainerCSS} key={label}> 
+							<Button 
+							bsSize="xsmall" 
+							className={label.toLowerCase()} 
+							onClick={this.handleClickLabel.bind(this)}>
+								{label}
+							</Button> 
+						</div>
+					)
 
 		return (
 			<div className={"fullHeight projectCardContainer"}>
@@ -103,19 +114,7 @@ export class ProjectsCardsContainer extends Component {
 					</Col>
 				</Row>
 
-				{
-					this.state.labels.map((label)=>
-						// generate label buttons
-						<div style={LabelContainerCSS} key={label}> 
-							<Button 
-							bsSize="xsmall" 
-							className={label.toLowerCase()} 
-							onClick={this.handleClickLabel.bind(this)}>
-								{label}
-							</Button> 
-						</div>
-					)
-				}
+				{labels} 
 
 				<hr/>
 	

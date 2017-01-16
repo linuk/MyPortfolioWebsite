@@ -4,7 +4,7 @@
 		"left": 
 		{
 			"title": "Coder",
-			"content": "Keen on front-end development, now studying in computer science to explore more relative knowledges ",
+			"content": "Keen on front-end development, now studying Computer Science to explore and expand relevant knowledge.",
 			"icon": "fa fa-code fa-5x",
 			"link": "projects",
 			"backgroundImage": "imgs/index/indexCodeBG.jpg"
@@ -14,7 +14,7 @@
 		"right": 
 		{
 			"title": "Photographer",
-			"content": "Worked as a event Photographer for hundreds events in Taiwan, good at capturing every precious moment.",
+			"content": "Worked as an event Photographer for hundreds of events in Taiwan, good at capturing every precious moment.",
 			"icon": "fa fa-camera-retro fa-5x",
 			"link": "photography",
 			"backgroundImage": "imgs/index/indexPhotographyBG.jpg"

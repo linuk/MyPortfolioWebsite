@@ -2,7 +2,7 @@
 	"page": 
 	{
 		"title": "Projects",
-		"content": "Learning outcomings based on school projects, exercises in books or projects practice."
+		"content": "University projects, exercises from books and independent projects."
 	},
 
 	"projects":
@@ -16,7 +16,7 @@
 				{
 					"imgs": ["imgs/projects/portfolio/portfolio.jpg"],
 					"shortDescription": "Full responsive portfolio website based on React JS",
-					"longDescription": "This is my first learning outcoming of React JS, whole website contents are based on different JSON files. The visual design style is modified from Google material design, and the components are modified based on React-Boostrap.",
+					"longDescription": "This is my first React JS project, all the contents of this website are based on different JSON files. The visual design style is modified from Google material design, and the components are modified based on React-Boostrap.",
 					"githubURL": "http://github.com/linuk/MyPortfolioWebsite",
 					"liveDemo": "http://jlportfolio.herokuapp.com/"
 				}
@@ -29,8 +29,8 @@
 			"contents": 
 				{
 					"imgs": ["imgs/projects/simpleTodoApp/simpleTodoApp.jpg"],
-					"shortDescription": "Simplest todo app, implentating props and states of React JS",
-					"longDescription": "A simplest todo app, user can add new task and hide completed ones. Not using server side so it will reset after reload the page.",
+					"shortDescription": "Simple To-Do App. Implentating props and states of React JS",
+					"longDescription": "A simple To-Do App. User can add new tasks and hide completed ones. Not using server side so it will reset after reloading the page.",
 					"githubURL": "http://github.com/linuk/SImple-Todo-App",
 					"liveDemo": "http://simple-to-do-app.herokuapp.com"
 				}
@@ -43,8 +43,8 @@
 			"contents": 
 				{
 					"imgs": ["imgs/projects/slides/slides.jpg"],
-					"shortDescription": "A modern designed slides gallery.",
-					"longDescription": "A  modern designed slides gallery based on jQuery, provided information icon to konw more about stories behind each picture. Full responsive.",
+					"shortDescription": "A modern design slide gallery.",
+					"longDescription": "A modern design slide gallery based on jQuery, included information icon to know more about stories behind each picture. Fully responsive.",
 					"githubURL": "http://github.com/linuk/SimpleGallery",
 					"liveDemo": "http://doc.gold.ac.uk/~jlin015/coursera/w4/"
 				}
@@ -58,7 +58,7 @@
 				{
 					"imgs": ["imgs/projects/singlePageWebsite/singlePageWebsite.jpg"],
 					"shortDescription": "Prototype of my photography portfolio. Full responsive front-end design practice.",
-					"longDescription": "It's a prototype of my own photography portfolio website. Initially laid out in Photoshop, put into practice in coding from scratch, structure based on Bootstrap. Full responsive to different platforms.",
+					"longDescription": "A prototype of my own photography portfolio website. Initially laid out in Photoshop, put into practice in coding from scratch, structure based on Bootstrap. Fully responsive to different platforms.",
 					"githubURL": "http://www.github.com/linuk",
 					"liveDemo": "http://doc.gold.ac.uk/~jlin015/practice/nyoxphotography/"
 				}
@@ -72,7 +72,7 @@
 				{
 					"imgs": ["imgs/projects/zooAlbum/zooAlbum.jpg"],
 					"shortDescription": "Simple album based on Handlebar JS ",
-					"longDescription": "The album is based on JSON file to read all the pictures and categories. With filter features, user can change the category of the animals. Full responsive to different platforms and with clean design style. This is an course exercise based on Responsive Web Design course on coursera maded by Goldsmiths, University of London.",
+					"longDescription": "The album is based on JSON files to read all the pictures and categories. With filter features, user can change the category of the animals. Fully responsive to different platforms and with clean design style. This is an exercise based on the Responsive Web Design course on Coursera by Goldsmiths, University of London.",
 					"githubURL": "http://github.com/linuk/ZooAlbum",
 					"liveDemo": "http://doc.gold.ac.uk/~jlin015/coursera/w8/album/"
 				}
@@ -86,7 +86,7 @@
 				{
 					"imgs": ["imgs/projects/websiteAggregater/websiteAggregater.jpg"],
 					"shortDescription": "A web app of aggregating website.",
-					"longDescription": "A website aggreater app based on Meteor JS. The app allows user to create account, login and vote or recommend new website to the list. This is an course exercise based on Introduction to Meteor.js Development course on coursera maded by Goldsmiths, University of London.",
+					"longDescription": "A website aggreater app based on Meteor JS. The app allows users to create account, login and vote or recommend new websites to the list. This is an exercise based on Introduction to Meteor.js Development course on Coursera by Goldsmiths, University of London.",
 					"githubURL": "https://github.com/linuk/ProjectWebsiteAggregater"
 				}
 		},
@@ -99,7 +99,7 @@
 				{
 					"imgs": ["imgs/projects/marioGame/marioGame.jpg"],
 					"shortDescription": "A classic action game made in P5 JS",
-					"longDescription": "Based on p5 JS and p5 play js, the game is control by arrow-keys. The game is scrolling automatically and with classic mario musics and sound effects, player can experience a mario game different from the original one.",
+					"longDescription": "Based on p5 JS and p5 play js, the game is controlled by arrow-keys. The game scrolls automatically and includes classic mario music and sound effects, player can experience a different mario game to the original one.",
 					"githubURL": "https://github.com/linuk/P5MarioGame",
 					"liveDemo": "http://doc.gold.ac.uk/~jlin015/intro/term/play.Mario1.4"
 				}
@@ -112,8 +112,8 @@
 			"contents": 
 				{
 					"imgs": ["imgs/projects/colourPicker/colourPicker.jpg"],
-					"shortDescription": "Background changing practiceon jQuery",
-					"longDescription": "Minimal design is my favorite. This is a simple background chaning web page for practicing jQuery to modify the css style, and also practicing layout in minimal design style.",
+					"shortDescription": "Background changing practice on jQuery",
+					"longDescription": "Minimal design is my favorite. This is a simple background changing web page for practicing jQuery by modifying the css and layout in a minimalistic design style.",
 					"githubURL": "https://github.com/linuk/ColourPicker",
 					"liveDemo": "http://doc.gold.ac.uk/~jlin015/webdev/ex3/"
 				}
@@ -126,8 +126,8 @@
 			"contents": 
 				{
 					"imgs": ["imgs/projects/TLAPExCh2-2-2/TLAPExCh2-2-2.jpg"],
-					"shortDescription": "A solution for the exercise.",
-					"longDescription": "A solution for exercise, to help someone who need it. The main question is to generate the image in the picture with limited cout command. It's a really good practice for dividing problems and solve from smalle parts. Really recommending this book.",
+					"shortDescription": "My solution to the exercise.",
+					"longDescription": "My solution to the exercise. The main question is to generate the image in the picture with a limited count command. A really good practice for dividing problems and solving from smaller parts. I really recommend book.",
 					"githubURL": "https://github.com/linuk/Think-like-a-programmer-Chp2-2-Exercise-2-2"
 				}
 		},
@@ -141,8 +141,8 @@
 					"imgs": [
 						"imgs/projects/TLAPExCh2-2-3/TLAPExCh2-2-3.jpg"
 						],
-					"shortDescription": "A solution for the exercise.",
-					"longDescription": "A solution for exercise, to help someone who need it. The main question is to generate the image in the picture with limited cout command. It's a really good practice for dividing problems and solve from smalle parts. Really recommending this book.",
+					"shortDescription": "My solution to the exercise.",
+					"longDescription": "My solution to the exercise. The main question is to generate the image in the picture with a limited count command. A really good practice for dividing problems and solving from smaller parts. I really recommend book..",
 					"githubURL": "https://github.com/linuk/Think-like-a-programmer-Chp2-2-Exercise-2-3"
 				}
 		}

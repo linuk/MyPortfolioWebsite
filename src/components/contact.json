@@ -1,6 +1,6 @@
 {
 	"title": "Contact",
-	"content": "Welcome to contact me anytime, thank you !",
+	"content": "Feel free to contact me anytime, thank you !",
 	
 	"contacts": [
 		{
@@ -23,7 +23,7 @@
 		}
 	],
 
-	"formContent": "Or you can send me message via the form ;)",
+	"formContent": "Or you can send me a message via the form ;)",
 
 	"thankYouIcon": "fa fa-envelope-o fa-5x iconBreathe",
 	"thankYou1": "Your mail is on its way!",

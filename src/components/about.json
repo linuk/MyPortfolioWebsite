@@ -22,7 +22,7 @@
 			},
 			{
 				"title":"Aesthetic",
-				"content": "Have a really high standard of aesthetics, and also good taste in visual design.",
+				"content": "Acute awareness of aesthetics, and also good taste in visual design.",
 				"iconClass": "fa fa-star-o fa-5x primaryBlackFont"
 			},
 			{
@@ -36,7 +36,7 @@
 	"section2": 
 	{
 		"title": "Skills",
-		"content": "Including visual design and programming languages, these tools are my favorite which help me create projects.",
+		"content": "Below includes visual design and programming languages, my favourite tools which help me create projects.",
 		"list": 
 		[
 			"devicon-html5-plain-wordmark",
@@ -56,6 +56,6 @@
 
 	"final": 
 	{
-		"content": "I'm now looking for a summber front-end web development internship in UK, would love to help if there is anything I can do."
+		"content": "I am now looking for a summer front-end web development internship in the UK, and would love to help you out with anything."
 	}
 }
