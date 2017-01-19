@@ -96,6 +96,12 @@
 
     padding: 0;
     margin: 0;
+
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
   }
 
   /* according using column system of bootstrap, 33.33% for bigger screen*/
@@ -110,6 +116,12 @@
     padding-left: 15px;
     padding-right: 15px;
     margin: 0;
+    
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
   }
 
   .ProjectCard-leave {
@@ -118,6 +130,12 @@
     -webkit-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out; 
+
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
   }
 
   .ProjectCard-leave.ProjectCard-leave-active{
@@ -130,6 +148,12 @@
     /* for existing div to align correctly   */
     padding: 0;
     margin: 0;
+
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
   }
 }
 
@@ -144,6 +168,12 @@
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out; 
     padding: 0 15px 0 15px;
+
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
   }
 
   .ProjectCard-enter.ProjectCard-enter-active{
@@ -153,6 +183,12 @@
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;   
     padding: 0 15px 0 15px;
+
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
   }
   
   .ProjectCard-leave {
@@ -161,6 +197,12 @@
     -webkit-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out; 
+  
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
   }
 
   .ProjectCard-leave.ProjectCard-leave-active{
@@ -169,6 +211,12 @@
     -webkit-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out; 
+
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
   }
 
 }

@@ -39,21 +39,21 @@ export class ProjectsCardsContainer extends Component {
 	}
 
 
-	// toggleClass(label){
-	// 	// if click the selected label button
-	// 	if(label.classList.contains("selected")){
-	// 		label.classList.remove("selected")
-	// 		this.setState({
-	// 			filter: "all",
-	// 		})
-	// 	}else{  // if click different label button
-	// 		if(document.getElementsByClassName("selected").length>0) {
-	// 			// remove selected label button selected class
-	// 			document.getElementsByClassName("selected")[0].classList.remove("selected");
-	// 		}
-	// 		label.classList.toggle("selected");
-	// 	}
-	// }
+	toggleClass(label){
+		// if click the selected label button
+		if(label.classList.contains("selected")){
+			label.classList.remove("selected")
+			this.setState({
+				filter: "all",
+			})
+		}else{  // if click different label button
+			if(document.getElementsByClassName("selected").length>0) {
+				// remove selected label button selected class
+				document.getElementsByClassName("selected")[0].classList.remove("selected");
+			}
+			label.classList.toggle("selected");
+		}
+	}
 
 
 	// TODO: for setting mutiple label filters
