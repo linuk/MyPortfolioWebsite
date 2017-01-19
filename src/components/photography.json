@@ -7,7 +7,7 @@
 	[
 		  {
 		    "src": "imgs/photos/thumbs/3_tn.jpg",
-		    "alt": "photography photo1",
+		    "alt": "Paper / Photo by Jheng Lin",
 		    "width": 1,
 		    "height": 1,
 		    "aspectRatio": 3,
@@ -17,7 +17,7 @@
 		  },
 		  {
 		    "src": "imgs/photos/thumbs/2_tn.jpg",
-		    "alt": "photography photo2",
+		    "alt": "Queen / Photo by Jheng Lin",
 		    "width": 1,
 		    "height": 1,
 		    "aspectRatio": 1,
@@ -27,7 +27,7 @@
 		  },
 		  {
 		    "src": "imgs/photos/thumbs/1_tn.jpg",
-		    "alt": "photography photo3",
+		    "alt": "Candles / Photo by Jheng Lin",
 		    "width": 1,
 		    "height": 1,
 		    "aspectRatio": 1,
@@ -37,7 +37,7 @@
 		  },
 		  {
 		    "src": "imgs/photos/thumbs/4_tn.jpg",
-		    "alt": "photography photo4",
+		    "alt": "Animals / Photo by Jheng Lin",
 		    "width": 1,
 		    "height": 1,
 		    "aspectRatio": 4,
@@ -47,7 +47,7 @@
 		  },
 		  {
 		    "src": "imgs/photos/thumbs/5_tn.jpg",
-		    "alt": "photography photo5",
+		    "alt": "Gold / Photo by Jheng Lin",
 		    "width": 1,
 		    "height": 1,
 		    "aspectRatio": 1.5,
@@ -57,17 +57,17 @@
 		  },
 		  {
 		    "src": "imgs/photos/thumbs/6_tn.jpg",
-		    "alt": "photography photo6",
+		    "alt": "Alcohol / Photo by Jheng Lin",
 		    "width": 1,
 		    "height": 1,
 		    "aspectRatio": 2,
 		    "lightboxImage":{
-		    	"src": "imgs/photos/6.jp"
+		    	"src": "imgs/photos/6.jpg"
 		    }
 		  },
 		  {
 		    "src": "imgs/photos/thumbs/7_tn.jpg",
-		    "alt": "photography photo7",
+		    "alt": "Prince / Photo by Jheng Lin",
 		    "width": 1,
 		    "height": 1,
 		    "aspectRatio": 1,
@@ -77,7 +77,7 @@
 		  },
 		  {
 		    "src": "imgs/photos/thumbs/8_tn.jpg",
-		    "alt": "photography photo8",
+		    "alt": "Band / Photo by Jheng Lin",
 		    "width": 1,
 		    "height": 1,
 		    "aspectRatio": 3,
@@ -87,7 +87,7 @@
 		  },
 		  {
 		    "src": "imgs/photos/thumbs/9_tn.jpg",
-		    "alt": "photography photo9",
+		    "alt": "Look / Photo by Jheng Lin",
 		    "width": 1,
 		    "height": 1,
 		    "aspectRatio": 1.5,
@@ -97,7 +97,7 @@
 		  },
 		  {
 		    "src": "imgs/photos/thumbs/10_tn.jpg",
-		    "alt": "photography photo10",
+		    "alt": "Sunshine / Photo by Jheng Lin0",
 		    "width": 1,
 		    "height": 1,
 		    "aspectRatio": 1,
@@ -107,7 +107,7 @@
 		  },
 		  {
 		    "src": "imgs/photos/thumbs/11_tn.jpg",
-		    "alt": "photography photo11",
+		    "alt": "Cafe / Photo by Jheng Lin1",
 		    "width": 1,
 		    "height": 1,
 		    "aspectRatio": 3,
@@ -117,7 +117,7 @@
 		  },
 		  {
 		    "src": "imgs/photos/thumbs/12_tn.jpg",
-		    "alt": "photography photo12",
+		    "alt": "Swarovski / Photo by Jheng Lin2",
 		    "width": 1,
 		    "height": 1,
 		    "aspectRatio": 1,
@@ -127,7 +127,7 @@
 		  },
 		  {
 		    "src": "imgs/photos/thumbs/13_tn.jpg",
-		    "alt": "photography photo13",
+		    "alt": "Carnival / Photo by Jheng Lin3",
 		    "width": 1,
 		    "height": 1,
 		    "aspectRatio": 4,

@@ -44,7 +44,7 @@ export default class AboutCardContent extends Component {
 		}
 
 		const SkillsIconCSS={
-			color: "#aaa",
+			color: "#999",
 			fontSize: "6em",
 		}
 
@@ -78,7 +78,7 @@ export default class AboutCardContent extends Component {
 									<Col key={advantage.title} md={4} style={{paddingBottom: "20px"}}> 
 										<div className={"aboutSkillsCard"}>
 											<div className={"cardContent"}>
-												<i className={advantage.iconClass} aria-label={advantage.title}></i>
+												<i style={SkillsIconCSS} className={advantage.iconClass} aria-label={advantage.title}></i>
 												<h3>{advantage.title}</h3>
 												<p style={pCSS}>{advantage.content}</p>
 											</div>

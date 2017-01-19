@@ -4,13 +4,6 @@ import { IndexLink } from 'react-router'
 import { LinkContainer } from 'react-router-bootstrap'
 import menuJSON from "./menu.json"
 
-let NavbarCSS={
-  marginBottom: "0",
-  // boxShadow: "0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)",
-  background: "#fefefe",
-  minHeight: "50px",
-}
-
 
 export default class MyNavbar extends Component {
 
@@ -23,7 +16,14 @@ export default class MyNavbar extends Component {
   }
 
 
-  // scroll function reference: http://stackoverflow.com/questions/21474678/scrolltop-animation-without-jquery
+/***********************************************************************
+* Title: <scrollTop animation without jquery/source code>
+*    Author: Robbendebiene
+*    Date: 3/7/2016
+*    Code version: #
+* Availability: http://stackoverflow.com/questions/21474678/
+* ***********************************************************************/
+
   // scrollDuration in miliseconds
   scrollToTop(scrollDuration){
     const scrollHeight = window.scrollY,
@@ -51,6 +51,12 @@ export default class MyNavbar extends Component {
     }
 
     const menu = this.state.menu
+
+    const NavbarCSS={
+      marginBottom: "0",
+      background: "#fefefe",
+      minHeight: "50px",
+    }
 
     return (
       <Navbar 
