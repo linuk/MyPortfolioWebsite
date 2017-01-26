@@ -100,7 +100,7 @@
 					"imgs": ["imgs/projects/marioGame/marioGame.jpg"],
 					"shortDescription": "A classic action game made in P5 JS",
 					"longDescription": "Based on p5 JS and p5 play js, the game is controlled by arrow-keys. The game scrolls automatically and includes classic mario music and sound effects, player can experience a different mario game to the original one.",
-					"githubURL": "https://github.com/linuk/P5MarioGame",
+					"githubURL": "https://github.com/linuk/Mario.Run",
 					"liveDemo": "http://doc.gold.ac.uk/~jlin015/projects/mario.run/"
 				}
 		},
