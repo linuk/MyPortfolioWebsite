@@ -8,7 +8,7 @@ let projects =[]
 export class ProjectsCards extends Component {
 
 	constructor(props){
-		super(props);
+		super(props)
 		this.state={
 			projects: this.props.projects,
 			filter: this.props.filter,
