@@ -46,7 +46,7 @@
 					"shortDescription": "A modern design slide gallery.",
 					"longDescription": "A modern design slide gallery based on jQuery, included information icon to know more about stories behind each picture. Fully responsive.",
 					"githubURL": "http://github.com/linuk/SimpleGallery",
-					"liveDemo": "http://doc.gold.ac.uk/~jlin015/coursera/w4/"
+					"liveDemo": "https://linuk.github.io/SimpleGallery/"
 				}
 		},
 		{
@@ -74,7 +74,7 @@
 					"shortDescription": "Simple album based on Handlebar JS ",
 					"longDescription": "The album is based on JSON files to read all the pictures and categories. With filter features, user can change the category of the animals. Fully responsive to different platforms and with clean design style. This is an exercise based on the Responsive Web Design course on Coursera by Goldsmiths, University of London.",
 					"githubURL": "http://github.com/linuk/ZooAlbum",
-					"liveDemo": "http://doc.gold.ac.uk/~jlin015/coursera/w8/album/"
+					"liveDemo": "https://linuk.github.io/ZooAlbum/"
 				}
 		},
 		{
@@ -101,7 +101,7 @@
 					"shortDescription": "A classic action game made in P5 JS",
 					"longDescription": "Based on p5 JS and p5 play js, the game is controlled by arrow-keys. The game scrolls automatically and includes classic mario music and sound effects, player can experience a different mario game to the original one.",
 					"githubURL": "https://github.com/linuk/Mario.Run",
-					"liveDemo": "http://doc.gold.ac.uk/~jlin015/projects/mario.run/"
+					"liveDemo": "https://linuk.github.io/Mario.Run/index.html"
 				}
 		},
 		{
@@ -115,7 +115,7 @@
 					"shortDescription": "Background changing practice on jQuery",
 					"longDescription": "Minimal design is my favorite. This is a simple background changing web page for practicing jQuery by modifying the css and layout in a minimalistic design style.",
 					"githubURL": "https://github.com/linuk/ColourPicker",
-					"liveDemo": "http://doc.gold.ac.uk/~jlin015/webdev/ex3/"
+					"liveDemo": "https://linuk.github.io/ColourPicker/"
 				}
 		},
 		{
