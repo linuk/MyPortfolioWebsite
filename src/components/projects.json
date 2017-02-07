@@ -22,6 +22,20 @@
 				}
 		},
 		{
+			"key": "P00",
+			"name": "Elegance",
+			"types": ["HTML", "CSS", "Design", "Javascript", "jQuery"],
+			"thumb": "imgs/projects/thumbs/singlePage_Elegance.jpg",
+			"contents": 
+				{
+					"imgs": ["imgs/projects/singlePage_Elegance/singlePage_Elegance.jpg"],
+					"shortDescription": "Single page Website Design with elegant black scheme.",
+					"longDescription": "Front-end website design as a modern style landing page template. Powered by Bulma and Animate.CSS.",
+					"githubURL": "http://github.com/linuk/Elegance",
+					"liveDemo": "https://linuk.github.io/Elegance/"
+				}
+		},
+		{
 			"key": "P01",
 			"name": "Todo App",
 			"types": ["HTML", "CSS", "reactJS", "Design", "Javascript"],
@@ -51,13 +65,13 @@
 		},
 		{
 			"key": "P2",
-			"name": "Single Page Website Design",
+			"name": "Nyo Photography",
 			"types": ["HTML", "CSS", "Javascript", "jQuery"],
 			"thumb": "imgs/projects/thumbs/singlePageWebsite_tn.jpg",
 			"contents": 
 				{
 					"imgs": ["imgs/projects/singlePageWebsite/singlePageWebsite.jpg"],
-					"shortDescription": "Prototype of my photography portfolio. Full responsive front-end design practice.",
+					"shortDescription": "Prototype of my photography portfolio. Full responsive single webite.",
 					"longDescription": "A prototype of my own photography portfolio website. Initially laid out in Photoshop, put into practice in coding from scratch, structure based on Bootstrap. Fully responsive to different platforms.",
 					"githubURL": "http://www.github.com/linuk",
 					"liveDemo": "http://doc.gold.ac.uk/~jlin015/practice/nyoxphotography/"
