@@ -92,6 +92,19 @@
 				}
 		},
 		{
+			"key": "P31",
+			"name": "Notes",
+			"types": [ "Javascript", "Python"],
+			"thumb": "imgs/projects/thumbs/gitbook_logo.png",
+			"contents": 
+				{
+					"imgs": ["imgs/projects/notes/gitbook.png"],
+					"shortDescription": "Notes of what I learned in courses or books",
+					"longDescription": "I used evernote to take notes, until I found gitbook is so much better to take notes of codes and share with others.",
+					"githubURL": "https://www.gitbook.com/@linuk"
+				}
+		},
+		{
 			"key": "P4",
 			"name": "Website Aggregater",
 			"types": [ "CSS", "Javascript", "MeteorJS" ],
