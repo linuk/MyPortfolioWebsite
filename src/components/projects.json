@@ -29,7 +29,7 @@
 			"contents": 
 				{
 					"imgs": ["imgs/projects/singlePage_Elegance/singlePage_Elegance.jpg"],
-					"shortDescription": "Single page Website Design with elegant black scheme.",
+					"shortDescription": "Single page website design with elegant black scheme.",
 					"longDescription": "Front-end website design as a modern style landing page template. Powered by Bulma and Animate.CSS.",
 					"githubURL": "http://github.com/linuk/Elegance",
 					"liveDemo": "https://linuk.github.io/Elegance/"
@@ -61,6 +61,19 @@
 					"longDescription": "A modern design slide gallery based on jQuery, included information icon to know more about stories behind each picture. Fully responsive.",
 					"githubURL": "http://github.com/linuk/SimpleGallery",
 					"liveDemo": "https://linuk.github.io/SimpleGallery/"
+				}
+		},
+		{
+			"key": "P11",
+			"name": "Message Board",
+			"types": ["HTML", "CSS", "PHP", "MySQL"],
+			"thumb": "imgs/projects/thumbs/message_board.jpg",
+			"contents": 
+				{
+					"imgs": ["imgs/projects/message_board/message_board.jpg"],
+					"shortDescription": "Based on PHP and MySQL.",
+					"longDescription": "A simple message board based on PHP and MySQL, users can leave any message on this simple full resopnsive webpage.",
+					"liveDemo": "http://igor.gold.ac.uk/~jlin015/projects/board/index.php"
 				}
 		},
 		{
@@ -105,19 +118,6 @@
 				}
 		},
 		{
-			"key": "P4",
-			"name": "Website Aggregater",
-			"types": [ "CSS", "Javascript", "MeteorJS" ],
-			"thumb": "imgs/projects/thumbs/websiteAggregater_tn.jpg",
-			"contents": 
-				{
-					"imgs": ["imgs/projects/websiteAggregater/websiteAggregater.jpg"],
-					"shortDescription": "A web app of aggregating website.",
-					"longDescription": "A website aggreater app based on Meteor JS. The app allows users to create account, login and vote or recommend new websites to the list. This is an exercise based on Introduction to Meteor.js Development course on Coursera by Goldsmiths, University of London.",
-					"githubURL": "https://github.com/linuk/ProjectWebsiteAggregater"
-				}
-		},
-		{
 			"key": "P5",
 			"name": "Mario Game",
 			"types": ["Javascript", "P5JS"],
@@ -129,6 +129,19 @@
 					"longDescription": "Based on p5 JS and p5 play js, the game is controlled by arrow-keys. The game scrolls automatically and includes classic mario music and sound effects, player can experience a different mario game to the original one.",
 					"githubURL": "https://github.com/linuk/Mario.Run",
 					"liveDemo": "https://linuk.github.io/Mario.Run/index.html"
+				}
+		},
+		{
+			"key": "P4",
+			"name": "Website Aggregater",
+			"types": [ "CSS", "Javascript", "MeteorJS" ],
+			"thumb": "imgs/projects/thumbs/websiteAggregater_tn.jpg",
+			"contents": 
+				{
+					"imgs": ["imgs/projects/websiteAggregater/websiteAggregater.jpg"],
+					"shortDescription": "A web app of aggregating website.",
+					"longDescription": "A website aggreater app based on Meteor JS. The app allows users to create account, login and vote or recommend new websites to the list. This is an exercise based on Introduction to Meteor.js Development course on Coursera by Goldsmiths, University of London.",
+					"githubURL": "https://github.com/linuk/ProjectWebsiteAggregater"
 				}
 		},
 		{

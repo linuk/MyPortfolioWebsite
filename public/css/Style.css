@@ -188,6 +188,14 @@ button.navbar-toggle{
 .p5js.btn-default.selected
 { background: #dd124b; color: #fff;}
 
+.php,
+.php.btn-default.selected
+{ background: #ddaa4b; color: #fff;}
+
+.MySQL,
+.MySQL.btn-default.selected
+{ background: #4d001b; color: #fff;}
+
 
 .btn-default{ 
 	background: #fff; /*for C++*/

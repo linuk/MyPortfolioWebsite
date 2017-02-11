@@ -59,6 +59,16 @@ const ProjectsCardModal  = React.createClass({
     			Demo
 			</Button> : null
 
+		// generate github Button if it has live demo link in JSON file
+		let githubButton = this.props.project.contents.githubURL ? 
+    		<Button 
+    		className={"button buttonShadow"} 
+    		onClick={this.close} 
+    		style={GithubButtonCSS}
+    		href={this.props.project.contents.githubURL}
+    		target="_blank">
+    			Github
+			</Button>: null
 
 		return (
 			<div>
@@ -88,19 +98,12 @@ const ProjectsCardModal  = React.createClass({
 						<div style={ModalContentCSS}>
 		        	    	<Row>
 		        	    	<Col md={10} mdOffset={1}>
-		        	    	<h3 style={ModalTitleCSS}>{this.props.project.name}</h3>
-				            <p style={pCSS}>{this.props.project.contents.longDescription}</p>
-							
-							<hr/>
-		            		<Button 
-		            		className={"button buttonShadow"} 
-		            		onClick={this.close} 
-		            		style={GithubButtonCSS}
-		            		href={this.props.project.contents.githubURL}
-		            		target="_blank">
-		            			Github
-		        			</Button>
-		        				{demoButton}
+			        	    	<h3 style={ModalTitleCSS}>{this.props.project.name}</h3>
+					            <p style={pCSS}>{this.props.project.contents.longDescription}</p>
+								
+								<hr/>
+		            			{ githubButton }
+	        					{ demoButton }
 		        	    	</Col>
 		        	    	</Row>
 
