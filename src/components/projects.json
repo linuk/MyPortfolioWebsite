@@ -66,13 +66,13 @@
 		{
 			"key": "P11",
 			"name": "Message Board",
-			"types": ["HTML", "CSS", "PHP", "MySQL"],
+			"types": ["HTML", "CSS", "PHP", "MySQL, AJAX"],
 			"thumb": "imgs/projects/thumbs/message_board.jpg",
 			"contents": 
 				{
 					"imgs": ["imgs/projects/message_board/message_board.jpg"],
-					"shortDescription": "Based on PHP and MySQL.",
-					"longDescription": "A simple message board based on PHP and MySQL, users can leave any message on this simple full resopnsive webpage.",
+					"shortDescription": "Based on PHP, MySQL and AJAX.",
+					"longDescription": "A simple message board based on PHP, MySQL and AJAX, users can leave any message on this simple full resopnsive webpage.",
 					"liveDemo": "http://igor.gold.ac.uk/~jlin015/projects/board/index.php"
 				}
 		},
