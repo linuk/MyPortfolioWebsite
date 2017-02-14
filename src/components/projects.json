@@ -66,7 +66,7 @@
 		{
 			"key": "P11",
 			"name": "Message Board",
-			"types": ["HTML", "CSS", "PHP", "MySQL, AJAX"],
+			"types": ["HTML", "CSS", "PHP", "MySQL", "AJAX"],
 			"thumb": "imgs/projects/thumbs/message_board.jpg",
 			"contents": 
 				{
