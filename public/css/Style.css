@@ -196,6 +196,13 @@ button.navbar-toggle{
 .MySQL.btn-default.selected
 { background: #4d001b; color: #fff;}
 
+.sass,
+.sass.btn-default.selected
+{ background: #cd669a; color: #fff;}
+
+.VanillaJS
+.VanillaJS.btn-default.selected
+{ background: #eee; color: #333;}
 
 .btn-default{ 
 	background: #fff; /*for C++*/
@@ -313,6 +320,24 @@ button.close:hover{
 /*=====  End of Projects-Modal  ======*/
 
 
+/*=============================
+=            About            =
+=============================*/
+
+.skillIcon{
+	transition: all .5s;
+}
+
+.skillIcon:hover{
+	opacity: .5;
+	transition: all .5s;
+    background: ;
+}
+
+
+/*=====  End of About  ======*/
+
+
 
 /*===============================
 =            Contact            =
@@ -337,7 +362,6 @@ button.close:hover{
 .contactLinkContainer i,
 .contactLinkContainer:hover i{
 	transition: all .5s;
-	-webkit-transition: all .5s;
 }
 
 

@@ -24,7 +24,7 @@
 		{
 			"key": "P00",
 			"name": "Elegance",
-			"types": ["HTML", "CSS", "Design", "Javascript", "jQuery"],
+			"types": ["HTML", "CSS", "Design", "Javascript", "jQuery", "SASS", "VanillaJS"],
 			"thumb": "imgs/projects/thumbs/singlePage_Elegance.jpg",
 			"contents": 
 				{

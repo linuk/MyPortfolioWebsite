@@ -41,14 +41,18 @@
 		[
 			"devicon-html5-plain-wordmark",
 			"devicon-css3-plain-wordmark",
-			"devicon-bootstrap-plain-wordmark",
+			"devicon-javascript-plain",
 			"devicon-react-original-wordmark",
 			"devicon-jquery-plain-wordmark",
 			"devicon-python-plain-wordmark",
 			"devicon-github-plain-wordmark",
 			"devicon-heroku-plain-wordmark",
 			"devicon-git-plain",
-			"devicon-javascript-plain",
+			"devicon-php-plain",
+			"devicon-mysql-plain-wordmark",
+			"devicon-wordpress-plain-wordmark",
+			"devicon-sass-original",
+			"devicon-bootstrap-plain-wordmark",
 			"devicon-illustrator-plain",
 			"devicon-photoshop-plain"
 		]

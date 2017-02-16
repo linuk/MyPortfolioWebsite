@@ -97,7 +97,7 @@ export default class AboutCardContent extends Component {
 								{
 									about.section2.list.map((skill, index)=>
 										<Col md={3} xs={4} style={{padding: "5px"}} key={"skills"+index}> 
-											<i style={SkillsIconCSS} className={skill} />
+											<i style={SkillsIconCSS} className={skill+" skillIcon"} />
 										</Col>	
 									)
 								}
