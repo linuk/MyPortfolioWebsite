@@ -46,7 +46,7 @@
 					"shortDescription": "Simple To-Do App. Implentating props and states of React JS",
 					"longDescription": "A simple To-Do App. User can add new tasks and hide completed ones. Not using server side so it will reset after reloading the page.",
 					"githubURL": "http://github.com/linuk/SImple-Todo-App",
-					"liveDemo": "http://simple-to-do-app.herokuapp.com"
+					"liveDemo": "https://linuk.github.io/Simple-Todo-App/"
 				}
 		},
 		{
