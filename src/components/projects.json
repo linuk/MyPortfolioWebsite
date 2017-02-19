@@ -24,7 +24,7 @@
 		{
 			"key": "P00",
 			"name": "Elegance",
-			"types": ["HTML", "CSS", "Design", "Javascript", "jQuery", "SASS", "VanillaJS"],
+			"types": ["HTML", "CSS", "Design", "Javascript", "jQuery", "SASS"],
 			"thumb": "imgs/projects/thumbs/singlePage_Elegance.jpg",
 			"contents": 
 				{
@@ -38,7 +38,7 @@
 		{
 			"key": "P01",
 			"name": "Todo App",
-			"types": ["HTML", "CSS", "reactJS", "Design", "Javascript"],
+			"types": ["HTML", "CSS", "reactJS", "Design", "Javascript", "VanillaJS"],
 			"thumb": "imgs/projects/thumbs/simpleTodoApp_tn.jpg",
 			"contents": 
 				{
@@ -142,48 +142,6 @@
 					"shortDescription": "A web app of aggregating website.",
 					"longDescription": "A website aggreater app based on Meteor JS. The app allows users to create account, login and vote or recommend new websites to the list. This is an exercise based on Introduction to Meteor.js Development course on Coursera by Goldsmiths, University of London.",
 					"githubURL": "https://github.com/linuk/ProjectWebsiteAggregater"
-				}
-		},
-		{
-			"key": "P6",
-			"name": "Colour Picker",
-			"types": ["HTML", "CSS", "jQuery"],
-			"thumb": "imgs/projects/thumbs/colourPicker_tn.jpg",
-			"contents": 
-				{
-					"imgs": ["imgs/projects/colourPicker/colourPicker.jpg"],
-					"shortDescription": "Background changing practice on jQuery",
-					"longDescription": "Minimal design is my favorite. This is a simple background changing web page for practicing jQuery by modifying the css and layout in a minimalistic design style.",
-					"githubURL": "https://github.com/linuk/ColourPicker",
-					"liveDemo": "https://linuk.github.io/ColourPicker/"
-				}
-		},
-		{
-			"key": "P7",
-			"name": "Think like a programmer exercise Ch2-2-2",
-			"types": ["C++"],
-			"thumb": "imgs/projects/thumbs/TLAPExCh2-2-2_tn.jpg",
-			"contents": 
-				{
-					"imgs": ["imgs/projects/TLAPExCh2-2-2/TLAPExCh2-2-2.jpg"],
-					"shortDescription": "My solution to the exercise.",
-					"longDescription": "My solution to the exercise. The main question is to generate the image in the picture with a limited count command. A really good practice for dividing problems and solving from smaller parts. I really recommend book.",
-					"githubURL": "https://github.com/linuk/Think-like-a-programmer-Chp2-2-Exercise-2-2"
-				}
-		},
-		{
-			"key": "P8",
-			"name": "Think like a programmer exercise Ch2-2-3",
-			"types": ["C++"],
-			"thumb": "imgs/projects/thumbs/TLAPExCh2-2-3_tn.jpg",
-			"contents": 
-				{
-					"imgs": [
-						"imgs/projects/TLAPExCh2-2-3/TLAPExCh2-2-3.jpg"
-						],
-					"shortDescription": "My solution to the exercise.",
-					"longDescription": "My solution to the exercise. The main question is to generate the image in the picture with a limited count command. A really good practice for dividing problems and solving from smaller parts. I really recommend book..",
-					"githubURL": "https://github.com/linuk/Think-like-a-programmer-Chp2-2-Exercise-2-3"
 				}
 		}
 	]
