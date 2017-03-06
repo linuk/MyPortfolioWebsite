@@ -20,7 +20,7 @@
 					"githubURL": "http://github.com/linuk/MyPortfolioWebsite",
 					"liveDemo": "http://linuk.org/"
 				}
-		}
+		},
 		{
 			"key": "P00",
 			"name": "Attendance UI",
@@ -47,7 +47,7 @@
 					"githubURL": "http://github.com/linuk/Elegance",
 					"liveDemo": "https://linuk.github.io/Elegance/"
 				}
-		},,
+		},
 		{
 			"key": "P02",
 			"name": "Todo App",
