@@ -8,7 +8,7 @@
 	"projects":
 	[ 
 		{
-			"key": "P0",
+			"key": "P000",
 			"name": "Portfolio",
 			"types": ["HTML", "CSS", "Javascript", "reactJS", "Design"],
 			"thumb": "imgs/projects/thumbs/portfolio_tn.jpg",
@@ -20,9 +20,22 @@
 					"githubURL": "http://github.com/linuk/MyPortfolioWebsite",
 					"liveDemo": "http://linuk.org/"
 				}
-		},
+		}
 		{
 			"key": "P00",
+			"name": "Attendance UI",
+			"types": ["HTML", "CSS", "Design", "AJAX", "jQuery", "SASS", "MySQL", "PHP"],
+			"thumb": "imgs/projects/thumbs/attendance_UI.jpg",
+			"contents": 
+				{
+					"imgs": ["imgs/projects/attendance_UI/attendance_UI.jpg"],
+					"shortDescription": "A web interface of an attendance system.",
+					"longDescription": "A web interface of an attendance system, it fetches the employee's daily logs of entering and leaving times from database, calculates the average working hours within a month or a year, and shows the statics in the table or the line chart. It also provides search features to search specific data of the employee or the year.",
+					"liveDemo": "http://igor.gold.ac.uk/~jlin015/projects/attendance_UI/"
+				}
+		},
+		{
+			"key": "P01",
 			"name": "Elegance",
 			"types": ["HTML", "CSS", "Design", "Javascript", "jQuery", "SASS"],
 			"thumb": "imgs/projects/thumbs/singlePage_Elegance.jpg",
@@ -34,9 +47,9 @@
 					"githubURL": "http://github.com/linuk/Elegance",
 					"liveDemo": "https://linuk.github.io/Elegance/"
 				}
-		},
+		},,
 		{
-			"key": "P01",
+			"key": "P02",
 			"name": "Todo App",
 			"types": ["HTML", "CSS", "reactJS", "Design", "Javascript", "VanillaJS"],
 			"thumb": "imgs/projects/thumbs/simpleTodoApp_tn.jpg",
@@ -50,7 +63,7 @@
 				}
 		},
 		{
-			"key": "P1",
+			"key": "P03",
 			"name": "Slides",
 			"types": ["HTML", "CSS", "jQuery", "Design"],
 			"thumb": "imgs/projects/thumbs/slides_tn.jpg",
@@ -64,7 +77,7 @@
 				}
 		},
 		{
-			"key": "P11",
+			"key": "P04",
 			"name": "Message Board",
 			"types": ["HTML", "CSS", "PHP", "MySQL", "AJAX"],
 			"thumb": "imgs/projects/thumbs/message_board.jpg",
@@ -77,7 +90,7 @@
 				}
 		},
 		{
-			"key": "P2",
+			"key": "P05",
 			"name": "Nyo Photography",
 			"types": ["HTML", "CSS", "Javascript", "jQuery"],
 			"thumb": "imgs/projects/thumbs/singlePageWebsite_tn.jpg",
@@ -91,7 +104,7 @@
 				}
 		},
 		{
-			"key": "P3",
+			"key": "P06",
 			"name": "Zoo Album",
 			"types": [ "HTML", "jQuery", "HandlebarJS", "CSS", "Design"],
 			"thumb": "imgs/projects/thumbs/zooAlbum_tn.jpg",
@@ -105,7 +118,7 @@
 				}
 		},
 		{
-			"key": "P31",
+			"key": "P07",
 			"name": "Notes",
 			"types": [ "Javascript", "Python"],
 			"thumb": "imgs/projects/thumbs/gitbook_logo.png",
@@ -118,7 +131,7 @@
 				}
 		},
 		{
-			"key": "P5",
+			"key": "P08",
 			"name": "Mario Game",
 			"types": ["Javascript", "P5JS"],
 			"thumb": "imgs/projects/thumbs/marioGame_tn.jpg",
@@ -132,7 +145,7 @@
 				}
 		},
 		{
-			"key": "P4",
+			"key": "P09",
 			"name": "Website Aggregater",
 			"types": [ "CSS", "Javascript", "MeteorJS" ],
 			"thumb": "imgs/projects/thumbs/websiteAggregater_tn.jpg",
