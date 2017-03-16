@@ -1,0 +1,270 @@
+.fadeInfadeOut-appear {
+   transform: translateY(20vw);
+   opacity: 0.01;
+}
+
+.fadeInfadeOut-appear.fadeInfadeOut-appear-active {
+   transform: translateY(0px);
+   opacity: 1;
+   transition: all .5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+.fadeInfadeOut-leave {
+  opacity: 1;
+}
+
+.fadeInfadeOut-leave.fadeInfadeOut-leave-active {
+  opacity: 0.01;
+  transition: all .5s ease-in;
+}
+
+/*==========================================
+=            IndexCardContent            =
+==========================================*/
+
+.IndexCardContent-appear {
+   transform: translateY(20vw);
+   opacity: 0.0;
+   transition: all .5s ease-in-out;
+}
+
+.IndexCardContent-appear.IndexCardContent-appear-active{
+   transform: translateY(0vw);
+   opacity: 1;
+   transition: all .5s ease-in-out;
+}
+
+.IndexCardContent-enter {
+   transform: translateY(10vw);
+   opacity: 0.0;
+   transition: all .5s ease-in-out;
+}
+
+.IndexCardContent-enter.IndexCardContent-enter-active{
+   transform: translateY(0vw);
+   opacity: 1;
+   transition: all .5s ease-in-out;
+}
+
+.IndexCardContent-leave {
+  transform: translateY(0vw);
+  opacity: 1;
+  transition: all .5s ease-in-out ;
+}
+
+.IndexCardContent-leave.IndexCardContent-leave-active{
+  transform: translateY(-10vw);
+  opacity: 0.0;
+  transition: all .5s ease-in-out  ;
+}
+/*=====  End of IndexCardContent  ======*/
+
+
+/*=================================
+=            IndexCard            =
+=================================*/
+
+.absoluteCenter-appear {
+   transform: translate(0%,40%);
+   opacity: 0.01;
+}
+
+.absoluteCenter-appear.absoluteCenter-appear-active {
+   transform: translate(0%,0%);
+   opacity: 1;
+   transition: all 1000ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+/*=====  End of IndexCard  ======*/
+
+
+/*===================================
+=            ProjectCard            =
+===================================*/
+
+
+/* for bigger screen like desktop or tablet */
+/* enter and livign with horizonal animation */
+@media screen and (min-width: 992px) {
+
+  .ProjectCard-enter {
+    width: 0px;
+    opacity: 0.0;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out; 
+
+    padding: 0;
+    margin: 0;
+
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+  }
+
+  /* according using column system of bootstrap, 33.33% for bigger screen*/
+  .ProjectCard-enter.ProjectCard-enter-active{
+    width: 33.333333%;
+    opacity: 1;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out; 
+    
+    /* for bootstrap grid default padding */
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0;
+    
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+
+  .ProjectCard-leave {
+    opacity: 1;
+    width: 100%;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out; 
+
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+
+  .ProjectCard-leave.ProjectCard-leave-active{
+    opacity: 0.0;
+    width: 0%;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out; 
+    
+    /* for existing div to align correctly   */
+    padding: 0;
+    margin: 0;
+
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+  }
+}
+
+/* for smaller screen for mobile devices */
+/* enter and livign with vertical animation */
+@media screen and (max-width: 992px) {
+  
+  .ProjectCard-enter {
+    height: 0;
+    opacity: 0.0;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out; 
+    padding: 0 15px 0 15px;
+
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+  }
+
+  .ProjectCard-enter.ProjectCard-enter-active{
+    height: 300px;
+    opacity: 1;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;   
+    padding: 0 15px 0 15px;
+
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  
+  .ProjectCard-leave {
+    opacity: 1;
+    height: 300px;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out; 
+  
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+
+  .ProjectCard-leave.ProjectCard-leave-active{
+    height: 0;
+    opacity: 0;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out; 
+
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+  }
+
+}
+
+/*=====  End of ProjectCard  ======*/
+
+
+/*======================================
+=            Icon Animation            =
+======================================*/
+
+.iconBreathe {
+  animation-name: breath;
+  animation-duration: 2s; 
+  animation-timing-function: ease-out; 
+  animation-delay: .5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes breath {
+  0% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    color: #777777;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+
+
+
+
+/*=====  End of Icon Animation  ======*/
+
