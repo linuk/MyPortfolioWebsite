@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+
+html,body,#root{
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+    min-height: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5{
+	font-weight: 300;
+	color: #717171;
+}
+
+h1{
+	padding: 15px;
+}
+
+a,a:hover{
+	text-decoration: none;
+}
+
+.primaryWhiteFont{
+	color: #e3e3e3;	
+}
+
+.primaryBlackFont{
+	color: #111;
+}
+
+.fullHeight{
+	min-height: 100%;
+}
+
+.pageTitle{
+	margin: 25px 0 25px 0;
+	color: #717171;
+	font-size: 3em;
+	text-align: center;
+}
+
+.pageDescription{
+	line-height: 25px;
+}
+
+/*==============================
+=            Navbar            =
+==============================*/
+
+.navbar-default .navbar-nav>li>a{
+	color: #666;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover{
+	color: #222;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover{
+	padding-bottom: 10px;
+	border-bottom: #ddd 5px solid;
+	background: #f7f7f7;
+	color: #000;	
+
+}
+
+/* hamburger line color */
+.navbar-default .navbar-toggle .icon-bar{
+    background-color: #aaa;
+}
+
+/* hamburger container */
+button.navbar-toggle{
+	border: none;
+	transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
+	margin-top: 9px;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover{
+	background: #eee;
+	transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
+}
+
+/*=====  End of Navbar  ======*/
+
+
+
+
+/*=============================
+=            Index            =
+=============================*/
+
+
+.IndexCardLeftOverlay{
+	height: 100%;
+	widows: 100%;
+	background: rgb(0,0,0);
+	opacity: 0.2;
+	transition: all 1000ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+	clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+	-webkit-clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+
+}
+
+.IndexCardRightOverlay{
+	height: 100%;
+	widows: 100%;
+	background: rgb(0,0,0);
+	opacity: 0.2;
+	transition: all 1000ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+}
+
+.IndexCardLeftOverlay:hover{
+	transition: all 1000ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+	opacity: 0.5;
+	clip-path:  polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+	-webkit-clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+}
+
+.IndexCardRightOverlay:hover{
+	transition: all 1000ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+	opacity: 0.5;
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+}
+
+
+/*=====  End of Index  ======*/
+
+
+
+
+/*=============================================
+=            Projects-Label Button            =
+=============================================*/
+
+.label-default{
+	display: inline-block;
+}
+
+.label-default,  /*for C++*/
+.btn-default.selected
+{ background: #2574dd; color: #fff;}
+
+.all,
+.all.btn-default.selected
+{ background: #673fb4; }
+
+.html,
+.html.btn-default.selected
+{ background: #d04714; color: #fff;}
+
+.css,
+.css.btn-default.selected
+{ background: #147bb2; color: #fff;}
+
+.javascript,
+.javascript.btn-default.selected
+{ background: #f6dd3b; color: #555; }
+
+.design,
+.design.btn-default.selected
+{ background: #d424a8; color: #fff;}
+
+.reactjs,
+.reactjs.btn-default.selected
+{ background: #66daf8; color: #565656;}
+
+.jquery,
+.jquery.btn-default.selected
+{ background: #a341c1; color: #fff;}
+
+.meteorjs,
+.meteorjs.btn-default.selected
+{ background: #d83535; color: #fff;}
+
+.p5js,
+.p5js.btn-default.selected
+{ background: #dd124b; color: #fff;}
+
+.php,
+.php.btn-default.selected
+{ background: #ddaa4b; color: #fff;}
+
+.MySQL,
+.MySQL.btn-default.selected
+{ background: #4d001b; color: #fff;}
+
+.sass,
+.sass.btn-default.selected
+{ background: #cd669a; color: #fff;}
+
+.VanillaJS
+.VanillaJS.btn-default.selected
+{ background: #eee; color: #333;}
+
+.btn-default{ 
+	background: #fff; /*for C++*/
+	color: #777;
+	border: none;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	
+	transition: all .5s;
+	-webkit-transition: all .5s;
+} 
+
+.btn-default:hover,
+.btn-default:focus{ 
+	background: #fff; /*for C++*/
+	color: #333;
+	border: none;	
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+	transition: all .5s;
+	-webkit-transition: all .5s;
+}
+
+.btn-default:focus{
+	outline: none !important;
+}
+/*=====  End of Projects-Label Button  ======*/
+
+
+
+/*======================================
+=            Projects-Modal            =
+======================================*/
+
+
+/*----------  vertically center modal  ----------*/
+/* reference: https://codepen.io/dimbslmh/full/mKfCc */
+
+.modal {
+	text-align: center;
+	padding: 0!important;
+}
+
+.modal:before {
+	content: '';
+	display: inline-block;	
+	height: 100%;
+	vertical-align: middle;
+	margin-right: -4px;
+}
+
+.modal-dialog {
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.modal-content{
+	border-radius: 5px;
+	border: none;
+}
+
+/*----------  End of vertically center modal  ----------*/
+
+
+/*----------  Modify position and style of close button   ----------*/
+
+.modal-header{
+	padding: 0;
+	height: 0;
+	border: none;
+	position: absolute;
+	right: 15px;
+	top: 5px;
+	z-index: 100;
+}
+
+button.close{
+	color: #fff;
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
+	opacity: .5;
+	font-size: 3em;
+	transition: all .5s;
+	-webkit-transition: all .5s;
+}
+
+button.close:hover{
+	color: #fff;
+	opacity: 1;
+	transition: all .5s;
+	-webkit-transition: all .5s;
+}
+
+/*---------- End of Modify position and style of close button   ----------*/
+
+.carousel-inner{
+	height: 400px;
+}
+
+.carousel-inner .item img{
+	object-fit: cover;
+	object-position:50% 20%;
+	height: 100%;
+	border-radius: 5px 5px 0 0;
+}
+
+.carousel-inner .item{
+	object-fit: cover;
+	object-position:0% 50%;
+	height: 100%;
+}
+
+/*=====  End of Projects-Modal  ======*/
+
+
+/*=============================
+=            About            =
+=============================*/
+
+.skillIcon{
+	transition: all .5s;
+}
+
+.skillIcon:hover{
+	opacity: .5;
+	transition: all .5s;
+    background: ;
+}
+
+
+/*=====  End of About  ======*/
+
+
+
+/*===============================
+=            Contact            =
+===============================*/
+
+.contactLinkContainer{
+	color: #717171;
+	text-decoration: none;
+	padding: 10px; 
+}
+
+.contactLinkContainer:hover{
+	color: #555;
+	background:#eee;
+	text-decoration: none;
+	border-radius: 15px;
+}
+
+
+.contactLinkContainer,
+.contactLinkContainer:hover
+.contactLinkContainer i,
+.contactLinkContainer:hover i{
+	transition: all .5s;
+}
+
+
+/*=====  End of Contact  ======*/

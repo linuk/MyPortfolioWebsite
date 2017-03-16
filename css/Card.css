@@ -1,0 +1,248 @@
+
+/*======================================
+=            Card Reference            =
+======================================*/
+
+/***********************************************************************
+* Title: <Material Design Box Shadows/source code>
+*    Author: Samuel Thornton
+*    Date: #
+*    Code version: #
+* Availability: https://codepen.io/sdthornton/pen/wBZdXq
+* ***********************************************************************/
+
+.card {
+  background: #eee;
+  border-radius: 5px;
+  text-align: center;
+  height: 300px;
+  margin: 1rem;
+  position: relative;
+  min-width: 300px;
+  cursor: pointer; 
+  max-width: 100%;
+}
+
+.cardContent{
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 1s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-1:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.card-2 {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition: all 1s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-3 {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.card-4 {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card-5 {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+
+/*=====  End of Card Reference  ======*/
+
+
+
+/*===================================
+=            ProjectCard            =
+===================================*/
+
+.projectCardTitle{
+  color: #fff;
+}
+
+.projectCardContainer {
+  background: #fafafa;
+  border-radius: 5px;
+  text-align: center;
+  margin: 1rem;
+  padding: 15px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.projectCard {
+  background: #eee;
+  border-radius: 5px;
+  text-align: center;
+  height: 350px;
+  margin: 1rem;
+  position: relative;
+  cursor: pointer; 
+  overflow: hidden;
+}
+
+.projectCardContent {
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  transition: all 1s cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: all .5s ease-in-out;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+}
+
+.projectCardContent:hover{
+  transition: all 1s cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: all .5s ease-in-out;
+  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+}
+
+
+.projectCardShadow {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 1s cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: all .5s ease-in-out;
+}
+
+.projectCardShadow:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+/*=====  End of ProjectCard  ======*/
+
+
+
+
+/*==============================
+=            Button            =
+==============================*/
+
+/*use with react-bootstrap button default class*/
+.button{
+  border-radius: 0px;
+  background: #fafafa;
+  border: none;
+  color: #717171;
+  outline: 0;
+}
+
+.button:hover{
+  background: #fff;
+  color: #444;
+}
+
+
+.buttonShadow {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 1s cubic-bezier(.25,.8,.25,1);
+  -webkit-transition: all .5s ease-in-out;
+}
+
+.buttonShadow:hover {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+/*=====  End of Button  ======*/
+
+
+/*=================================
+=            AboutCard            =
+=================================*/
+
+.aboutSkillsCard{
+  background: #fefefe;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+
+/*=====  End of AboutCard  ======*/
+
+
+/*================================================
+=            Photography Gallery Card            =
+=================================================*/
+
+.arrow_1d5fttb-o_O-arrow__direction__right_174p6a9-o_O-arrow__size__medium_9f7hgo,
+.arrow_1d5fttb-o_O-arrow__direction__left_shhpn5-o_O-arrow__size__medium_9f7hgo{
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}
+
+
+/* arrows for light box */
+.arrow_1d5fttb-o_O-arrow__direction__right_174p6a9-o_O-arrow__size__medium_9f7hgo:hover,
+.arrow_1d5fttb-o_O-arrow__direction__left_shhpn5-o_O-arrow__size__medium_9f7hgo:hover{
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+
+  background: rgba(255,255,255,0.2);
+}
+
+
+
+#Gallery div img{
+  object-fit: cover;   /* make picture fit in div without breaking original ration*/
+  background: #fff;
+
+  /*filter: grayscale(40%);*/
+  /*-webkit-filter: grayscale(40%); */
+
+  transform: scale(1);
+  -webkit-transform: scale(1);
+
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}
+
+#Gallery div img:hover{
+  /*filter: grayscale(0);*/
+  /*-webkit-filter: grayscale(0); /* Safari 6.0 - 9.0 */
+ 
+  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+ 
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}
+
+#Gallery div{
+  background: #fff;
+  overflow: hidden;
+  
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}
+
+#Gallery div:hover{
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  -moz-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}
+
+/*=====  End of Photography Gallery Card  ======*/
+
