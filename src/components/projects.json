@@ -35,6 +35,19 @@
 				}
 		},
 		{
+			"key": "P001",
+			"name": "Draft Generator",
+			"types": ["HTML", "CSS", "Design", "RestAPI", "Express", "SASS", "MySQL", "NodeJS"],
+			"thumb": "imgs/projects/thumbs/draft-generator.jpg",
+			"contents": 
+				{
+					"imgs": ["imgs/projects/draft-generator/draft-generator.jpg"],
+					"shortDescription": "A Mandarin poem text editor",
+					"longDescription": "A web app for posting poem anonymously, also supports link sharing and image output. It is a Mandarin peom editor so the direction of text is made in vertically on purpose. The backend side is based on Node JS with Express and Restful API.",
+					"liveDemo": "https://draft-generator.herokuapp.com/"
+				}
+		},
+		{
 			"key": "P01",
 			"name": "Elegance",
 			"types": ["HTML", "CSS", "Design", "Javascript", "jQuery", "SASS"],
