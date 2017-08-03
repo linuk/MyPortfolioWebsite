@@ -1,8 +1,10 @@
 {
   "name": "portfolio",
+  "author": "Jheng-Hao Lin",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://linuk.github.io/MyPortfolioWebsite",
+  "homepage": "http://linuk.github.io",
+  "repository": "MyPortfolioWebsite",
   "devDependencies": {
     "gh-pages": "^1.0.0",
     "react-addons-perf": "^15.4.2",

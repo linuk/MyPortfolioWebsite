@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Image, Nav, Navbar, NavItem } from 'react-bootstrap';
+import { Image, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import menuJSON from './menu.json';
 
@@ -56,6 +56,14 @@ export default class MyNavbar extends Component {
       minHeight: '50px',
     };
 
+    const MenuItems = menu.list.map((item) =>(
+      <li key={item.link}>
+        <Link to={item.link} onSelect={this.scrollToTop(1000)}>
+          {item.title}
+        </Link>
+      </li>
+    ));
+
     return (
       <Navbar
         style={NavbarCSS}
@@ -82,23 +90,9 @@ export default class MyNavbar extends Component {
         </Navbar.Header>
 
         <Navbar.Collapse>
-          <Nav pullRight>
-            {
-              menu.list.map((item) =>
-                <NavItem
-                  key={item.title}
-                  onSelect={this.scrollToTop(1000)}
-                  eventKey={item.key}
-                  href="#"
-                  aria-label={item.title}
-                >
-                  <Link to={item.link}>
-                    {item.title}
-                  </Link>
-                </NavItem>,
-              )
-            }
-          </Nav>
+          <ul className="nav navbar-nav navbar-right">
+            {MenuItems}
+          </ul>
         </Navbar.Collapse>
 
       </Navbar>

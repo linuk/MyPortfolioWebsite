@@ -15,11 +15,11 @@ export class AboutContainer extends Component {
 
 		return (
 			<div style={AboutContainerCSS}>
-				{/*<ReactCSSTransitionGroup*/}
-						{/*transitionName="fadeInfadeOut"*/}
-						{/*transitionAppear={true} transitionAppearTimeout={4000}*/}
-          				{/*transitionEnter={true}  transitionEnterTimeout={4000}*/}
-		  				{/*transitionLeave={true} transitionLeaveTimeout={4000}>*/}
+				<ReactCSSTransitionGroup
+						transitionName="fadeInfadeOut"
+						transitionAppear={true} transitionAppearTimeout={4000}
+          				transitionEnter={true}  transitionEnterTimeout={4000}
+		  				transitionLeave={true} transitionLeaveTimeout={4000}>
 					<Grid className={"fullHeight"}>
 						<Row className={"fullHeight"}>
 							<Col md={8} mdOffset={2} className={"fullHeight"}>
@@ -27,7 +27,7 @@ export class AboutContainer extends Component {
 							</Col>
 						</Row>
 					</Grid>
-				{/*</ReactCSSTransitionGroup>*/}
+				</ReactCSSTransitionGroup>
 			</div>
 		);
 	}
