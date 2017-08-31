@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group' 
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 import { Grid, Row, Col} from "react-bootstrap"
 import AboutCardContainer from './AboutCardContainer'
 
 export class AboutContainer extends Component {
 
 	render() {
-		
+
 		const AboutContainerCSS={
 			paddingTop: "100px",
 			paddingBottom : "50px",

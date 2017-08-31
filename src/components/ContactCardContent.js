@@ -19,15 +19,15 @@ export default class ContactCardContent extends Component {
 			padding: "15px"
 		}
 
-		// for addi server side in the future 
+		// for addi server side in the future
 		const contactForm=(
 			<div style={contactFormContainerCSS}>
 				<form method="POST" action="https://formspree.io/nyotony@gmail.com">
-					<input type="hidden" name="_next" value="/thankyou" />
+					<input type="hidden" name="_next" value="#/thankyou" />
 					<input type="hidden" name="_format" value="plain" />
 					<FormGroup controlId="formControlsName">
-				    	<FormControl 
-				    	type="text" 
+				    	<FormControl
+				    	type="text"
 				    	name="Name"
 						placeholder="Name"
 						style={{margin: "5px"}}
@@ -36,8 +36,8 @@ export default class ContactCardContent extends Component {
 				    </FormGroup>
 
 				    <FormGroup controlId="formControlsEmail">
-				    	<FormControl 
-				    	type="text" 
+				    	<FormControl
+				    	type="text"
 				    	name="E-mail"
 						placeholder="E-Mail"
 						style={{margin: "5px"}}
@@ -46,7 +46,7 @@ export default class ContactCardContent extends Component {
 				    </FormGroup>
 
 				    <FormGroup controlId="formControlsMessages">
-				    	<FormControl 
+				    	<FormControl
 				    	name="Message"
 				    	componentClass="textarea"
 						style={{margin: "5px",height: "20vh",display: "inline", maxWidth: "100%"}}
@@ -54,13 +54,13 @@ export default class ContactCardContent extends Component {
 				    	placeholder="Messages" />
 				    </FormGroup>
 
-				    <Button 
+				    <Button
 				    className={"buttonShadow button"}
-				    type="submit"> 
-				    	Send 
+				    type="submit">
+				    	Send
 			    	</Button>
 		    	</form>
-		    </div>)		
+		    </div>)
 
 		return (
 				<Row>
@@ -82,11 +82,11 @@ export default class ContactCardContent extends Component {
 									</Col>
 								)
 							}
-							
+
 							<Col md={10} mdOffset={1} xs={12}>
 								<hr/>
 									<h3>{contactJSON.formContent}</h3>
-									{contactForm}	
+									{contactForm}
 								<hr/>
 								<br/>
 							</Col>
