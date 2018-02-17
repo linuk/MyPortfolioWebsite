@@ -1,9 +1,6 @@
-#My Portfolio Website
+# My Portfolio Website
 
-Based on React JS (work in progress)
-
-Live website: https://jlportfolio.herokuapp.com/
-
+Written in React JS
 ----
 
 To clone:
