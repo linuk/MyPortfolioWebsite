@@ -3,7 +3,7 @@
   "author": "Jheng-Hao Lin",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://linuk.github.io",
+  "homepage": ".",
   "repository": "MyPortfolioWebsite",
   "devDependencies": {
     "gh-pages": "^1.0.0",

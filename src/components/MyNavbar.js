@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Image, Nav, Navbar } from 'react-bootstrap';
+import { Image, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import menuJSON from './menu.json';
 
